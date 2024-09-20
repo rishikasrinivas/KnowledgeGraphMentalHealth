@@ -1,0 +1,91 @@
+,index,subj,rel,obj,reference
+0,0,ssris,recommended first-line treatment for,major depression,"""most guideline currently recommend ssris as the first-line treatment for patients with major depression."""
+1,1,tcas,less commonly used for,depression,"""in most cases, tcas should generally be reserved for situations when first-line drug treatment have failed."""
+2,2,monoamine oxidase inhibitors (maois),less commonly used for,depression,"""maois have become less commonly used over time due to their side effects."""
+3,3,electroconvulsive therapy (ect),treatment for,resistant form of depression,"""electroconvulsive therapy is the most effective somatic therapy for depression in some specific situation;"""
+4,4,ketamine,effective for,treatment-resistant depression,"""in intravenous sub-anesthetic dose, ketamine have very quick effect on resistant unipolar (and, possibly, bipolar) depression and acute suicidal ideation."""
+5,5,selective serotonin reuptake inhibitors (ssris),same efficacy as,tcas,"""in most systematic review and meta-analysis, ssris have demonstrated comparable efficacy to tcas,"""
+6,6,serotonin-norepinephrine reuptake inhibitors (snris),use,patients who do not respond to ssris,"""clinical guidelines commonly recommend prescribing snri to patients who do not respond to ssris."""
+7,7,tricyclic antidepressants (tcas),use,severe major depressive disorder (mdd) symptoms requiring hospitalization,"""however, some tcas can be more effective than ssris when used to treat hospitalized patients."""
+8,8,bupropion,use,patients with mdd and low to moderate level of anxiety,"""for individuals with low to moderate level of anxiety, the efficacy of bupropion in treating mdd is comparable to that of ssris."""
+9,9,mirtazapine,effective for,major depression,"""mirtazapine is about as effective as ssris."""
+10,10,vortioxetine,effective for,depression-related cognitive impairment,"""vortioxetine is a very recent antidepressant with a multimodal mechanism that is thought to have a high affinity for serotonin transporter and 5-ht3, 5ht1a, 5ht7 receptor... such a specific profile seems to indicate a level of efficacy to other antidepressants with a specific action on cognitive impairments."""
+11,0,selective serotonin reuptake inhibitors (ssris),recommended first-line treatment for,major depression,most guidelines currently recommend ssris as the first-line treatment for patients with major depression
+12,2,tricyclic antidepressants (tcas),less commonly used for,depression,"in most cases, tcas should generally be reserved for situations when first-line drug treatment have failed"
+13,3,norepinephrine reuptake inhibitors (snris),use,patients with problem b,clinical guidelines commonly recommend prescribing snri to patients who do not respond to ssris
+14,4,ketamine,use,decreasing symptoma,there is still no data about the potential link between the onset of action and the route of administration for ketamine
+15,6,nefazodone,use,decreasing symptoma,nefazodone's use is associated with rare (but fatal) cases of clinical idiosyncratic hepatotoxicity
+16,7,bupropion,properties,reduces this symptom by inhibiting that neuron,bupropion appears to have a more activate profile than ssris
+17,8,venlafaxine,effective for,major depression,venlafaxine’s efficacy is comparable to that of tcas
+18,9,duloxetine,effective for,major depression,duloxetine is generally considered as effective as ssris
+19,10,reboxetine,less effective than,ssris,"according to some meta-analysis, reboxetine seems less efficacious than ssris"
+20,11,trazodone,use,decreasing symptoma,"in contemporary practice, trazodone is much more likely to be used in low dose as a sedative-hypnotic than as an antidepressant"
+21,0,iproniazid,example of,maoi,product date of fda1 approval contribution disadvantage
+22,1,imipramine,example of,tca,product date of fda1 approval contribution disadvantage
+23,2,maprotiline,effective for,patients with more severe symptoms of mdd,first tetracyclicmaprotiline efficacy in patient with more severe symptom of mdd cardiovascular toxicity and anticholinergic side effect.
+24,3,fluoxetine,side effects,"minor side effects (sexual dysfunction, loss of appetite, vomiting, nausea, irritability, anxiety, insomnia, headache)",ssri sertraline 1999 improved tolerability several minor side effect.
+25,4,fluvoxamine,side effects,overall adverse events,fluvoxamine be associate with the most overall adverse event
+26,5,paroxetine,side effects,high rate of sexual dysfunction,paroxetine have the high rate of sexual dysfunction.
+27,6,venlafaxine,side effects,"nausea, vomiting, and sexual dysfunction",snri commonly recommend for patient who do not respond to ssris no improvement in efficacy.
+28,7,bupropion,properties,"minimal weight gain or weight loss, improvement in symptoms of fatigue and sleepiness",a well tolerability profile (minimal weight gain or even weight loss).
+29,8,vortioxetine,side effects,nausea,safety profile be similar to ssris the most commonly report adverse effect be nausea
+30,9,vilazodone,side effects,diarrhea and nausea,safety profile be similar to ssris the most commonly report adverse effect be diarrhea and nausea
+31,10,mirtazapine,side effects,low risk of sexual dysfunction,comparable efficacy to ssris. low risk of sexual dysfunction
+32,12,esketamine,effective for,treatment-resistant depression,great affinity for nmda receptor than ketamine
+33,13,physical exercise,treatment to,reduce depression,recommend that depressed patient perform regular physical activity to alleviate symptom and prevent relapses
+34,14,cbt,recommended first-line treatment for,depression,"base on robust evidence, cbt be one of the most well - document and validate psychotherapeutic method available."
+35,15,ipt,recommended first-line treatment for,depression,treatment for mild to moderate major depressive episode in adult
+36,16,pst,effective for,"mild depressive symptom, especially in primary care","use in different clinical situation, like prevent depression among the elderly and treat patient with mild depressive symptom, especially in primary care"
+37,17,mft,effective for,some aspects of depression,effective in treat some aspect of depression
+38,0,monoamine oxidase inhibitor antidepressants,less commonly used,depression,monoamine oxidase inhibitor antidepressants have become less commonly used over time due to numerous side effects.
+39,1,monoamine oxidase inhibitor antidepressants,effective for,depression with atypical features,maois have demonstrated specific efficacy in treating depression with atypical features.
+40,2,monoamine oxidase inhibitor antidepressants,less commonly used for,depression,use of monoamine oxidase inhibitor antidepressants is generally restricted to patients who do not respond to other treatment.
+41,3,tricyclic antidepressants,more effective than,ssris in hospitalized patients,some tcas can be more effective than ssris when used to treat hospitalized patients.
+42,4,selective serotonin reuptake inhibitors,recommended first-line treatment for,all depression,ssris are recommended as the first-line treatment for patients with major depression.
+43,5,selective norepinephrine reuptake inhibitors,recommended for,patients who do not respond to ssris,clinical guidelines commonly recommend prescribing snri to patients who do not respond to ssris.
+44,6,ketamine,side effects,"multiple including neurotoxicity, cognitive dysfunction","common adverse effects of ketamine include dizziness, neurotoxicity, cognitive dysfunction, etc."
+45,7,ketamine,not recommended in,daily clinical practice,ketamine is not recommended for use in daily clinical practice due to the risk of abuse and addiction.
+46,8,ssris,same efficacy as,tcas,most systematic review and meta-analysis demonstrate comparable efficacy to tcas.
+47,9,esketamine,use,treatment-resistant depression,esketamine use must be carefully monitored due to potential risk of abuse.
+48,0,ipt,treatment for,mdd,overview of psychotherapy in depression
+49,1,cbt,recommended first-line treatment for,mdd,overview of psychotherapy in depression
+50,3,ssris,effective for,mdd,ssri4...
+51,4,snris,less commonly used for,mdd,snri5...
+52,5,maois,side effects,hepatotoxicity and hypertensive crisis,confirm the role of monoaminergic...
+53,6,tcas,side effects,cardiovascular toxicity and anticholinergic side effect,first tetracyclic...
+54,9,cbasp,recommended first-line treatment for,chronic depression,the european psychiatric association recommend use the...
+55,10,mbct,treatment to,reduce depression,mbct : mbct be a relatively recent technique...
+56,11,psycho-education,treatment to,reduce depression,psycho - education : this type...
+57,12,mirtazapine,effective for,mdd,other antidepressant mirtazapine...
+58,13,bupropion,properties,reduce symptom of fatigue and sleepiness,bupropion 2003 a well tolerability profile...
+59,14,vortioxetine,effective for,elderly patient with mdd,vortioxetine 2013 efficacy in...
+60,15,vilazodone,properties,less sexual dysfunction,vilazodone 2011 less sexual dysfunction...
+61,16,fluvoxamine,side effects,the most overall adverse event,fluvoxamine be associate with the most...
+62,0,psychotherapy,effective,depression,psychotherapy be effective for treat depression
+63,1,cbt and pst,effective,depression,brief form (six to eight session) of cbt and pst have already show their effectiveness for treat depression
+64,2,ect,most effective treatment,major unipolar depression,ect be arguably the most effective treatment modality in psychiatry
+65,3,ect,consider,safe,ect is considered safe
+66,4,rtms,effective,depression,rtms has shown improvement in depressive symptoms
+67,5,rtms and antidepressants,more effective than,placebo condition,treatment combining rtms and antidepressant be significantly more effective than placebo condition
+68,6,tdcs,less effective than,antidepressants and rtms,tdcs effect remain lower than that of antidepressants and rtms
+69,7,vns,effective,resistant depression,numerous study have demonstrate the efficacy of vns in resistant depression
+70,8,dbs,effective,resistant depression,dbs elicit a clinical response in 60% of resistant depression patient after six month
+71,9,magnetic seizure therapy,effective,psychiatric disorders,evidence support its effectiveness on depressive symptom continue to grow
+72,10,phototherapy,effective,seasonal and non-seasonal depression,this treatment method be effective both for those with seasonal and non-seasonal depression
+73,11,ect,recommended for,"severe and psychotic depression, high risk of suicide, or parkinson’s disease, pregnant patients","ect be typically recommend for patient with severe and psychotic depression, a high risk of suicide, or parkinson’s disease, as well as pregnant patients"
+74,12,rtms,use,depression,rtms be widely use in research on depression
+75,13,tdcs,use,depression,"tdcs be easy to use, safe, and tolerable"
+76,14,"combination of medication, psychotherapy, and somatic therapy",most effective way to manage,resistant depression,"combination of medication, psychotherapy, and somatic therapy remain the most effective way to manage resistant form of depression"
+77,0,pharmacotherapy,effective for,all depression,"""pharmacotherapy, especially selective serotonin reuptake inhibitor antidepressants, remains the most frequent option for treating depression during the acute phase."""
+78,1,ssris,effective for,all depression,"""ssris remain the gold-standard treatment for depression"""
+79,3,maois,less commonly used for,all depression,"""consequently, maois have become less commonly used over time."""
+80,4,maois,effective for,atypical depression,"""maois have demonstrated specific efficacy in treating depression with atypical features such as reactive mood, reverse neuro-vegetative symptoms, and sensitivity to rejection."""
+81,5,tcas,effective for,major depression,"""tcas...are about as effective as other classes of antidepressants...in treating major depression."""
+82,6,tcas,more effective than,ssris,"""however, some tcas can be more effective than ssris when used to treat hospitalized patients."""
+83,7,snris,recommended for,patients not responding to ssris,"""clinical guidelines commonly recommend prescribing snri to patients who do not respond to ssris."""
+84,8,ssris,same efficacy as,other antidepressants,"""in most systematic review and meta-analysis, ssris have demonstrated comparable efficacy to tcas, and there was no significant evidence to indicate the superiority of any other class or agent over ssris."""
+85,9,ssris,side effects of,"nausea, loss of appetite, irritability, anxiety, insomnia, headaches","""common tolerance rate and side effects - mostly sexual and digestive (nausea and loss of appetite) as well as irritability, anxiety, insomnia, and headaches"""
+86,10,ketamine,effective for,treatment-resistant unipolar and possibly bipolar depression,"""in intravenous sub-anesthetic doses, ketamine has a very quick effect on resistant unipolar (and possibly bipolar) depression and acute suicidal ideation."""
+87,12,ketamine,side effects of,"dizziness, neurotoxicity, cognitive dysfunction, blurred vision, psychosis, dissociation, urological dysfunction, restlessness, headache, nausea, vomiting, cardiovascular symptoms","""common adverse effect of ketamine include dizziness, neurotoxicity, cognitive dysfunction, blurred vision, psychosis, dissociation, urological dysfunction, restlessness, headache, nausea, vomiting, and cardiovascular symptoms."""
+88,13,esketamine,approved for,treatment-resistant depression,"""it (esketamine) was approved by the united states food and drug administration in march 2019 for treatment-resistant depression."""
+89,14,esketamine,use must be,carefully monitored,"""regarding the potential risk of abuse, esketamine use must be carefully monitored."""
