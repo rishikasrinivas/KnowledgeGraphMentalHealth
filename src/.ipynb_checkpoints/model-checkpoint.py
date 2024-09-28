@@ -11,7 +11,7 @@ def get_response(client, src_text : list, prompt_llm :str, model_type: str):
         prompt=f'Using this information: {text}, answer the following question: {prompt_llm}'
     
         chat_completion=client.chat.completions.create(
-            temperature = 1,
+            temperature = constants.TEMPERATURE,
             messages=[
                 {
                     "role": "system",
@@ -60,6 +60,6 @@ def main():
         
         response = get_response(client, file_text, constants.PROMPT, constants.MODEL_TYPE) 
         dfs.append(response)
-    pd.concat([df for df in dfs]).to_csv("Temperature1.csv")
+    pd.concat([df for df in dfs]).to_csv(constants.SAVE_FILE)
 main()
     
