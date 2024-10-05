@@ -10,12 +10,24 @@
       width: 100%;
       height: 500px;
       display: block;
+      position: relative;
+    }
+    /* Styling for the pop-up description */
+    .popup {
+      position: absolute;
+      background-color: white;
+      border: 1px solid #ccc;
+      padding: 10px;
+      z-index: 1000;
+      display: none;  /* Hidden by default */
+      box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
     }
   </style>
 </head>
 <body>
 
 <div id="cy"></div>
+<div id="popup" class="popup"></div> <!-- Pop-up element for node description -->
 
 <script>
   // Function to load CSV data using PapaParse
@@ -42,13 +54,14 @@
       const target = row['obj'];
       const relationship = row['rel'];
       const weight = row['weight'];
+      const description = row['description'];  // Assume CSV has 'description' field
 
       // Add unique nodes
       if (source && !nodes[source]) {
-        nodes[source] = { data: { id: source, label: source } };
+        nodes[source] = { data: { id: source, label: source, description: description || 'No description available' } };
       }
       if (target && !nodes[target]) {
-        nodes[target] = { data: { id: target, label: target } };
+        nodes[target] = { data: { id: target, label: target, description: description || 'No description available' } };
       }
 
       // Add edges
@@ -74,7 +87,7 @@
 
   // Function to initialize Cytoscape with dynamically loaded data
   function initCytoscape(graphData) {
-    cytoscape({
+    const cy = cytoscape({
       container: document.getElementById('cy'),
 
       elements: graphData,
@@ -126,6 +139,29 @@
       layout: {
         name: 'cose',  // COSE layout for automatic positioning
         animate: true
+      }
+    });
+
+    // Handle click event on nodes
+    cy.on('click', 'node', function(evt) {
+      const node = evt.target;
+      const description = node.data('description'); // Fetch node description
+
+      const popUp = document.getElementById('popup');
+      popUp.style.display = 'block';
+      popUp.innerHTML = `<strong>${node.data('label')}</strong><br>${description}`;
+
+      // Get node position and adjust pop-up position
+      const nodePosition = node.renderedPosition();
+      const containerPosition = document.getElementById('cy').getBoundingClientRect();
+      popUp.style.left = (containerPosition.left + nodePosition.x + 10) + 'px';
+      popUp.style.top = (containerPosition.top + nodePosition.y + 10) + 'px';
+    });
+
+    // Hide the pop-up when clicking elsewhere
+    cy.on('click', function(event) {
+      if (event.target === cy) {
+        document.getElementById('popup').style.display = 'none';
       }
     });
   }
