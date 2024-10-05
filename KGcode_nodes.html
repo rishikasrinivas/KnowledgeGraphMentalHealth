@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Knowledge Graph</title>
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <style>
+        body {
+            margin: 0; /* Remove default margin */
+            overflow: hidden; /* Prevent scrollbars */
+        }
+
+        svg {
+            width: 100vw;
+            height: 100vh;
+            background-color: #f9f9f9;
+        }
+
+        .links line {
+            stroke: #999;
+            stroke-opacity: 0.6;
+        }
+
+        .nodes circle {
+            stroke: #fff;
+            stroke-width: 1.5px;
+        }
+
+        .node-label {
+            font-size: 10px;
+            fill: #333;
+        }
+    </style>
+</head>
+<body>
+
+<svg viewBox="0 0 800 600"></svg>
+
+<script>
+window.onload = function() {
+    const svg = d3.select("svg"),
+          width = +svg.attr("width"),
+          height = +svg.attr("height");
+
+    const simulation = d3.forceSimulation()
+        .force("link", d3.forceLink().id(d => d.id))
+        .force("charge", d3.forceManyBody().strength(-10)) 
+        .force("center", d3.forceCenter(width / 2, height / 2));
+
+    d3.json("https://gist.githubusercontent.com/anushkalimaye/e67a9de34e81262389755b19f8ed642b/raw/43d8cfae984d9e154ddd47b85ce38ce71c984bcf/graph.json").then(function(graph) {
+
+        const link = svg.append("g")
+            .attr("class", "links")
+            .selectAll("line")
+            .data(graph.links)
+            .enter().append("line")
+            .attr("stroke-width", d => d.rel === "strong" ? 2 : 1) 
+            .attr("stroke", "#999")
+            .attr("stroke-opacity", 0.6);
+
+        const node = svg.append("g")
+            .attr("class", "nodes")
+            .selectAll("circle")
+            .data(graph.nodes)
+            .enter().append("circle")
+            .attr("r", 4) // Reduced radius for visibility
+            .attr("fill", d => d.group === 1 ? "blue" : "green")
+            .call(drag(simulation));
+
+        // Adding node labels
+        const nodeLabels = svg.append("g")
+            .attr("class", "node-labels")
+            .selectAll(".node-label")
+            .data(graph.nodes)
+            .enter().append("text")
+            .attr("class", "node-label")
+            .text(d => d.id) // Assuming 'id' is the label
+            .attr("text-anchor", "middle") // text center on nodes
+            .attr("dy", -10); // place labels above nodes
+
+        node.append("title") 
+            .text(d => d.id); // gives the label of the node when hovering
+
+        simulation
+            .nodes(graph.nodes)
+            .on("tick", ticked);
+
+        simulation.force("link")
+            .links(graph.links);
+
+        function ticked() {
+            link
+                .attr("x1", d => d.source.x)
+                .attr("y1", d => d.source.y)
+                .attr("x2", d => d.target.x)
+                .attr("y2", d => d.target.y);
+
+            node
+                .attr("cx", d => d.x)
+                .attr("cy", d => d.y);
+
+            nodeLabels
+                .attr("x", d => d.x)
+                .attr("y", d => d.y);
+        }
+    });
+
+    function drag(simulation) {
+        return d3.drag()
+            .on("start", dragstarted)
+            .on("drag", dragged)
+            .on("end", dragended);
+
+        function dragstarted(event, d) {
+            if (!event.active) simulation.alphaTarget(0.3).restart();
+            d.fx = d.x;
+            d.fy = d.y;
+        }
+
+        function dragged(event, d) {
+            d.fx = event.x;
+            d.fy = event.y;
+        }
+
+        function dragended(event, d) {
+            if (!event.active) simulation.alphaTarget(0);
+            d.fx = null;
+            d.fy = null;
+        }
+    }
+};
+</script>
+
+</body>
+</html>
