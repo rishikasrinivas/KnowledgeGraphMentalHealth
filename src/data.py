@@ -10,7 +10,7 @@ def read_file_text(filename: str) -> str:
     if filename[-3:]!="pdf":
         return
     doc = fitz.open(constants.DOCS_DIR+filename)
-    all_text = ""
+    all_text = []
     for page_nums in range(0, len(doc), constants.SKIP):
         text_in_group = ""
         for page_num in range(page_nums, page_nums + constants.SKIP):
@@ -21,6 +21,6 @@ def read_file_text(filename: str) -> str:
           docs = nlp(page_text)
           text = " ".join([token.lemma_ for token in docs])
           text_in_group += text
-        all_text += text_in_group
+        all_text.append(text_in_group)
     return all_text
 
