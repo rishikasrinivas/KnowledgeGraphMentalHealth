@@ -1,6 +1,6 @@
 import fitz
 import os
-import constants
+import src.constants as constants
 import spacy
 nlp = spacy.load("en_core_web_sm")
 def read_file_text(filename: str) -> str:
