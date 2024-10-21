@@ -1,5 +1,7 @@
-async function fetchData() {
+export async function fetchData() {
+    const lists = [];
     try {
+     
         const response = await fetch('/get_results'); // Adjust the URL as necessary
 
         if (!response.ok) {
@@ -8,10 +10,15 @@ async function fetchData() {
 
         const data = await response.json();
         
-        
-
-        const outputElement = document.getElementById('output');
-        outputElement.innerHTML = JSON.stringify(data, null, 2); // Display the data
+        data.forEach(item => {
+            let ds = {
+                subj: item.subj,
+                rel: item.rel,
+                obj: item.obj
+            }
+            lists.push(ds)
+        });
+        return lists
     } catch (error) {
         console.error('Error fetching data:', error);
     }
