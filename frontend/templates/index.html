@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flask Front Page</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+        h1 {
+            color: #333;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            margin-bottom: 20px;
+        }
+        pre {
+            background-color: #fff;
+            padding: 10px;
+            border-radius: 5px;
+            overflow: auto;
+        }
+       
+
+    </style>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/cytoscape/3.21.2/cytoscape.min.js"></script>
+</head>
+<body>
+    <h1>Welcome to My Flask App</h1>
+    <h1>Upload a File</h1>
+    <form id="uploadForm" action="/upload" method="POST" enctype="multipart/form-data">
+        <input type="file" name="files[]" multiple>
+        <div class="button-container">
+            <button type="submit">Upload</button>
+            <button id="fetchButton">Fetch Last Graph</button> <!-- Fetch Button -->
+        </div>
+    </form>
+
+    
+    <div id="cy" style="width: 800px; height: 600px;"></div>
+    <pre id="output"></pre>
+    
+    <div id="loadingtext">Upload...Please Wait</div>
+    <div class="spinner" id="spinner"></div>
+
+    <script type="module">
+        function logMessage(message) {
+            const cyContainer = document.getElementById('cy');
+            cyContainer.innerHTML = ""
+            cyContainer.innerHTML += `<div>${message}</div>`; // Append the message to the container
+            cyContainer.scrollTop = cyContainer.scrollHeight; // Scroll to the bottom
+        }
+        import { make_kg } from "/static/script.js"
+        import {fetchData} from "/static/fetch.js"
+        document.getElementById('fetchButton').addEventListener('click', async function(event){
+           event.preventDefault();
+            try {
+                logMessage("Fetching Results")
+                const fetchResponse = await fetch('/get_results', {
+                    method: 'GET',
+                }); // Fetch the latest data from the DB
+                const data = await fetchResponse.json();
+             
+                if (data) {
+                    // Call the function from script.js to create the KG with the fetched data
+                    make_kg(data); // Pass the fetched data to the KG generator
+                }
+            } catch (error) {
+                console.log("Error", error)
+            }
+            
+        });
+        document.getElementById('uploadForm').addEventListener('submit', async function(event) {
+            event.preventDefault(); // Prevent default form submission
+
+            const formData = new FormData(this); 
+            const spinner = document.getElementById('spinner');
+            const loadingText = document.getElementById("loadingtext");
+            spinner.style.display='block';
+            loadingText.style.display='block';
+            
+            try {
+                logMessage("Extracting Relationships")
+                const uploadResponse = await fetch('/upload', {
+                    method: 'POST',
+                    body: formData
+                });
+    
+                if (!uploadResponse.ok) {
+                    throw new Error('Failed to upload files');
+                }
+    
+                const result = await uploadResponse.json(); // Get the response data
+                document.getElementById('output').innerText = 'Upload successful!';  // Display success message
+    
+    
+                // Now fetch the data for the KG
+                logMessage("Fetching Results")
+                const data = await fetchData(); // Fetch the latest data from the DB
+                console.log("Fetched data: ", data);
+    
+                if (data) {
+                    // Call the function from script.js to create the KG with the fetched data
+                    make_kg(data); // Pass the fetched data to the KG generator
+                }
+            } catch (error) {
+                document.getElementById('output').innerText = "Error occured"
+            } finally {
+                spinner.style.display='none';
+                loadingText.style.display='none';
+            }
+            });
+    </script> 
+    
+</body>
+</html>

@@ -1,0 +1,177 @@
+﻿subj,rel,obj
+Depression,Side effect,Suicidal behavior
+Depression,Side effect,Mortality
+Depression,Side effect,Slower response to treatment
+Pharmacotherapy,Treats,Acute phase of depression
+Pharmacotherapy,Entails,SSRIs
+Pharmacotherapy,Entails,Monoamine oxidase inhibitors
+Pharmacotherapy,Entails,TCAs
+Pharmacotherapy,Entails,Norepinephrine reuptake inhibitors
+Pharmacotherapy,Entails,Ketamine 
+Monoamine oxidase inhibitors,Side effects,Hepatotoxicity and hypertensive crises 
+Monoamine oxidase inhibitors,Same efficacy as,Tricyclic antidepressants
+Monoamine oxidase inhibitors,Demonstrated specific efficacy in treating,"Atypical features, such as reactive moods, reverse neuro-vegetative symptoms, and sensitivity to rejection"
+Monoamine oxidase inhibitors,Eligible for ,Patients who do not respond to other treatments
+SSRIs,Is a part of,Pharmacotherapy
+SSRIs,Treat,Acute phase of depression
+SSRIs ,Same efficacy as,TCAs
+SSRI,Includes,"fluoxetine, sertraline, paroxetine, fluvoxamine, citalopram, and escitalopram"
+Norepinephrine reuptake inhibitors,Eligible for,Patients who do not respond to SSRIs
+Trazodone,Use,In low doses as a sedative hypnotic
+Nefazodone,Is comparable to ,SSRI
+Nefazodone,Side effects,Rare cases of clinical idiosyncratic hepatotoxicity 
+Bupropion,Properties ,Norepinephrine and dopamine reuptake inhibitor
+Bupropion,Properties,Has a more activating profile than SSRIs that are modestly superior to bupropion in patients with MDD
+Bupropion,Properties,"A better tolerability than SSRIs, with minimal weight gain"
+Bupropion,Finding,Is more likely than SSRIs to improve symptoms of fatigue and sleepiness
+Mianserin,Properties,"Antagonizes serotoninergic subtypes receptors, <5-HT2A> and <5-HT2C>"
+Mianserin,Properties,Increases norepinephrine and dopamine release in cortical regions
+Mirtazapine,Increases,Availability of serotonin or norepinephrine (or both)
+Mirtazapine,As effective as,SSRIs
+Ketamine,Has effects on,"Unipolar, bipolar depression"
+Ketamine,Side effects,"dizziness, neurotoxicity, cognitive dysfunction, blurred vision, psychosis, dissociation, urological dysfunction, restlessness, headache, nausea, vomiting, and cardiovascular symptoms"
+Ketamine,Has,Active metabolite (hydroxynorketamine) that can produce rapid and sustained glutamatergic stimulation
+Depression-focused psychotherapy,Second most common treatment of,Acute phase depression
+Depression-focused psychotherapy ,For,"Depression, psychosocial difficulties, interpersonal problems, and intra-psychic conflicts"
+Depression-focused psychotherapy ,For,Mild to moderate MDD
+Depression-focused psychotherapy ,Effect,Strengthens therapeutic alliance
+Depression-focused psychotherapy ,Goal,"To monitor their mood, improve their functioning, understand their symptoms better, and master the practical tools they need to cope with stressful events"
+Depression-focused psychotherapy ,Entails,"Cognitive-behavioral therapy (CBT), interpersonal therapy (IPT), Supportive therapy (ST) and psychoeducational intervention (PEI)"
+Cognitive-behavioral therapy,For,Depressed patients’ with irrational beliefs and distorted cognitions that perpetuate depressive symptoms by challenging and reversing them
+Cognitive-behavioral therapy,Use,For the first time treatment
+Acceptance and commitment therapy,Is a form of ,CBT
+Acceptance and commitment therapy,Based on,Functional contextualism
+Acceptance and commitment therapy,Use,Reduce depressive symptoms and preventing relapse
+Acceptance and commitment therapy,Use,Accepting and adjusting to persistent problems
+Computerized CBT,Is a form of,CBT
+Computerized CBT,Treats,"Patients with reduced mobility, remoteness, confinement, or quarantine"
+Schema Therapy,Is a form of,CBT
+Schema Therapy,Treats,Patients with personality disorder comorbidity
+Interpersonal Therapy,Goal,Identify triggers of depression episodes
+Interpersonal Therapy,Goal,"Resolves Mourning, recognition of patient’s own affect, resolving social interaction dysfunction, building social skills and social support"
+Problem-solving therapy,Goal,"Combines cognitive and interpersonal elements, focusing on negative assessments of situations and problem-solving strategies"
+Problem-solving therapy,Use,"Preventing depression among the elderly and treating patients with mild depressive symptoms, especially in primary care"
+Marital and family therapy,Treats,Severe forms of depression associated with medications and hospitalization
+Marital and family therapy,Includes,Both members of the couple
+Marital and family therapy,Use,Resolving marital and family problems
+Marital and family therapy,Goal,Facilitate communication and resolve different types of marital conflict
+Supportive Therapy,Requirements,"Emotionally attuned listening, empathic paraphrasing, explaining the nature of the patient’s suffering, and reassuring and encouraging them"
+Supportive Therapy,Goal,"Allows patients to ventilate and accept their feelings, increase their self-esteem, and enhance their adaptive coping skills"
+Psychodynamic therapy,Focuses,"Intrapsychic conflicts related to shame, repressed impulses, problems in early childhood with one’s emotional caretakers that lead to low self- esteem and poor emotional self-regulation"
+Group therapy,Reduces,Depressive Symptoms
+Mindfulness-based cognitive therapy,Combines,CBT with mindfulness-based stress reduction
+Mindfulness-based cognitive therapy,Goal,"Reduce, or even stop, antidepressant treatment without increasing the risk of depressive recurrence, especially for patients at a high risk of relapse"
+Psycho-education,Goal,Educates depressed patients and family members involved in the patient’s life about depression symptoms and management
+Psycho-education,Goal,"Addresses Issues such as misperceptions about medication, treatment duration, the risk of relapse, and prodromes of depression"
+Physical Exercise ,Benefits,Improvements in one’s quality of life
+Physical Exercise,Finding,an adjunct to other Anti-depressive treatments
+Acute-phase treatment options,Approaches,"Pharmacotherapy, depression-focused psychotherapy, combinations of medications and psychotherapy, and somatic therapies such as electroconvulsive therapy (ECT)"
+Somatic treatments,Includes,"Transcranial magnetic stimulation (rTMS), transcranial direct current stimulation (tDCS), vagus nerve stimulation (VNS), deep brain stimulation (DBS), and magnetic seizure therapy"
+Electroconvulsive therapy,Effective,Acute phase of depression in some situations
+Electroconvulsive therapy,Reduces,Number of hospital readmissions
+Electroconvulsive therapy,Goal,Lighten the burden of depression
+Electroconvulsive therapy,Eligible for,"Patients with severe and psychotic depression, a high risk of suicide, or Parkinson’s disease, as well as pregnant patients"
+Repetitive Transcranial magnetic stimulation,Affects,Brain metabolism and neuronal electrical activity
+Repetitive Transcranial magnetic stimulation,Results,rTMS and antidepressants more effective 
+Transcranial direct current stimulation,Entails,Weak currents delivered to the brain via electrodes placed on the scalp
+Transcranial direct current stimulation,Properties,"Easy to use, safe, tolerable"
+Transcranial direct current stimulation,Results,Outperforms the simulator by rate of response and remission
+Transcranial direct current stimulation,Results,Lower than that of antidepressants and rTMS
+Transcranial direct current stimulation,Findings,Well-suited for remote supervised treatment and assessment at home
+Deep Brain Stimulation,Findings,"Elicited a clinical response in 60% of resistant depression patients after six months and clinical remission in 35% of patients, with benefits maintained for over 12 mo"
+Magnetic Seizure Therapy,Entials,Inducing a therapeutic seizure by applying magnetic stimulation to the brain while the patient is under anesthesia
+Luxtherapy,Eligible for,Those with seasonal and non-seasonal depression. Benefits to sleep deprivation and drug treatments have also been reported
+Fluvoxamine,Side effects,Lower acceptability due to reduced efficacy 
+Fluoxetine,Side effects,Generally acceptable side effect profile
+Fluoxetine,Moderate efficacy for,Anxiety
+Fluoxetine,High efficiency for ,"Obsessive-compulsive disorder, bulimia nerviosa"
+Duloxetine,Side effects,Lower acceptability 
+Duloxetine,High efficiency for ,"Neuropathic pain, fibromyalgia, anxiety"
+Depression,Side effect,Suicidal behavior
+Depression,Side effect,Mortality
+Depression,Side effect,Slower response to treatment
+Pharmacotherapy,Treats,Acute phase of depression
+Pharmacotherapy,Entails,SSRIs
+Pharmacotherapy,Entails,Monoamine oxidase inhibitors
+Pharmacotherapy,Entails,TCAs
+Pharmacotherapy,Entails,Norepinephrine reuptake inhibitors
+Pharmacotherapy,Entails,Ketamine 
+Monoamine oxidase inhibitors,Side effects,Hepatotoxicity and hypertensive crises 
+Monoamine oxidase inhibitors,Same efficacy as,Tricyclic antidepressants
+Monoamine oxidase inhibitors,Demonstrated specific efficacy in treating,"Atypical features, such as reactive moods, reverse neuro-vegetative symptoms, and sensitivity to rejection"
+Monoamine oxidase inhibitors,Eligible for ,Patients who do not respond to other treatments
+SSRIs,Is a part of,Pharmacotherapy
+SSRIs,Treat,Acute phase of depression
+SSRIs ,Same efficacy as,TCAs
+SSRI,Includes,"fluoxetine, sertraline, paroxetine, fluvoxamine, citalopram, and escitalopram"
+Norepinephrine reuptake inhibitors,Eligible for,Patients who do not respond to SSRIs
+Trazodone,Use,In low doses as a sedative hypnotic
+Nefazodone,Is comparable to ,SSRI
+Nefazodone,Side effects,Rare cases of clinical idiosyncratic hepatotoxicity 
+Bupropion,Properties ,Norepinephrine and dopamine reuptake inhibitor
+Bupropion,Properties,Has a more activating profile than SSRIs that are modestly superior to bupropion in patients with MDD
+Bupropion,Properties,"A better tolerability than SSRIs, with minimal weight gain"
+Bupropion,Finding,Is more likely than SSRIs to improve symptoms of fatigue and sleepiness
+Mianserin,Properties,"Antagonizes serotoninergic subtypes receptors, <5-HT2A> and <5-HT2C>"
+Mianserin,Properties,Increases norepinephrine and dopamine release in cortical regions
+Mirtazapine,Increases,Availability of serotonin or norepinephrine (or both)
+Mirtazapine,As effective as,SSRIs
+Ketamine,Has effects on,"Unipolar, bipolar depression"
+Ketamine,Side effects,"dizziness, neurotoxicity, cognitive dysfunction, blurred vision, psychosis, dissociation, urological dysfunction, restlessness, headache, nausea, vomiting, and cardiovascular symptoms"
+Ketamine,Has,Active metabolite (hydroxynorketamine) that can produce rapid and sustained glutamatergic stimulation
+Depression-focused psychotherapy,Second most common treatment of,Acute phase depression
+Depression-focused psychotherapy ,For,"Depression, psychosocial difficulties, interpersonal problems, and intra-psychic conflicts"
+Depression-focused psychotherapy ,For,Mild to moderate MDD
+Depression-focused psychotherapy ,Effect,Strengthens therapeutic alliance
+Depression-focused psychotherapy ,Goal,"To monitor their mood, improve their functioning, understand their symptoms better, and master the practical tools they need to cope with stressful events"
+Depression-focused psychotherapy ,Entails,"Cognitive-behavioral therapy (CBT), interpersonal therapy (IPT), Supportive therapy (ST) and psychoeducational intervention (PEI)"
+Cognitive-behavioral therapy,For,Depressed patients’ with irrational beliefs and distorted cognitions that perpetuate depressive symptoms by challenging and reversing them
+Cognitive-behavioral therapy,Use,For the first time treatment
+Acceptance and commitment therapy,Is a form of ,CBT
+Acceptance and commitment therapy,Based on,Functional contextualism
+Acceptance and commitment therapy,Use,Reduce depressive symptoms and preventing relapse
+Acceptance and commitment therapy,Use,Accepting and adjusting to persistent problems
+Computerized CBT,Is a form of,CBT
+Computerized CBT,Treats,"Patients with reduced mobility, remoteness, confinement, or quarantine"
+Schema Therapy,Is a form of,CBT
+Schema Therapy,Treats,Patients with personality disorder comorbidity
+Interpersonal Therapy,Goal,Identify triggers of depression episodes
+Interpersonal Therapy,Goal,"Resolves Mourning, recognition of patient’s own affect, resolving social interaction dysfunction, building social skills and social support"
+Problem-solving therapy,Goal,"Combines cognitive and interpersonal elements, focusing on negative assessments of situations and problem-solving strategies"
+Problem-solving therapy,Use,"Preventing depression among the elderly and treating patients with mild depressive symptoms, especially in primary care"
+Marital and family therapy,Treats,Severe forms of depression associated with medications and hospitalization
+Marital and family therapy,Includes,Both members of the couple
+Marital and family therapy,Use,Resolving marital and family problems
+Marital and family therapy,Goal,Facilitate communication and resolve different types of marital conflict
+Supportive Therapy,Requirements,"Emotionally attuned listening, empathic paraphrasing, explaining the nature of the patient’s suffering, and reassuring and encouraging them"
+Supportive Therapy,Goal,"Allows patients to ventilate and accept their feelings, increase their self-esteem, and enhance their adaptive coping skills"
+Psychodynamic therapy,Focuses,"Intrapsychic conflicts related to shame, repressed impulses, problems in early childhood with one’s emotional caretakers that lead to low self- esteem and poor emotional self-regulation"
+Group therapy,Reduces,Depressive Symptoms
+Mindfulness-based cognitive therapy,Combines,CBT with mindfulness-based stress reduction
+Mindfulness-based cognitive therapy,Goal,"Reduce, or even stop, antidepressant treatment without increasing the risk of depressive recurrence, especially for patients at a high risk of relapse"
+Psycho-education,Goal,Educates depressed patients and family members involved in the patient’s life about depression symptoms and management
+Psycho-education,Goal,"Addresses Issues such as misperceptions about medication, treatment duration, the risk of relapse, and prodromes of depression"
+Physical Exercise ,Benefits,Improvements in one’s quality of life
+Physical Exercise,Finding,an adjunct to other Anti-depressive treatments
+Acute-phase treatment options,Approaches,"Pharmacotherapy, depression-focused psychotherapy, combinations of medications and psychotherapy, and somatic therapies such as electroconvulsive therapy (ECT)"
+Somatic treatments,Includes,"Transcranial magnetic stimulation (rTMS), transcranial direct current stimulation (tDCS), vagus nerve stimulation (VNS), deep brain stimulation (DBS), and magnetic seizure therapy"
+Electroconvulsive therapy,Effective,Acute phase of depression in some situations
+Electroconvulsive therapy,Reduces,Number of hospital readmissions
+Electroconvulsive therapy,Goal,Lighten the burden of depression
+Electroconvulsive therapy,Eligible for,"Patients with severe and psychotic depression, a high risk of suicide, or Parkinson’s disease, as well as pregnant patients"
+Repetitive Transcranial magnetic stimulation,Affects,Brain metabolism and neuronal electrical activity
+Repetitive Transcranial magnetic stimulation,Results,rTMS and antidepressants more effective 
+Transcranial direct current stimulation,Entails,Weak currents delivered to the brain via electrodes placed on the scalp
+Transcranial direct current stimulation,Properties,"Easy to use, safe, tolerable"
+Transcranial direct current stimulation,Results,Outperforms the simulator by rate of response and remission
+Transcranial direct current stimulation,Results,Lower than that of antidepressants and rTMS
+Transcranial direct current stimulation,Findings,Well-suited for remote supervised treatment and assessment at home
+Deep Brain Stimulation,Findings,"Elicited a clinical response in 60% of resistant depression patients after six months and clinical remission in 35% of patients, with benefits maintained for over 12 mo"
+Magnetic Seizure Therapy,Entials,Inducing a therapeutic seizure by applying magnetic stimulation to the brain while the patient is under anesthesia
+Luxtherapy,Eligible for,Those with seasonal and non-seasonal depression. Benefits to sleep deprivation and drug treatments have also been reported
+Fluvoxamine,Side effects,Lower acceptability due to reduced efficacy 
+Fluoxetine,Side effects,Generally acceptable side effect profile
+Fluoxetine,Moderate efficacy for,Anxiety
+Fluoxetine,High efficiency for ,"Obsessive-compulsive disorder, bulimia nerviosa"
+Duloxetine,Side effects,Lower acceptability 
+Duloxetine,High efficiency for ,"Neuropathic pain, fibromyalgia, anxiety"
