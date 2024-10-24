@@ -1,0 +1,51 @@
+,index,subj,rel,obj,reference
+0,0,anxious depression,finding,low remission rates,"remission rates were significantly lower in patients with anxious depression, according to both the ham-d criterion (22.2% versus 33.4%) and the qids-sr criterion (27.5% versus 38.9%)."
+1,1,anxious depression,finding,low response rates,response rates were also significantly lower for patients with anxious depression (41.7% versus 52.8%).
+2,2,anxious depression,associated with,poorer acute outcomes,anxious depression is associated with poorer acute outcomes than nonanxious depression following antidepressant treatment.
+3,3,nonanxious depression,associated with,better acute outcomes,nonanxious depression is associated with better acute outcomes compared to anxious depression following antidepressant treatment.
+4,4,anxious depression,correlated with,greater illness severity and functional impairment,"in patients with high levels of anxiety accompanying major depression, greater severity of depressive illness and functional impairment, greater illness chronicity, and an increased risk of suicidality have been reported."
+5,5,anxious depression,correlated with,increased risk of suicidality,"in patients with high levels of anxiety accompanying major depression, greater severity of depressive illness and functional impairment, greater illness chronicity, and an increased risk of suicidality have been reported."
+6,6,major depressive disorder with high levels of anxiety,greater likelihood of,unemployment,patients with anxious depression were significantly more likely to be unemployed.
+7,7,major depressive disorder with high levels of anxiety,greater likelihood of,more concurrent anxiety disorders,individuals experiencing major depressive disorder with high levels of anxiety symptoms were significantly more likely to have more concurrent anxiety disorders.
+8,2,anxious depression,finding,high side effect burden,"rating of side effect frequency, intensity, and burden was significantly greater in the anxious depression group."
+9,3,anxious depression,associated with,higher illness chronicity,"in patients with high levels of anxiety accompanying major depression, greater severity of depressive illness and functional impairment."
+10,4,anxious depression,associated with,increased risk of suicidality,and an increase risk of suicidality have been reported.
+11,5,anxious depression,more likely to report,suicidal ideation,patient with anxious depression were significantly more likely to report suicidal ideation.
+12,6,anxious depression,more likely to have,medical comorbidity,patient with anxious depression were significantly more likely to have more medical comorbidity.
+13,7,major depressive disorder,correlated with,anxiety,"patients with major depressive disorder often also suffer from anxiety, nervousness, and the somatic correlates of these states."
+14,8,anxious depression,less time in treatment,than nonanxious depression,patients with anxious depression spend less time in treatment than those without.
+15,9,anxious depression,low remission rates,compared to nonanxious depression,remission rates were significantly lower in patients with anxious versus nonanxious depression.
+16,10,citalopram,use,in major depressive disorder,citalopram was used on patients with major depressive disorder in the star*d study level 1.
+17,11,citalopram,use,as initial treatment in star*d study,citalopram was the initial treatment provided in the star*d study.
+18,0,anxious depression,findings,low remission rates,table 2
+19,1,anxious depression,findings,low response rates,table 2
+20,2,ham-d anxiety/somatization factor,predictor of,remission status,table 3
+21,3,anxious depression,symptom,greater residual symptoms of anxiety/somatization,supplementary table 2
+22,4,ham-d anxiety/somatization factor,correlated with,remission status,table 3
+23,5,anxious depression,findings,longer time to achieve remission,figures 3 and 4
+24,6,anxious depression,treatment responsiveness,less likely to achieve remission in level 1 with citalopram,discussion section
+25,7,anxious depression,treatment responsiveness,less likely to achieve remission in level 2,discussion section
+26,8,anxious depression,associated with,"greater frequency, intensity, and burden of side effects","table 4, discussion section"
+27,9,anxious depression,associated with,more serious adverse events,discussion section
+28,10,nonanxious depression,findings,faster remission and response,figures 3 and 4
+29,11,anxious depression,findings,greater side effect burden,table 4
+30,12,anxious depression,findings,poor treatment outcome with antidepressant monotherapy,discussion section
+31,13,anxious depression,side effects,increased psychiatric serious adverse events,table 4
+32,14,anxious depression,side effects,intolerace,table 4
+33,0,major depressive disorder,correlated with,clinically meaningful levels of anxiety,about half of outpatients with major depressive disorder also have clinically meaningful levels of anxiety
+34,3,anxious depression,associated with,poor acute outcome following antidepressant treatment compared to nonanxious depression,anxious depression is associated with poorer acute outcome than nonanxious depression following antidepressant treatment
+35,4,anxious depression,less effective,antidepressant treatment,patients with anxious depression fare significantly worse in both the switching and augmentation options
+36,5,anxious depression,more common than,"nonanxious depression in african americans, hispanies, primary care settings, unemployed, lower education, and lower income individuals","anxious depression was significantly more common among african americans, hispanics, those seen in primary care settings, among the unemployed, among those who were married, divorced, or widowed, and among those with less education, those with public insurance, and those with less income"
+37,6,anxious depression,definition,major depressive disorder with a ham-d anxiety/somatization factor score ≥7,anxious depression defined as major depressive disorder with a ham-d anxiety/somatization factor score ≥7
+38,7,anxious depression,finding,"greater likelihood of reporting suicidal ideation, personal history of attempt suicide, and a family history of drug abuse","anxious depression was associated with a greater likelihood of reporting suicidal ideation, a personal history of attempted suicide, and a family history of drug abuse"
+39,2,anxious depression,finding,greater reduction in ham-d anxiety/somatization score,patients with anxious depression have greater reduction in ham-d anxiety/somatization scores.
+40,3,anxious depression,finding,greater residual symptoms of anxiety/somatization,patients with anxious depression have greater residual symptoms of anxiety/somatization at endpoint.
+41,4,anxious depression,finding,specificity drops quickly with ham-d anxiety/somatization score,specificity drops off quickly for ham-d anxiety/somatization score.
+42,5,anxious depression,finding,downward trend in remission rates as number of anxiety symptoms increases,"a downward trend, with remission rates dropping as the number of anxiety symptoms increases."
+43,6,anxious depression,less effective,citalopram,patients with anxious depression are less likely to respond or to remit with citalopram treatment.
+44,7,nonanxious depression,finding,earlier remission and response than anxious depression,nonanxious depression group achieves remission and response sooner on average.
+45,8,anxious depression,associated with,poorer treatment outcomes with citalopram,major depression with anxious features associated with different treatment outcome than nonanxious major depression.
+46,9,major depressive disorder,not effective,treatment in patients without remission to citalopram,"1,292 adult outpatients with major depressive disorder who have no remission of symptoms to citalopram were assigned to different treatments."
+47,10,anxious depression,finding,"higher frequency, intensity, and burden of side effects","the anxious depression group has greater frequency, intensity, and burden of side effects."
+48,11,anxious depression,side effects,more serious adverse events,number of hospitalizations for general medical condition strikingly different between the two groups.
+49,12,anxious depression,less effective,treatment after resistance or intolerance to antidepressant,"in level 2 of star*d, patients with anxious depression are less likely to achieve remission."

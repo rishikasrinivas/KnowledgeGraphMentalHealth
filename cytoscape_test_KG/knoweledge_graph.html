@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Dynamic Knowledge Graph using CSV and Cytoscape.js</title>
+  <script src="https://unpkg.com/cytoscape@3.20.0/dist/cytoscape.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/papaparse@5.3.0/papaparse.min.js"></script> <!-- For parsing CSV -->
+  <style>
+    #cy {
+      width: 100%;
+      height: 500px;
+      display: block;
+    }
+  </style>
+</head>
+<body>
+
+<div id="cy"></div>
+
+<script>
+  // Function to load CSV data using PapaParse
+  function loadCSVData(csvFile, callback) {
+    Papa.parse(csvFile, {
+      download: true,
+      header: true,
+      complete: function(results) {
+        callback(results.data);
+      },
+      error: function(err) {
+        console.error("Error loading CSV file:", err);
+      }
+    });
+  }
+
+  // Function to process CSV data into Cytoscape format
+  function processCSVData(data) {
+    const nodes = {};
+    const edges = [];
+
+    data.forEach(row => {
+      const source = row['subj'];
+      const target = row['obj'];
+      const relationship = row['rel'];
+      const weight = row['weight'];
+
+      // Add unique nodes
+      if (source && !nodes[source]) {
+        nodes[source] = { data: { id: source, label: source } };
+      }
+      if (target && !nodes[target]) {
+        nodes[target] = { data: { id: target, label: target } };
+      }
+
+      // Add edges
+      if (source && target && relationship) {
+        edges.push({
+          data: {
+            source: source,
+            target: target,
+            relationship: relationship,
+            weight: parseInt(weight, 10) || 1,  // Convert weight to integer, default to 1
+            label: relationship            // Label the edge with the relationship type
+          }
+        });
+      }
+    });
+
+    // Convert nodes object to array
+    return {
+      nodes: Object.values(nodes),
+      edges: edges
+    };
+  }
+
+  // Function to initialize Cytoscape with dynamically loaded data
+  function initCytoscape(graphData) {
+    cytoscape({
+      container: document.getElementById('cy'),
+
+      elements: graphData,
+
+      style: [
+        {
+          selector: 'node',
+          style: {
+            'label': 'data(label)',
+            'background-color': '#666',
+            'text-valign': 'center',
+            'text-halign': 'center',
+            'color': '#fff',
+            'font-size': '10px',
+            'width': '40px',   // Modern, larger nodes
+            'height': '40px',
+            'border-color': '#ccc',
+            'border-width': '2px',
+            'border-opacity': '0.8',
+            'shape': 'ellipse'
+          }
+        },
+        {
+          selector: 'edge',
+          style: {
+            'width': 'mapData(weight, 1, 5, 2, 10)',  // Dynamic width based on weight
+            'line-color': function(ele) {
+              return ele.data('relationship') === 'associated with' ? 'blue' : 'red'; // Customize colors as needed
+            },
+            'curve-style': 'bezier',  // Smooth curved edges
+            'target-arrow-shape': 'triangle',
+            'target-arrow-color': function(ele) {
+              return ele.data('relationship') === 'associated with' ? 'blue' : 'red'; // Customize arrow colors
+            },
+            'arrow-scale': 1.5,  // Larger arrowheads for modern look
+            'line-style': 'solid',
+            'opacity': 0.8,
+            'overlay-padding': '6px',  // Creates better padding around the edges
+            'z-index': 9999,
+            'label': 'data(label)',  // Display relationship type as label
+            'font-size': '8px',  // Small font for edge labels
+            'text-rotation': 'autorotate',  // Rotates text to align with edge direction
+            'text-margin-y': -10,  // Position label closer to the edge
+            'color': '#555'  // Darker color for labels for better readability
+          }
+        }
+      ],
+
+      layout: {
+        name: 'cose',  // COSE layout for automatic positioning
+        animate: true
+      }
+    });
+  }
+
+  // Load the CSV and initialize the graph
+  loadCSVData('knowledge_graph_data.csv', function(data) {
+    const graphData = processCSVData(data);
+    initCytoscape(graphData);
+  });
+</script>
+
+</body>
+</html>
