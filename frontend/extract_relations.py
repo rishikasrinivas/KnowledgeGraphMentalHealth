@@ -24,7 +24,7 @@ def extract_rels(files):
         response = model.get_response(client, file_text, constants.PROMPT, constants.MODEL_TYPE)
         print(response)
         responses.extend(response)
-        break
+     
     print(responses)
     return responses
 
