@@ -1,20 +1,21 @@
-API_KEY= 
+API_KEY= ''
 MODEL_TYPE= 'gpt-4-turbo-preview' #MODEL TYPE
 DOCS_DIR = "Docs/" #DIRECTORY OF PAPERS
-SKIP = 1 #NUMBER OF PAGES TO READ AT A TIME
+SKIP = 2 #NUMBER OF PAGES TO READ AT A TIME
 TEMPERATURE=1
-SAVE_FILE = 'DefinedRels_NoEX_4turbo.csv'
+SAVE_FILE = '/Users/rishikasrinivas/KnowledgeGraphMentalHealth/NewRels_Skip2.csv'
 PROMPT =  """
-     You are to extract important entities, their definitions, overarching ideas,  and their relationships with one another from this paper. Don't copy the sentence word for word and split it up. Do not take all random relationships. Identify relationships that can help clinicians with diagnosis. . Will/May need to look across sections. Refrain from forming relationships unless text explicitly highlights or suggests that.
+     You are to extract important entities, their definitions, overarching ideas,  and their relationships with one another from this paper. Don't copy the sentence word for word and split it up. Do not take all random relationships. Identify relationships that can help clinicians with diagnosis. Will/May need to look across sections. Refrain from forming relationships unless text explicitly highlights or suggests that.
     
     Understand the sentence and determine the relationships between the subject and objects
     
     DO NOT use the word 'Depression' ALONE as a subject or object. Each block of text emphasizes different types of depression and you must include the type of depression the relationship is referring to.
     If the text is referring to all types of depression for that relationship, label it as "All Depression"
     The idea is that these relationships can be pieced together into a knowledge graph that a clinician can trace. Keep this in mind as you extract.
-    
+
+    If a sentence uses one of these relationship words, use that specific relatoinship word for that triplet (subj, rel, obj)
     Do not use any relationships other than these (Note I've given the relationships and explained when to use it) :
-        1. Associated with: use this to explain when a disease has some effect on someones life. Don't use it to define a disease. For example dont say 'depression -> associated with -> 
+        1. Associated with: use this to explain when a disease has some effect on someones life. Don't use it to define a disease. For example don't say 'depression -> associated with -> 
         2. Results: use this when the sentence shows events, observations and/or results.
         3. Symptom: when the subject/object is a sign of the object/subject
         4. Definition: when the text explains the meaning of a disease or word
@@ -22,7 +23,7 @@ PROMPT =  """
         6. More common than … in …: Anxious depression --> more common than -> nonanxious depression -> in -> African American group, Hispanics, Primary Care Patients, Unemployed, Married then Divorced/Widowed, Less, Education, Public insurance, Lower-income
 
 
-        8. Side effects: When the text demonstrates effects on the patient as VERBS, samples: nausea, vomiting, etc. This is different from results
+        8. Side effects: When the text demonstrates effects on the patient as VERBS, samples: nausea, vomiting, etc. This is different from results. 
         9. Goal:  When the text explains the expected outcone or purpose of using treatment or medication
         10. Treats: When the text states that a medicine or treatment 'treats' or some synonym of that
         11. second-line treatment:  when the reference string (ref) mentions that something was used as a second-line treatment. NOTE DO NOT USE UNLESS THE TEXT YOU'RE REFERENCING SPECIFICALLY MENTIONS THE WORDS 'SECOND-LINE TREATMENT'. NOTE: 'SECOND MOST FREQUENT' AND OTHER SYNONYMS DO NOT COUNT AS 'SECOND-LINE TREATMENT'
@@ -67,24 +68,17 @@ PROMPT =  """
         rel:  side effect
         obj:  less mental clarity
 
-
-
-    Example:  As shown in Table 2, remission rates were significantly lower in patients with anxious depression,
-    according to both the HAM-D criterion (22.2% versus 33.4%) and the QIDS-SR criterion (27.5% versus 38.9%). 
-    Response rates were also significantly lower for patients with anxious depression (41.7% versus 52.8%). "
-
-    Gives the rel(s): Anxious Depression ->  side effects -> low remission rates  and Anxious Depression -> side effects -> low response rates 
-
-    Develop relationships that all connect to depression. Meaning as subj, have A FORM OF DEPRESSION (following the 'depression' rules mentioned) as the subject, then a relation that connects depression to the object
-
     
-    Develop a dataframe that should have 4 headers, subj, rel, obj, ref. Reference should hold the exact sentence(s) (in closed quotes) that you used to get the relationship, This dataframe should explain the relationships between all subjects.
+    Develop a dataframe that should have 6  headers, subjSummary, subj, rel, obj, objSummary ref. Reference should hold the exact sentence(s) (in closed quotes) that you used to get the relationship, This dataframe should explain the relationships between all subjects and for each subject and object.
+    If the subject and/or object are more than 3 words, leaf it as is in the subj column but also summarize it into 1 word and store that as subjSummary or objSummary respectively. If the subject and/or object are less than 3 words just copy the subject/object into the subjSummary/objSumary segment. 
+
+
+    Go through all the relationships and make sure there are no inconsistencies and no repeats and everything is factual
 
     Return the dataframe as a list of dictionaries in the structure of [, <enter>, dictionaries, <enter>, ]
     [
         dictionaries
     ]
-
 
     
     
