@@ -18,15 +18,18 @@ function processCSVData(data) {
   const edges = [];
 
   data.forEach(item => {
+    const subSum=item.subjSumm;
     const source = item.subj;
     const target = item.obj;
+    const objSum=item.objSumm;
     const relationship = item.rel;
+    const description = "No desc";
     // Add unique nodes
     if (source && !nodes[source]) {
-      nodes[source] = { data: { id: source, label: source} };
+      nodes[source] = { data: { id: source, label: source,description: description || 'No description available' } };
     }
     if (target && !nodes[target]) {
-      nodes[target] = { data: { id: target, label: target} };
+      nodes[target] = { data: { id: target, label: target,description: description || 'No description available' } };
     }
 
     // Add edges
@@ -37,7 +40,8 @@ function processCSVData(data) {
           target: target,
           relationship: relationship,
           weight: 1 || 1,  // Convert weight to integer, default to 1
-          label: relationship            // Label the edge with the relationship type
+          label: relationship ,           // Label the edge with the relationship type
+           description: "empty"
         }
       });
     }
@@ -60,7 +64,7 @@ function getRandomColor() {
 
 // Function to initialize Cytoscape with dynamically loaded data
 export function initCytoscape(graphData) {
-  console.log("ent init")
+  console.log("ent init,", graphData)
   let edges_lab = Array.from(new Set(graphData.edges.map(edges => edges.data.label)))
 
   let labeltocolor = {}
@@ -68,7 +72,7 @@ export function initCytoscape(graphData) {
     labeltocolor[l] = getRandomColor();
   });
 
-  console.log(edges_lab)
+  console.log("Edges labels ", edges_lab)
     
   const cy = cytoscape({
     container: document.getElementById('cy'),
@@ -109,6 +113,7 @@ export function initCytoscape(graphData) {
 
 
     ],
+    
 
     layout: {
       name: 'cose',  // COSE layout for automatic positioning
@@ -165,8 +170,7 @@ export function initCytoscape(graphData) {
 }
 
 export function make_kg(data){
-    
-  const graphData = processCSVData(data);
-  initCytoscape(graphData);
+    const graphData = processCSVData(data);
+    initCytoscape(graphData);
     console.log("Made")
 }

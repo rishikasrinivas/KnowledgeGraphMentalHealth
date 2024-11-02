@@ -6,26 +6,25 @@ import src.model as model
 import src.data as data 
 import src.constants as constants
 import os
+import pandas as pd
 
 def extract_rels(files):
-    client= OpenAI( api_key= constants.API_KEY)
-    file_text = []
+    OpenAI.api_key = os.environ["OPENAI_API_KEY"]
+    client= OpenAI()
     responses=[]
     dfs=[]
     for documents in files:
         file=documents.filename
         if file[-4:] != ".pdf":
-            return "Inv"
-        text =  data.read_file_text(io.BytesIO(documents.read()) )
-        if text:
-            print("Reading text from ", documents)
-            file_text.append(text)
-        print("entering model")
-        response = model.get_response(client, file_text, constants.PROMPT, constants.MODEL_TYPE)
-        print(response)
-        responses.extend(response)
-     
-    print(responses)
+            return "Invalid"
+        for text in data.read_file_text(io.BytesIO(documents.read()) ):
+            print("entering model")
+            response = model.get_response(client, text, constants.PROMPT, constants.MODEL_TYPE)
+            print(response)
+            responses.extend(response)
+
+
+    
     return responses
 
     

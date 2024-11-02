@@ -12,6 +12,8 @@ export async function fetchData() {
         
         data.forEach(item => {
             let ds = {
+                subjSumm: item.subjSummary,
+                objSumm: item.objSummary,
                 subj: item.subj,
                 rel: item.rel,
                 obj: item.obj
