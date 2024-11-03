@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -31,6 +32,7 @@
        
 
     </style>
+    
     <script src="https://cdnjs.cloudflare.com/ajax/libs/cytoscape/3.21.2/cytoscape.min.js"></script>
 </head>
 <body>
@@ -45,30 +47,31 @@
     </form>
 
     
-    <div id="cy" style="width: 800px; height: 600px;"></div>
+    <div id="cy" style="width: 100%; height: 100%;"></div>
+    <div id="popup" style="width: 80px; height: 60px; class="popup"></div> 
     <pre id="output"></pre>
     
     <div id="loadingtext">Upload...Please Wait</div>
     <div class="spinner" id="spinner"></div>
 
     <script type="module">
+        import { make_kg } from "/static/script.js"
+        import {fetchData} from "/static/fetch.js"
         function logMessage(message) {
             const cyContainer = document.getElementById('cy');
             cyContainer.innerHTML = ""
             cyContainer.innerHTML += `<div>${message}</div>`; // Append the message to the container
             cyContainer.scrollTop = cyContainer.scrollHeight; // Scroll to the bottom
         }
-        import { make_kg } from "/static/script.js"
-        import {fetchData} from "/static/fetch.js"
         document.getElementById('fetchButton').addEventListener('click', async function(event){
            event.preventDefault();
             try {
-                logMessage("Fetching Results")
+                logMessage("Fetching Results fetch")
                 const fetchResponse = await fetch('/get_results', {
                     method: 'GET',
                 }); // Fetch the latest data from the DB
                 const data = await fetchResponse.json();
-             
+                
                 if (data) {
                     // Call the function from script.js to create the KG with the fetched data
                     make_kg(data); // Pass the fetched data to the KG generator
@@ -82,9 +85,7 @@
             event.preventDefault(); // Prevent default form submission
 
             const formData = new FormData(this); 
-            const spinner = document.getElementById('spinner');
             const loadingText = document.getElementById("loadingtext");
-            spinner.style.display='block';
             loadingText.style.display='block';
             
             try {
@@ -104,9 +105,9 @@
     
                 // Now fetch the data for the KG
                 logMessage("Fetching Results")
-                const data = await fetchData(); // Fetch the latest data from the DB
-                console.log("Fetched data: ", data);
-    
+                const fetchResponse = await fetch("/get_results", { method: 'GET' }); // Fetch the latest data from the DB
+                //event.preventDefault(); // Prevent default form submission
+                const data = await fetchResponse.json();
                 if (data) {
                     // Call the function from script.js to create the KG with the fetched data
                     make_kg(data); // Pass the fetched data to the KG generator
@@ -114,7 +115,6 @@
             } catch (error) {
                 document.getElementById('output').innerText = "Error occured"
             } finally {
-                spinner.style.display='none';
                 loadingText.style.display='none';
             }
             });

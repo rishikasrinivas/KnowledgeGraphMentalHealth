@@ -4,13 +4,16 @@ from utils import connect_to_db
 app = Flask(__name__)
 from extract_relations import extract_rels
 from urllib.parse import quote_plus
+import sys
+
 
 app = Flask(__name__)
 
 
 
    
-collection = connect_to_db(password = quote_plus('tSbYeiPdlloExC4T'))
+collection = connect_to_db()
+
 print("CONNECTED")
 @app.route('/')
 def index():
@@ -39,7 +42,7 @@ def get_results():
         # Fetch all documents from the collection
         print("ent get")
         results = collection.find()
-        print("found res")
+        print("found res", results)
         
         for res in results:
         # Convert the results to a list of dictionaries
@@ -63,7 +66,7 @@ def upload_files():
         return jsonify({'error': str(e)}), 500
 
     try:
-        response = requests.post('http://127.0.0.1:5000/upload_results', json=responses)
+        response = requests.post('http://127.0.0.1:8000/upload_results', json=responses)
         return jsonify({
           'message': 'Data added',
         }), 201
@@ -71,7 +74,9 @@ def upload_files():
         return jsonify({'error': str(e)}), 500
    
 if __name__ == '__main__':
-    app.run(debug=True)
+    collections.Brightside.deleteMany({})
+
+    app.run(port=8000, debug=True)
     
     
     

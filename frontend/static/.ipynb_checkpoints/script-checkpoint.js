@@ -18,26 +18,32 @@ function processCSVData(data) {
   const edges = [];
 
   data.forEach(item => {
+      console.log(item)
+    const subSum=item.subjsummary;
+      console.log("hee ", subSum)
     const source = item.subj;
     const target = item.obj;
+    const objSum=item.objsummary;
     const relationship = item.rel;
+    const description = "No desc";
     // Add unique nodes
-    if (source && !nodes[source]) {
-      nodes[source] = { data: { id: source, label: source} };
+    if (subSum && !nodes[subSum]) {
+      nodes[subSum] = { data: { id: subSum, label: subSum,description: description || 'No description available' } };
     }
-    if (target && !nodes[target]) {
-      nodes[target] = { data: { id: target, label: target} };
+    if (objSum && !nodes[objSum]) {
+      nodes[objSum] = { data: { id: objSum, label: objSum,description: description || 'No description available' } };
     }
 
     // Add edges
-    if (source && target && relationship) {
+    if (subSum && objSum && relationship) {
       edges.push({
         data: {
-          source: source,
-          target: target,
+          source: subSum,
+          target: objSum,
           relationship: relationship,
           weight: 1 || 1,  // Convert weight to integer, default to 1
-          label: relationship            // Label the edge with the relationship type
+          label: relationship ,           // Label the edge with the relationship type
+           description: "empty"
         }
       });
     }
@@ -60,7 +66,7 @@ function getRandomColor() {
 
 // Function to initialize Cytoscape with dynamically loaded data
 export function initCytoscape(graphData) {
-  console.log("ent init")
+  console.log("ent init,", graphData)
   let edges_lab = Array.from(new Set(graphData.edges.map(edges => edges.data.label)))
 
   let labeltocolor = {}
@@ -68,7 +74,7 @@ export function initCytoscape(graphData) {
     labeltocolor[l] = getRandomColor();
   });
 
-  console.log(edges_lab)
+  console.log("Edges labels ", edges_lab)
     
   const cy = cytoscape({
     container: document.getElementById('cy'),
@@ -109,6 +115,7 @@ export function initCytoscape(graphData) {
 
 
     ],
+    
 
     layout: {
       name: 'cose',  // COSE layout for automatic positioning
@@ -165,8 +172,7 @@ export function initCytoscape(graphData) {
 }
 
 export function make_kg(data){
-    
-  const graphData = processCSVData(data);
-  initCytoscape(graphData);
+    const graphData = processCSVData(data);
+    initCytoscape(graphData);
     console.log("Made")
 }

@@ -18,26 +18,28 @@ function processCSVData(data) {
   const edges = [];
 
   data.forEach(item => {
-    const subSum=item.subjSumm;
+      console.log(item)
+    const subSum=item.subjsummary;
+      console.log("hee ", subSum)
     const source = item.subj;
     const target = item.obj;
-    const objSum=item.objSumm;
+    const objSum=item.objsummary;
     const relationship = item.rel;
     const description = "No desc";
     // Add unique nodes
-    if (source && !nodes[source]) {
-      nodes[source] = { data: { id: source, label: source,description: description || 'No description available' } };
+    if (subSum && !nodes[subSum]) {
+      nodes[subSum] = { data: { id: subSum, label: subSum,description: description || 'No description available' } };
     }
-    if (target && !nodes[target]) {
-      nodes[target] = { data: { id: target, label: target,description: description || 'No description available' } };
+    if (objSum && !nodes[objSum]) {
+      nodes[objSum] = { data: { id: objSum, label: objSum,description: description || 'No description available' } };
     }
 
     // Add edges
-    if (source && target && relationship) {
+    if (subSum && objSum && relationship) {
       edges.push({
         data: {
-          source: source,
-          target: target,
+          source: subSum,
+          target: objSum,
           relationship: relationship,
           weight: 1 || 1,  // Convert weight to integer, default to 1
           label: relationship ,           // Label the edge with the relationship type

@@ -18,13 +18,10 @@ def extract_rels(files):
         if file[-4:] != ".pdf":
             return "Invalid"
         for text in data.read_file_text(io.BytesIO(documents.read()) ):
-            print("entering model")
+            print("entering model", text)
             response = model.get_response(client, text, constants.PROMPT, constants.MODEL_TYPE)
             print(response)
             responses.extend(response)
-
-
-    
     return responses
 
     
