@@ -1,7 +1,7 @@
 API_KEY= ''
 MODEL_TYPE= 'gpt-4-turbo-preview' #MODEL TYPE
 DOCS_DIR = "Docs/" #DIRECTORY OF PAPERS
-SKIP = 2 #NUMBER OF PAGES TO READ AT A TIME
+SKIP = 4 #NUMBER OF PAGES TO READ AT A TIME
 TEMPERATURE=1
 SAVE_FILE = '/Users/rishikasrinivas/KnowledgeGraphMentalHealth/NewRels_Skip2.csv'
 PROMPT =  """
@@ -15,12 +15,13 @@ PROMPT =  """
 
     If a sentence uses one of these relationship words, use that specific relatoinship word for that triplet (subj, rel, obj)
     Do not use any relationships other than these (Note I've given the relationships and explained when to use it) :
-        1. Associated with: use this to explain when a disease has some effect on someones life. Don't use it to define a disease. For example don't say 'depression -> associated with -> 
-        2. Results: use this when the sentence shows events, observations and/or results.
-        3. Symptom: when the subject/object is a sign of the object/subject
-        4. Definition: when the text explains the meaning of a disease or word
-        5. first-line treatment: when the reference string (ref) mentions that something was used as a first-line treatment.NOTE DO NOT USE UNLESS THE TEXT YOU'RE REFERENCING SPECIFICALLY MENTIONS THE WORDS 'FIRST-LINE TREATMENT'. NOTE: 'MOST FREQUENT' AND OTHER SYNONYMS DO NOT COUNT AS 'FIRST-LINE TREATMENT'
-        6. More common than … in …: Anxious depression --> more common than -> nonanxious depression -> in -> African American group, Hispanics, Primary Care Patients, Unemployed, Married then Divorced/Widowed, Less, Education, Public insurance, Lower-income
+        1. Subset: Use this ONLY for illnesses related to depression. For example: DepressionTypeA -> subset -> Depression, DepressionB -> subset -> Depression
+        2. Associated with: use this to explain when a disease has some effect on someones life. Don't use it to define a disease. For example don't say 'depression -> associated with -> 
+        3. Results: use this when the sentence shows events, observations and/or results.
+        4. Symptom: when the subject/object is a sign of the object/subject
+        5. Definition: when the text explains the meaning of a disease or word
+        6. first-line treatment: when the reference string (ref) mentions that something was used as a first-line treatment.NOTE DO NOT USE UNLESS THE TEXT YOU'RE REFERENCING SPECIFICALLY MENTIONS THE WORDS 'FIRST-LINE TREATMENT'. NOTE: 'MOST FREQUENT' AND OTHER SYNONYMS DO NOT COUNT AS 'FIRST-LINE TREATMENT'
+        7. More common than … in …: Anxious depression --> more common than -> nonanxious depression -> in -> African American group, Hispanics, Primary Care Patients, Unemployed, Married then Divorced/Widowed, Less, Education, Public insurance, Lower-income
 
 
         8. Side effects: When the text demonstrates effects on the patient as VERBS, samples: nausea, vomiting, etc. This is different from results. 

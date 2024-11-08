@@ -1,7 +1,7 @@
 from openai import OpenAI
 import pandas as pd
-import constants as constants
-import data as data
+import src.constants as constants
+import src.data as data
 import os,json
 
 def get_response(client, src_text : list, prompt_llm :str, model_type: str):
@@ -24,10 +24,15 @@ def get_response(client, src_text : list, prompt_llm :str, model_type: str):
             ],
         model= model_type,
     )
-    print(chat_completion.choices[0].message.content)
     resp = parse_response(chat_completion.choices[0].message.content)
 
-    resp_list = json.loads(resp)
+    try:
+        resp_list = json.loads(resp)
+        for i in range(len(resp_list)):
+            resp_list[i] = {k.lower(): v.lower() for k,v in resp_list[i].items()}
+    except:
+        print("Error ", resp)
+        return "Error"
 
     responses.extend(resp_list)
     return responses
@@ -54,7 +59,9 @@ def save_resp_as_df(response):
 
     return df
 def main():
-    client= OpenAI( api_key= constants.API_KEY)
+    print(os.environ)
+    OpenAI.api_key = os.environ["OPENAI_API_KEY"]
+    client= OpenAI()
     file_text = []
     responses=[]
     dfs=[]
@@ -62,17 +69,15 @@ def main():
         documents="Docs/" + documents
         if documents[-4:] != ".pdf":
             continue
-        print("Came here", documents)
         for text in data.read_file_text(documents):
-
             if text:
-                print("Reading text from ", documents)
+                print("Reading text from ", text)
                 file_text.append(text)
                 response = get_response(client, file_text, constants.PROMPT, constants.MODEL_TYPE) 
                 responses.extend(response)
                 dfs.append(save_resp_as_df(response))
     pd.concat([df for df in dfs]).to_csv(constants.SAVE_FILE)
-main()
+
 
     
 
