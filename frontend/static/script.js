@@ -62,7 +62,7 @@ function initializeCytoscape(container) {
             {
                 selector: 'node.highlighted',
                 style: {
-                    'background-color': '#F3A475',  // Matching your CSS color
+                    'background-color': '#F3A475',  // Matching  CSS color
                     'border-color': '#ed732a',
                     'border-width': '2px',
                     'color': '#000'
@@ -94,7 +94,7 @@ function initializeCytoscape(container) {
 }
 
 // Function to get edge width based on relationship magnitude
-function getEdgeWidth(relationship) {
+function getEdgeWidth(relationship) { // can be changed as needed 
     const magnitudeMap = {
         'first-line treatment': 4,
         'definition': 4,
