@@ -4,14 +4,17 @@ from utils import connect_to_db
 app = Flask(__name__)
 from extract_relations import extract_rels
 from urllib.parse import quote_plus
+import sys
+
 
 app = Flask(__name__)
 
 
 
    
-collection = connect_to_db(password = quote_plus('k90t1ml6GXtFTvUK'))
+collection = connect_to_db()
 
+print("CONNECTED")
 @app.route('/')
 def index():
     return render_template('index.html')
@@ -25,9 +28,7 @@ def upload_results():
         
         
         data=request.get_json()
-        print("data ", data)
         collection.insert_many(data)
-    
         return jsonify({
           'message': 'Data added',
         }), 201
@@ -39,24 +40,33 @@ def get_results():
     try:
         data=[]
         # Fetch all documents from the collection
+        print("ent get")
         results = collection.find()
+        print("found res", results)
+        
         for res in results:
         # Convert the results to a list of dictionaries
             res['_id'] = str(res['_id'])  # Convert ObjectId to string
             data.append(res)
-        print(data)
-  
         
-        return jsonify(data), 200
+        print("retuning")  
+        response=jsonify(data)
+        response.headers["Content-Type"] = "application/json"
+        response.headers["Content-Disposition"] = "inline" 
+
+        
+        return response, 200
     except Exception as e:
         return jsonify({'error': str(e)}), 500
         
 @app.route("/upload", methods=['POST'])
 def upload_files():
     responses= extract_rels(request.files.getlist('files[]'))
+    if responses=="Invalid":
+        return jsonify({'error': str(e)}), 500
 
     try:
-        response = requests.post('http://127.0.0.1:5000/upload_results', json=responses)
+        response = requests.post('http://127.0.0.1:8000/upload_results', json=responses)
         return jsonify({
           'message': 'Data added',
         }), 201
@@ -64,7 +74,9 @@ def upload_files():
         return jsonify({'error': str(e)}), 500
    
 if __name__ == '__main__':
-    app.run(debug=True)
+    collections.Brightside.deleteMany({})
+
+    app.run(port=8000, debug=True)
     
     
     

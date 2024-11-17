@@ -5,33 +5,36 @@ import src.data as data
 import os,json
 
 def get_response(client, src_text : list, prompt_llm :str, model_type: str):
-    text = [txt for txt in src_text]
 
     responses=[]
-    for text in src_text:
-        prompt=f'Using this information: {text}, answer the following question: {prompt_llm}'
+    prompt=f'Using this information: {src_text}, answer the following question: {prompt_llm}'
 
-        print("getting")
-        chat_completion=client.chat.completions.create(
-            temperature = constants.TEMPERATURE,
-            messages=[
-                {
-                    "role": "system",
-                    "content": prompt_llm,
-                    },
-                {
-                    "role": "user",
-                    "content": prompt,
-                    }
-                ],
-            model= model_type,
-        )
-        print(chat_completion.choices[0].message.content)
-        resp = parse_response(chat_completion.choices[0].message.content)
-        print(resp)
+
+    chat_completion=client.chat.completions.create(
+        temperature = constants.TEMPERATURE,
+        messages=[
+            {
+                "role": "system",
+                "content": prompt_llm,
+                },
+            {
+                "role": "user",
+                "content": prompt,
+                }
+            ],
+        model= model_type,
+    )
+    resp = parse_response(chat_completion.choices[0].message.content)
+
+    try:
         resp_list = json.loads(resp)
-        print(resp)
-        responses.extend(resp_list)
+        for i in range(len(resp_list)):
+            resp_list[i] = {k.lower(): v.lower() for k,v in resp_list[i].items()}
+    except:
+        print("Error ", resp)
+        return "Error"
+
+    responses.extend(resp_list)
     return responses
 
 def parse_response(response) -> pd.DataFrame:
@@ -50,25 +53,31 @@ def parse_response(response) -> pd.DataFrame:
     response=response[start_idx:start_idx+end_idx+2]
     return response
 def save_resp_as_df(response):
-    df=pd.concat([df, pd.DataFrame(eval(response))])
+    df=pd.DataFrame()
+    df=pd.concat([df, pd.DataFrame(response)])
     df=df.drop_duplicates(subset=['subj', 'rel', 'obj'], keep='first').reset_index().drop(columns= ['index'])
 
     return df
 def main():
-    client= OpenAI( api_key= constants.API_KEY)
+    print(os.environ)
+    OpenAI.api_key = os.environ["OPENAI_API_KEY"]
+    client= OpenAI()
     file_text = []
     responses=[]
     dfs=[]
     for documents in os.listdir(constants.DOCS_DIR):
-        text =  data.read_file_text(documents)
-        if text:
-            print("Reading text from ", documents)
-            file_text.append(text)
-        
-        response = get_response(client, file_text, constants.PROMPT, constants.MODEL_TYPE) 
-        responses.extend(response)
-        dfs.append(save_resp_as_df(response))
+        documents="Docs/" + documents
+        if documents[-4:] != ".pdf":
+            continue
+        for text in data.read_file_text(documents):
+            if text:
+                print("Reading text from ", text)
+                file_text.append(text)
+                response = get_response(client, file_text, constants.PROMPT, constants.MODEL_TYPE) 
+                responses.extend(response)
+                dfs.append(save_resp_as_df(response))
     pd.concat([df for df in dfs]).to_csv(constants.SAVE_FILE)
+
 
     
 
