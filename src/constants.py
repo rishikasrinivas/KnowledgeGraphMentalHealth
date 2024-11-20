@@ -102,13 +102,11 @@ PROMPT =  """
 
     Go through all the relationships and make sure there are no inconsistencies and no repeats and everything is factual
 
-    Return the dataframe as a list of dictionaries in the structure of [, <enter>, dictionaries, <enter>, ]
+    Return the data frame as a list of dictionaries in the structure of [, <enter>, dictionaries, <enter>, ]
     [
         dictionaries
     ]
 
-    
-    
     
     
     
