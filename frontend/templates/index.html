@@ -5,9 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Knowledge Graph Visualization</title>
+        <!-- Link to external CSS -->
+    <link rel="stylesheet" href="/frontend/static/styles.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/cytoscape/3.21.2/cytoscape.min.js"></script>
     <style>
-        /* CSS is here for now.. */
         :root {
             --primary-bg: #e0efee;
             --secondary-bg: #ffffff;
@@ -139,15 +140,6 @@
             background-color: #ffffff;
         }
 
-        .relationship-ledger {
-            background: rgba(255, 255, 255, 0.9);
-            padding: 1.5rem;
-            border-radius: 1rem;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-            position: sticky;
-            top: 2rem;
-            height: fit-content;
-        }
 
         .upload-section {
             background: rgba(255, 255, 255, 0.9);
@@ -223,6 +215,79 @@
             display: none;
         }
 
+
+        /* Modal Styles */
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgba(0, 0, 0, 0.4);
+        }
+
+/* Modal Styling */
+        #details-modal {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.4); /* Dark overlay */
+            justify-content: center;
+            align-items: center;
+            z-index: 1000;
+        }
+
+        .modal-content {
+            background-color: rgba(250, 250, 250, 1); /* Light background */
+            width: 90%;
+            max-width: 500px;
+            padding: 2rem;
+            border-radius: 1.5rem;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            text-align: center;
+            color: #2D4D85; /* Dark blue text for readability */
+            font-family: 'Raleway', sans-serif;
+            position: relative;
+        }
+
+        .modal-content h2 {
+            font-size: 1.8rem;
+            margin-bottom: 1rem;
+            color: #2D4D85;
+        }
+
+        .modal-content p {
+            font-size: 1rem;
+            color: #555; 
+            margin-bottom: 1.5rem;
+            line-height: 1.6;
+        }
+
+        .modal-content button {
+            padding: 0.6rem 1.2rem;
+            font-size: 1rem;
+            font-weight: 600;
+            background-color: rgba(171, 227, 227, 1); /* Matching button color */
+            color: white;
+            border: none;
+            border-radius: 1.5rem;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .modal-content button:hover {
+            background-color: rgba(136, 217, 217, 1); /* Slightly darker for hover */
+            transform: translateY(-2px);
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.15);
+        }
+
         .relationship-ledger {
             background-color: var(--secondary-bg);
             padding: 1.5rem;
@@ -231,6 +296,8 @@
             position: sticky;
             top: 2rem;
             height: fit-content;
+            width: 100%;
+            border-collapse: collapse;
         }
 
         .relationship-ledger h2 {
@@ -255,6 +322,24 @@
             background-color: var(--primary-bg);
             font-weight: 600;
         }
+        /* Accordion details styling */
+        .details-row {
+            display: none;
+            font-size: 0.95rem;
+            padding: 1.5rem;
+            color: #333;
+        }
+
+    /* Color-specific background for expanded content */
+        .color-green-content { background-color: rgba(160, 225, 160, 0.15); }
+        .color-orange-content { background-color: rgba(250, 208, 46, 0.15); }
+        .color-red-content { background-color: rgba(255, 107, 107, 0.15); }
+        .color-blue-content { background-color: rgba(119, 170, 212, 0.15); }
+        .color-purple-content { background-color: rgba(168, 145, 242, 0.15); }
+        .color-yellow-content { background-color: rgba(255, 235, 153, 0.15); }
+        .color-teal-content { background-color: rgba(77, 182, 172, 0.15); }
+        .color-pink-content { background-color: rgba(253, 145, 202, 0.15); }
+
 
         .color-circle {
             width: 1.25rem;
@@ -264,6 +349,7 @@
             vertical-align: middle;
             margin-right: 0.5rem;
             border: 2px solid var(--border-color);
+            cursor: pointer;
         }
 
         .magnitude-legend {
@@ -305,7 +391,7 @@
         }
 
         .magnitude-table tr:hover {
-            background-color: rgba(174, 212, 210, 0.1);
+            background-color: rgba(220, 250, 233, 0.5);
         }
 
         #status {
@@ -343,7 +429,7 @@
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
             z-index: 1000;
         }
-    /* Popup Styling */
+       /* Popup Styling */
         #helpPopup {
             display: none; 
             position: fixed; 
@@ -417,6 +503,53 @@
         display: none;
         }
 
+
+
+        
+        #node-tooltip {
+            position: absolute;
+            display: none;
+            background: linear-gradient(135deg, #e0f7f8 0%, #d2edf8 100%);
+            color: #2a4365;
+            padding: 12px 16px;
+            border-radius: 12px;
+            font-size: 14px;
+            font-family: 'Poppins', sans-serif;
+            z-index: 999;
+            pointer-events: none;
+            max-width: 300px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            border: 2px solid #ffffff;
+            animation: tooltipFade 0.2s ease-in-out;
+            transform: translateY(-5px);
+        }
+
+        #node-tooltip::before {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+            border-width: 10px 10px 0;
+            border-style: solid;
+            border-color: #ffffff transparent transparent;
+        }
+        
+        #node-tooltip span {
+            font-weight: bold;  /* This will bold the label part inside the tooltip */
+        }
+
+        @keyframes tooltipFade {
+            from {
+                opacity: 0;
+                transform: translateY(0);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(-5px);
+            }
+        }
+
         /* Style for the custom label */
         .custom-file-label {
             display: inline-block;
@@ -474,14 +607,160 @@
             border-width: 2px;
             color: #000;
         }
+
+
+/* Filter */
+
+        #filter-panel {
+            position: fixed;
+            width: 270px;
+            max-height: 400px;
+            overflow-y: auto;
+            bottom: 20px;
+            right: 20px;
+            background-color: #fefefe;
+            border: 1.5px solid #e0efee;
+            border-radius: 5px;
+            padding: 10px;
+            z-index: 1000;
+        }
+
+        .filter-panel.minimized {
+            transform: scale(0.20);
+            opacity: 50;
+            width: auto;
+            height: auto;
+            padding: 10px;
+            overflow: hidden;
+        }
+
+
+        .filter-panel-header {
+            display: flex;
+            text-align: center; 
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 10px;
+            padding-bottom: 8px;
+            color:#F3A475;
+            border-bottom: 1px solid var(--border-color);
+            cursor: move;
+        }
+
+        .filter-panel h3 {
+            margin: 0;
+            font-size: 16px;
+            color: var(--primary-text);
+            font-weight: 600;
+        }
+
+        .filter-controls {
+            display: flex;
+            gap: 8px;
+        }
+
+        .minimize-btn {
+            background: none;
+            border: none;
+            color: var(--primary-text);
+            cursor: pointer;
+            padding: 2px 6px;
+            font-size: 18px;
+            line-height: 1;
+            transition: color 0.2s ease;
+        }
+
+        .minimize-btn:hover {
+            color: var(--secondary-text);
+        }
+
+        .filter-content {
+            max-height: 200px;
+            overflow: hidden;
+            transition: max-height 0.3s ease;
+        }
+
+        .filter-panel.minimized .filter-content {
+            max-height: 0;
+        }
+        .filter-item {
+            display: flex;
+            align-items: center;
+            margin: 8px 0;
+            padding: 4px 0;
+        }
+
+        .filter-item input[type="checkbox"] {
+            margin-right: 8px;
+            cursor: pointer;
+            accent-color: var(--tertiary-bg);
+        }
+
+        .filter-item label {
+            display: flex;
+            align-items: center;
+            font-size: 13px;
+            color: var(--primary-text);
+            cursor: pointer;
+            line-height: 1.2;
+            flex: 1;
+        }
+
+        .color-dot {
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            margin-right: 8px;
+            display: inline-block;
+            flex-shrink: 0;
+            border: 1px solid var(--border-color);
+        }
+
+        .filter-buttons {
+            display: flex;
+            gap: 8px;
+            margin-top: 12px;
+            padding-top: 12px;
+            border-top: 1px solid var(--border-color);
+        }
+
+        .filter-buttons button {
+            flex: 1;
+            padding: 6px 12px;
+            border: 1px solid var(--border-color);
+            border-radius: 4px;
+            background: var(--primary-bg);
+            color: var(--primary-text);
+            cursor: pointer;
+            font-size: 12px;
+            font-family: 'Raleway', sans-serif;
+            transition: all 0.2s ease;
+        }
+
+        .filter-buttons button:hover {
+            background: var(--accent-color);
+        }
+
+        @media (max-width: 768px) {
+            .filter-panel {
+                max-width: 250px;
+                font-size: 12px;
+            }
+    
+            .filter-item label {
+                font-size: 12px;
+            }
+        }
+            
             .color-green { background-color: #A0E1A0; }   /* Highly effective */
-            .color-yellow { background-color: #FAD02E; }  /* Clinical Recommendations */
+            .color-orange { background-color: #FAD02E; }  /* Clinical Recommendations */
             .color-red { background-color: #FF6B6B; }     /* Side effects */
-            .color-orange { background-color: #FFB3BA; }  /* Treatment Options */
+            .color-pink { background-color: #fd91ca; }  /* Treatment Options */
             .color-blue { background-color: #77aad4; }    /* General Information */
-            .color-pink { background-color: #a891f2; }    /* Comparative Usage Patterns */
-            .color-purple { background-color: #FFEB99; }  /* Symptom */
-            .green-blue { background-color: #72B7B2; }
+            .color-purple { background-color: #a891f2; }    /* Usage Patterns */
+            .color-yellow { background-color: #FFEB99; }  /* Symptom */
+            .color-teal { background-color: #4DB6AC; }    /* Enhances */
+
     </style>
 </head>
 <body>
@@ -526,7 +805,7 @@
             <div class="magnitude-legend">
                 <h2>Magnitude Legend</h2>
                 <table class="magnitude-table">
-                    <tr><th>Magnitude Level</th><th>Counts</th><th>Relationships</th></tr>
+                    <tr><th>Magnitude Level</th><th>Counts (Per Relationship) </th><th>Relationships</th></tr>
                     <tr><td>High Magnitude </td><td>18, 9, 7, 7</td><td>'first-line treatment', 'Definition', 'Highly effective', 'Treats'</td></tr>
                     <tr><td>Moderately High Magnitude </td><td>6 (all)</td><td>'More effective', 'Comparable to', 'Side effects', 'Associated with'</td></tr>
                     <tr><td>Moderate Magnitude </td><td>5, 4, 4, 3</td><td>'Side effects', 'Second-line treatment', 'Less effective', 'Symptom'</td></tr>
@@ -543,29 +822,169 @@
 <aside class="relationship-ledger">
     <h2>Relationship Types</h2>
     <table class="relationship-table">
-        <tr><th>Color</th><th>Relationship</th></tr>
-        <tr><td><span class="color-circle color-green"></span></td><td>Highly effective / Comparative Effectiveness</td></tr>
-        <tr><td><span class="color-circle color-yellow"></span></td><td>Clinical Recommendations</td></tr>
-        <tr><td><span class="color-circle color-red"></span></td><td>Side effects / Limitations</td></tr>
-        <tr><td><span class="color-circle color-orange"></span></td><td>Treatment Options</td></tr>
-        <tr><td><span class="color-circle color-blue"></span></td><td>General Information</td></tr>
-        <tr><td><span class="color-circle color-pink"></span></td><td> Usage Patterns</td></tr>
-        <tr><td><span class="color-circle color-purple"></span></tdx<td>Symptom</td></tr>
+        <tr>
+            <th>Color</th>
+            <th>Relationship</th>
+        </tr>
+
+        <!-- Reduces and Increases Effects (Color: Green) -->
+        <tr>
+            <td><span class="color-circle color-green" onclick="toggleDetails('reduces-increases')"></span></td>
+            <td>Reduces and Increases Effects</td>
+        </tr>
+        <tr id="reduces-increases" class="details-row color-green-content">
+            <td colspan="2">
+                <ul>
+                    <li><strong>Reduces</strong>: Effects of a treatment that reduce symptoms or severity.</li>
+                    <li><strong>Increases</strong>: Effects of a treatment that increase symptoms or condition severity.</li>
+                    <li><strong>Properties</strong>: Specific characteristics or qualities of a treatment or medication.</li>
+                </ul>
+            </td>
+        </tr>
+
+        <!-- Clinical Recommendations and Guidelines (Color: Yellow) -->
+        <tr>
+            <td><span class="color-circle color-yellow" onclick="toggleDetails('clinical-recommendations')"></span></td>
+            <td>Clinical Recommendations and Guidelines</td>
+        </tr>
+        <tr id="clinical-recommendations" class="details-row color-yellow-content">
+            <td colspan="2">
+                <ul>
+                    <li><strong>Recommendation</strong>: Suggested treatment or procedure based on clinical guidelines.</li>
+                    <li><strong>Recommended</strong>: Specific mention of treatment being recommended.</li>
+                    <li><strong>First-Line Treatment</strong>: Most commonly used treatment option.</li>
+                    <li><strong>Second-Line Treatment</strong>: Backup treatment option when the first-line treatment isn’t suitable.</li>
+                    <li><strong>Treatment Options</strong>: Available treatment choices.</li>
+                    <li><strong>Goal</strong>: Expected outcomes from using a treatment.</li>
+                </ul>
+            </td>
+        </tr>
+
+        <!-- Side Effects and Limitations (Color: Red) -->
+        <tr>
+            <td><span class="color-circle color-red" onclick="toggleDetails('side-effects')"></span></td>
+            <td>Side Effects and Limitations</td>
+        </tr>
+        <tr id="side-effects" class="details-row color-red-content">
+            <td colspan="2">
+                <ul>
+                    <li><strong>Side Effects</strong>: Negative effects resulting from treatment.</li>
+                    <li><strong>Less Effective</strong>: When a treatment is deemed less effective compared to others.</li>
+                    <li><strong>Potential Alternative</strong>: Alternative treatment options to consider.</li>
+                    <li><strong>Dosage</strong>: Dosage recommendations or requirements.</li>
+                    <li><strong>Details</strong>: Specific details or processes related to treatment.</li>
+                    <li><strong>Less Well Tolerated</strong>: A treatment that is not tolerated well by the majority of patients.</li>
+                    <li><strong>Less Tolerated Than</strong>: A comparison of the tolerance level of two treatments, where one is less tolerated than the other.</li>
+                </ul>
+            </td>
+        </tr>
+
+        <!-- Interactions and Usage Patterns (Color: Blue) -->
+        <tr>
+            <td><span class="color-circle color-blue" onclick="toggleDetails('interactions')"></span></td>
+            <td>Interactions and Usage Patterns</td>
+        </tr>
+        <tr id="interactions" class="details-row color-blue-content">
+            <td colspan="2">
+                <ul>
+                    <li><strong>Enhances</strong>: Positive interaction where one substance enhances the effect of another.</li>
+                    <li><strong>Interacts With</strong>: Negative or adverse interaction between substances or treatments.</li>
+                    <li><strong>Alternative To</strong>: Alternative treatments or procedures.</li>
+                    <li><strong>Form Of</strong>: Different forms or formats of a treatment (e.g., pill, injection).</li>
+                    <li><strong>Treats</strong>: A treatment that directly manages or cures a condition.</li>
+                </ul>
+            </td>
+        </tr>
+
+        <!-- Risk Factors and Requirements (Color: Purple) -->
+        <tr>
+            <td><span class="color-circle color-purple" onclick="toggleDetails('risk-factors')"></span></td>
+            <td>Risk Factors and Requirements</td>
+        </tr>
+        <tr id="risk-factors" class="details-row color-purple-content">
+            <td colspan="2">
+                <ul>
+                    <li><strong>Risk Factor For</strong>: Factors that increase the likelihood of a disease or condition.</li>
+                    <li><strong>Eligibility</strong>: Criteria that a patient must meet to receive a particular treatment.</li>
+                    <li><strong>Requirements</strong>: Prerequisites for administering or using a treatment.</li>
+                </ul>
+            </td>
+        </tr>
+
+        <!-- Symptoms and General Information (Color: Pink) -->
+        <tr>
+            <td><span class="color-circle color-pink" onclick="toggleDetails('symptoms')"></span></td>
+            <td>Symptoms and General Information</td>
+        </tr>
+        <tr id="symptoms" class="details-row color-pink-content">
+            <td colspan="2">
+                <ul>
+                    <li><strong>Symptom</strong>: When the presence of a condition or disease is indicated.</li>
+                    <li><strong>Definition</strong>: Clarifying the meaning of a treatment, symptom, or condition.</li>
+                    <li><strong>Overview</strong>: General overview of a treatment's usage, procedure, or goal.</li>
+                    <li><strong>Synonym</strong>: When one term is used as a synonym or abbreviation for another.</li>
+                    <li><strong>Example</strong>: A specific example used to illustrate a point about a treatment or symptom.</li>
+                    <li><strong>Short Form</strong>: An abbreviated version of a term or treatment name.</li>
+                    <li><strong>Associated With</strong>: A connection where a treatment or condition is linked to another, typically in a correlational or causal sense.</li>
+                </ul>
+            </td>
+        </tr>
+
+        <!-- Comparative Effectiveness and Clinical Outcomes (Color: Teal) -->
+        <tr>
+            <td><span class="color-circle color-teal" onclick="toggleDetails('comparative-effectiveness')"></span></td>
+            <td>Comparative Effectiveness and Clinical Outcomes</td>
+        </tr>
+        <tr id="comparative-effectiveness" class="details-row color-teal-content">
+            <td colspan="2">
+                <ul>
+                    <li><strong>Subset</strong>: Type of another topic (e.g., a specific condition under a broader disease).</li>
+                    <li><strong>Results</strong>: Outcomes of an experiment or test.</li>
+                    <li><strong>More Common Than In</strong>: Comparative statistics about conditions or treatments.</li>
+                    <li><strong>Same Efficacy As For</strong>: Comparing the efficacy between two treatments or medicines.</li>
+                    <li><strong>More Effective Than</strong>: When one treatment is more effective than another.</li>
+                    <li><strong>Highly Effective</strong>: Specific mention of high effectiveness in treating a condition.</li>
+                    <li><strong>Benefits</strong>: The positive outcomes associated with a treatment or intervention.</li>
+                    <li><strong>Well Tolerated</strong>: A treatment that is generally well accepted by most patients.</li>
+                    <li><strong>Least Efficacious and Acceptable</strong>: A treatment with the lowest efficacy or patient acceptance.</li>
+                    <li><strong>Among Most Efficacious</strong>: Treatments that are among the most effective for a given condition.</li>
+                    <li><strong>Moderately Effective</strong>: Treatments that are moderately effective for treating a condition.</li>
+                    <li><strong>Widely Used</strong>: A treatment that is commonly used across different populations or healthcare settings.</li>
+                    <li><strong>More Commonly Used</strong>: A treatment that is more frequently used compared to other options.</li>
+                    <li><strong>Less Commonly Used</strong>: A treatment that is used less frequently in comparison to other options.</li>
+                </ul>
+            </td>
+        </tr>
     </table>
 </aside>
+<script>
+function toggleDetails(id) {
+    const element = document.getElementById(id);
+    element.style.display = element.style.display === 'table-row' ? 'none' : 'table-row';
+}
+</script>
 <script type="module" src="/static/script.js"></script>
    
-            <div id="helpPopup" class="popup">
-                <div class="popup-content">
-                    <h2>Need Help?</h2>
-                    <p><strong>Instructions:</strong> Click "Choose Files" to select one or more PDFs. Then, click "Upload Files" to start. After that, you’ll see the message "Processing your files..." as the files are analyzed.</p>
-                    <p><strong>Graph Fetch:</strong> To view your last saved graph, click "Fetch Last Graph."</p>
-                    <p><strong>Explanation:</strong> Each circular node represents an idea or term, and lines connect related ideas. Each line is color coded based on its category in the <strong> Relationship Types</strong> shown on the right. <strong>The width of each line reflects the strength of the connection</strong>, as shown in the <strong>Magnitude Legend</strong> on the bottom.</p>
-                    <p><strong>Exploring the Graph:</strong> Click and drag circles to rearrange them for better viewing. Use the color-coded sidebar legend to identify relationship types easily.</p>
-                    <button id="closePopup">Got it!</button>
-                </div>
-            </div>
-        </div>
+            <div id="details-modal" class="modal">
+    <div class="modal-content">
+        <span class="close-btn" onclick="closeModal()">&times;</span>
+        <h2 id="category-title"></h2>
+        <div id="category-details"></div>
+        <button onclick="closeModal()">Close</button>
+    </div>
+</div>
+
+<div id="helpPopup" class="popup">
+    <div class="popup-content">
+        <h2>Need Help?</h2>
+        <p><strong>Instructions:</strong> Click "Choose Files" to select one or more PDFs. Then, click "Upload Files" to start. After that, you'll see the message "Processing your files..." as the files are analyzed.</p>
+        <p><strong>Graph Fetch:</strong> To view your last saved graph, click "Fetch Last Graph."</p>
+        <p><strong>Explanation:</strong> Each circular node represents an idea or term, and lines connect related ideas. Each line is color coded based on its category in the <strong>Relationship Types</strong> shown on the right. <strong>The width of each line reflects the strength of the connection</strong>, as shown in the <strong>Magnitude Legend</strong> on the bottom.</p>
+        <p><strong>Exploring the Graph:</strong> Click and drag circles to rearrange them for better viewing. Use the color-coded sidebar legend to identify relationship types easily. To learn more about a connection, click the corresponding colored circle in the <strong>Relationship Types</strong> table to see its detailed meaning.</p>
+        <button id="closePopup">Got it!</button>
+    </div>
+</div>
+</div>
     </div>
 
 
@@ -581,6 +1000,7 @@
     });
 </script>
 
+        
 
 </body>
 </html>
