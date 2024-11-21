@@ -1,4 +1,6 @@
 // Global variable to store Cytoscape instance
+
+
 let cy;
 
 function initializeCytoscape(container) {
