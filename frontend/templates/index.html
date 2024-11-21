@@ -198,6 +198,13 @@
             background-color: #BCEBBC;
             color: var(--primary-text);
         }
+
+        .helpButton::before {
+            content: '📂'; /* Folder icon */
+            display: inline-block;
+            margin-right: 8px;
+            font-size: 1.2rem;
+        }
         #cy {
             width: 100%;
             height: 700px;
@@ -574,7 +581,7 @@
 
 /* Add an icon before the text */
         .custom-file-label::before {
-            content: '📁'; /* Folder icon */
+            content: '📂'; /* Folder icon */
             display: inline-block;
             margin-right: 8px;
             font-size: 1.2rem;
@@ -977,11 +984,18 @@ function toggleDetails(id) {
 <div id="helpPopup" class="popup">
     <div class="popup-content">
         <h2>Need Help?</h2>
-        <p><strong>Instructions:</strong> Click "Choose Files" to select one or more PDFs. Then, click "Upload Files" to start. After that, you'll see the message "Processing your files..." as the files are analyzed.</p>
-        <p><strong>Graph Fetch:</strong> To view your last saved graph, click "Fetch Last Graph."</p>
-        <p><strong>Explanation:</strong> Each circular node represents an idea or term, and lines connect related ideas. Each line is color coded based on its category in the <strong>Relationship Types</strong> shown on the right. <strong>The width of each line reflects the strength of the connection</strong>, as shown in the <strong>Magnitude Legend</strong> on the bottom.</p>
-        <p><strong>Exploring the Graph:</strong> Click and drag circles to rearrange them for better viewing. Use the color-coded sidebar legend to identify relationship types easily. To learn more about a connection, click the corresponding colored circle in the <strong>Relationship Types</strong> table to see its detailed meaning.</p>
-        <button id="closePopup">Got it!</button>
+        
+        <p><strong>📝 Getting Started:</strong> Click "📁Choose Files" to upload PDFs, then click "Upload Files" to start. You'll see the message "Processing your files..." and the graph will appear once processed.</p>
+
+        <p><strong>📊 Understanding the Graph:</strong> 🔵 Circles (nodes) represent terms like treatments, symptoms, or medications. Hover over a node to see more details. → Lines (edges)show relationships between terms, color-coded by category (see the legend).</p>
+
+        <p><strong>🗂 Relationship Ledger:</strong> Relationships are color-coded by type. Use the ledger to understand the connections. Click a color in the ledger to see a detailed list of relationships for that category.</p>
+
+        <p><strong>🔍 Search & Filter:</strong> Use the search bar to find specific terms quickly. Filter relationships with the panel that appears after processing.</p>
+
+        <p><strong>💡 Tips:</strong> Drag nodes to adjust the graph layout and zoom in or out as needed.</p>
+        
+        <button id="closePopup">👍 Got it!</button>
     </div>
 </div>
 </div>
@@ -1066,4 +1080,4 @@ function toggleDetails(id) {
         });
     </script>
 </body>
-</html>    
+</html>  
