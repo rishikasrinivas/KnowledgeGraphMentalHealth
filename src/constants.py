@@ -1,9 +1,11 @@
 API_KEY= ''
 MODEL_TYPE= 'gpt-4-turbo-preview' #MODEL TYPE
 DOCS_DIR = "Docs/" #DIRECTORY OF PAPERS
-SKIP = 3 #NUMBER OF PAGES TO READ AT A TIME
+SKIP = 2 #NUMBER OF PAGES TO READ AT A TIME
 TEMPERATURE=1
-SAVE_FILE = '/Users/rishikasrinivas/KnowledgeGraphMentalHealth/NewRels_Skip3.csv'
+
+MONGO_URI="mongodb://127.0.0.1:27017/"
+SAVE_FILE = '/Users/rishikasrinivas/KnowledgeGraphMentalHealth/NewRels_Skip2.csv'
 PROMPT =  """
      You are to extract important entities, their definitions, overarching ideas, and their relationships with one another from this paper. Do not take all random relationships. Identify relationships that can help clinicians with diagnosis. Will need to look across sections. Refrain from forming relationships unless the text explicitly highlights or suggests that.
     

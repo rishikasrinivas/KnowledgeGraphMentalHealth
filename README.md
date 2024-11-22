@@ -14,32 +14,45 @@ Hand annotations were meticulously developed by team members, who manually revie
 
 ---
 
-## User Interface (UI)  
+## User Interface (UI)
 
-### Features  
-1. **Uploading Files:**
-   ![Animated Demo](assets/uploading.gif)
-   Users can upload PDF or CSV files for processing into KG format.  
+### Features
 
-3. **Fetching Previous KGs:**  
-   ![Animated Demo](assets/fetching.gif)
-   Retrieve previously saved Knowledge Graphs for continued analysis.  
+1. **Upload Files**
+<p align="center">
+  <img src="assets/uploading.gif" alt="File Upload Demo" width="50%">
+</p>
+   Easily import PDFs, which are converted into Knowledge Graphs (KGs) that extract clinical entities and relationships.
 
-4. **Searching the KG:**
-   ![Animated Demo](assets/searching.gif)
-   Perform searches on the KG to find specific triplets or related entities.  
+3. **Fetch Previous Graphs**  
+   Retrieve saved Knowledge Graphs for continued analysis or updates.
 
-5. **Reading the KG:**
-   ![Animated Demo](assets/visualization.gif)
-   Visualize the KG with clear distinctions using color coding and edge weights.  
+4. **Search and Highlight**
+<p align="center">
+  <img src="assets/searching.gif" alt="Search Functionality Demo" width="50%">
+</p>
+   A **search-first design** lets users quickly locate nodes or relationships. Results are **highlighted in orange** and zoomed in for clarity.
 
-### Visualization Features  
-- **Color Coding:**
-   
-   Visual cues for different entity types and relationships.  
-- **Edge Weights:**
-     VISUALS TBA
-   Representing the strength of relationships.  
+6. **Dynamic Visualization**  
+   - Nodes represent clinical entities, and edges use **color coding and varying thickness** to show relationship categories and strength.  
+   - The **Relationship Table** offers a legend with clickable colored circles for more details on each relationship.  
+   - A **magnitude table** shows the significance of relationships.
+
+7. **Custom Filtering**  
+   Users can **filter** the graph to focus on specific relationship types (e.g., "Side Effects" or "Recommendations"), improving clarity without clutter.
+
+8. **Help Button**  
+   An intuitive **Help button** offers guidance on the graph’s features, ensuring accessibility for new users and clinicians unfamiliar with knowledge graphs.
+
+---
+
+### Design Highlights
+
+- **Brightside Health Branding**: The design aligns with **Brightside Health’s brand** using calming blues, pastels, and creative accents like **color-coded edges** for a clean, engaging experience.
+- **User-Centered Design**: Focuses on usability with:  
+   - **Interactive Relationship Table** for easy data interpretation.  
+   - **Edge Thickness** to prioritize strong relationships for evidence-based decisions.  
+   - **Search and Filtering** for focused, efficient navigation.
 
 6. **Fitering Results the KG:**
    ![Animated Demo](assets/filtering.gif)

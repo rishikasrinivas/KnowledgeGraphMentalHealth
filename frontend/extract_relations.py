@@ -1,10 +1,9 @@
 import requests
 import sys,io
 from openai import OpenAI
-sys.path.append("/Users/rishikasrinivas/KnowledgeGraphMentalHealth/")
-import src.model as model
-import src.data as data 
-import src.constants as constants
+from src import model
+from src import data
+from src import constants
 import os
 import pandas as pd
 
@@ -16,11 +15,10 @@ def extract_rels(files):
     for documents in files:
         file=documents.filename
         if file[-4:] != ".pdf":
-            return "Invalid"
+            return f"You uploaded and invalid file type {file[-4:]}. Please reupload your files ensuring they are all pdf forms!"
+            
         for text in data.read_file_text(io.BytesIO(documents.read()) ):
-            print("entering model", text)
             response = model.get_response(client, text, constants.PROMPT, constants.MODEL_TYPE)
-            print(response)
             responses.extend(response)
     return responses
 
