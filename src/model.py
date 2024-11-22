@@ -78,7 +78,6 @@ def save_resp_as_df(response):
 def main():
     OpenAI.api_key = os.environ["OPENAI_API_KEY"]
     client= OpenAI()
-    file_text = []
     responses=[]
     dfs=[]
     for documents in os.listdir(constants.DOCS_DIR):
@@ -87,7 +86,6 @@ def main():
             continue
         for text in data.read_file_text(documents):
             if text:
-                file_text.append(text)
                 response = get_response(client, text, constants.PROMPT, constants.MODEL_TYPE) 
                 responses.extend(response)
                 dfs.append(save_resp_as_df(response))
