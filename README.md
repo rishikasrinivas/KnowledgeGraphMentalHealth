@@ -18,8 +18,7 @@ Hand annotations were meticulously developed by team members, who manually revie
 
 ### Features  
 1. **Uploading Files:**
-VISUALS TBA
-
+   ![Animated Demo](uploading.gif)
    Users can upload PDF or CSV files for processing into KG format.  
 
 3. **Fetching Previous KGs:**  
