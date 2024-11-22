@@ -16,23 +16,31 @@ Hand annotations were meticulously developed by team members, who manually revie
 ## User Interface (UI)  
 
 ### Features  
-1. **Uploading Files:**  
+1. **Uploading Files:**
+VISUALS TBA
+
    Users can upload PDF or CSV files for processing into KG format.  
 
-2. **Fetching Previous KGs:**  
+3. **Fetching Previous KGs:**  
    Retrieve previously saved Knowledge Graphs for continued analysis.  
 
-3. **Searching the KG:**  
+4. **Searching the KG:**
+    VISUALS TBA
+
    Perform searches on the KG to find specific triplets or related entities.  
 
-4. **Reading the KG:**  
+5. **Reading the KG:**
+   VISUALS TBA
    Visualize the KG with clear distinctions using color coding and edge weights.  
 
 ### Visualization Features  
-- **Color Coding:**  
+- **Color Coding:**
+     VISUALS TBA
+
    Visual cues for different entity types and relationships.  
-- **Edge Weights:**  
-   Representing the strength or confidence of relationships.  
+- **Edge Weights:**
+     VISUALS TBA
+   Representing the strength of relationships.  
 
 ---
 
