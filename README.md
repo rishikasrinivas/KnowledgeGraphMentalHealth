@@ -22,6 +22,7 @@ Hand annotations were meticulously developed by team members, who manually revie
    Users can upload PDF or CSV files for processing into KG format.  
 
 3. **Fetching Previous KGs:**  
+   ![Animated Demo](assets/fetching.gif)
    Retrieve previously saved Knowledge Graphs for continued analysis.  
 
 4. **Searching the KG:**
@@ -29,17 +30,22 @@ Hand annotations were meticulously developed by team members, who manually revie
    Perform searches on the KG to find specific triplets or related entities.  
 
 5. **Reading the KG:**
-   VISUALS TBA
+   ![Animated Demo](assets/visualization.gif)
    Visualize the KG with clear distinctions using color coding and edge weights.  
 
 ### Visualization Features  
 - **Color Coding:**
-     VISUALS TBA
-
+   
    Visual cues for different entity types and relationships.  
 - **Edge Weights:**
      VISUALS TBA
    Representing the strength of relationships.  
+
+6. **Fitering Results the KG:**
+   ![Animated Demo](assets/filtering.gif)
+
+7. **Get Help:**
+   ![Animated Demo](assets/help.gif)
 
 ---
 
