@@ -25,8 +25,7 @@ Hand annotations were meticulously developed by team members, who manually revie
    Retrieve previously saved Knowledge Graphs for continued analysis.  
 
 4. **Searching the KG:**
-    VISUALS TBA
-
+   ![Animated Demo](assets/searching.gif)
    Perform searches on the KG to find specific triplets or related entities.  
 
 5. **Reading the KG:**
