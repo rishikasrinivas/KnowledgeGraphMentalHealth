@@ -8,19 +8,13 @@ import sys
 
 
 app = Flask(__name__)
-
-
-
-   
+ 
 collection = connect_to_db()
 
-print("CONNECTED")
 @app.route('/')
 def index():
     return render_template('index.html')
 
-        
-    
 
 @app.route("/upload_results", methods=['POST'])
 def upload_results():
