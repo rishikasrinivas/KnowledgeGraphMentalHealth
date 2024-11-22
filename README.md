@@ -54,8 +54,7 @@ Hand annotations were meticulously developed by team members, who manually revie
 | Fuzzy Wuzzy              | Statistical    | 35.32%       | Low accuracy, only simple matches. |  
 | TF-IDF + Cosine Similarity | Statistical    | 36.28%       | Limited to vectorized text formats.|  
 | GPT Critic               | Model-Based    | 61.66%       | Requires large computational resources.|  
-| G-Eval                   | Model-Based    | TBD          | Requires large computational resources.    |  
-| PyTorch + bioBERT        | Model-Based    | TBD          | TBD    |  
+| G-Eval                   | Model-Based    | 46%        | Requires large computational resources.   Requires medical detailed dictionary for concepts |  
 | Precision                | Statistical    | 81.81          | Applies cosine similarity which is not always a good indication of contextual similarity    |  
 
 ---
