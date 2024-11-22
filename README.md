@@ -108,7 +108,20 @@ VISUALS TBA
 - **Method:** TBD  
 - **Threshold for Matching:** TBD  
 - **Accuracy:** TBD  
-- **Output:** TBD  
+- **Output:** TBD
+
+#### 6. **Precision 
+- **Evaluation Type:** Statistical: word match and cosine similarity 
+- **Method:** Checking if the extracted relationship is in the source text or in the ground truth annotations  
+- **Threshold for Matching:** 0.7 
+- **Precision Score:** 85.85
+
+#### 7. **Hallucination 
+- **Evaluation Type:** TBA
+- **Method:** TBA
+- **Threshold for Matching:** TBA 
+- **Hallucination Score:** TBA
+
 
 ---
 
