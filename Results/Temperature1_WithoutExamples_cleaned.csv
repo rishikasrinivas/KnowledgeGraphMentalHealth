@@ -1,0 +1,117 @@
+,subj,rel,obj
+0,Major Depressive Disorder,Definition,a prevalent psychiatric disorder that often leads to poor quality of life and impaired functioning
+1,Selective Serotonin Reuptake Inhibitor antidepressants,first-line treatment,Major Depressive Disorder
+2,Depression-focused psychotherapy,second-line treatment,Major Depressive Disorder
+3,Electroconvulsive therapy,Treats,Depression
+4,Monoamine Oxidase Inhibitors,Less commonly used,Major Depressive Disorder
+5,SSRIs,More commonly used,Major Depressive Disorder
+6,"Combination of medication, psychotherapy, and somatic therapy",Treats,resistant form of depression
+7,Ketamine,Side effects,"dizziness, neurotoxicity, cognitive dysfunction, blurred vision, psychosis, dissociation, urological dysfunction, restlessness, headache, nausea, vomiting, and cardiovascular symptoms"
+8,Vagus Nerve Stimulation,Treats,resistant unilateral or bipolar depression
+9,Physical exercise,Associated with,improvement in depression symptom and prevention of relapses
+0,All Depression,Definition,a prevalent psychiatric disorder that often leads to poor quality of life and impaired functioning
+1,Selective Serotonin Reuptake Inhibitors (SSRIs),first-line treatment,All Depression
+2,Anxious Depression,more common than,"nonanxious depression in African American group, Hispanics, Primary Care Patients, Unemployed, Married then Divorced/Widowed, Less Education, Public insurance, Lower-income"
+3,Electroconvulsive therapy (ECT),Highly effective,somatic therapy for depression in some specific situations
+4,Ketamine,Properties,very quick effects on resistant unipolar depression and acute suicidal ideation
+5,All Depression,Associated with,high rates of suicidal behavior and mortality
+6,Mirtazapine,Comparable to,SSRIs in efficacy
+7,Depression-focused psychotherapy,second-line treatment,All Depression
+8,Physical exercise,Treats,All Depression
+9,Psychoeducation,Goal,educate depressed patients and family members about depression symptoms and management
+0,Major Depressive Disorder,Definition,a prevalent psychiatric disorder leading to poor quality of life and impaired functioning
+1,Selective Serotonin Reuptake Inhibitor antidepressants,first-line treatment,Major Depressive Disorder during the acute phase
+2,Electroconvulsive therapy,Definition,the most effective somatic therapy for depression in specific situations
+3,Resistant forms of depression,Treats,"Combination of medication, psychotherapy, and somatic therapy"
+4,Ketamine,Side effects,"dizziness, neurotoxicity, cognitive dysfunction, blurred vision, psychosis, dissociation, urological dysfunction, restlessness, headache, nausea, vomiting, and cardiovascular symptoms"
+5,SSRIs,Side effects,"sexual dysfunction, loss of appetite, vomiting, nausea, irritability, anxiety, insomnia, and headache"
+6,Cognitive Behavioral Therapy and Interpersonal Therapy,first-line treatment,Mild to moderate Major Depressive Disorder
+0,"Mirtazapine, Escitalopram, Venlafaxine, Sertraline",More effective,"Duloxetine, Fluoxetine, Fluvoxamine, Paroxetine, Reboxetine"
+1,Reboxetine,Less effective,All other antidepressants
+2,Escitalopram and Sertraline,Better acceptability,"Duloxetine, Fluvoxamine, Paroxetine, Reboxetine, Venlafaxine"
+3,Escitalopram and Sertraline,Overview,"Good balance between benefits, acceptability, and acquisition cost for moderate to severe major depression"
+4,Escitalopram and Sertraline,Highly effective,Unipolar major depression
+5,Escitalopram and Sertraline,first-line treatment,Moderate to severe major depression
+6,Compared antidepressants,Treatment options,Acute treatment of unipolar major depression
+0,Major Depressive Disorder,Definition,a prevalent psychiatric disorder leading to poor quality of life and impaired functioning
+1,Selective Serotonin Reuptake Inhibitors (SSRIs),first-line treatment,Major Depressive Disorder
+2,Monoamine Oxidase Inhibitors (MAOIs),Less commonly used,due to side effects such as hepatotoxicity and hypertensive crisis
+3,Tricyclic antidepressants (TCAs),More effective than,SSRIs in hospitalized patients with severe Major Depressive Disorder symptoms
+4,Ketamine,Treats,resistant unipolar and possibly bipolar depression
+5,Ketamine,side effects,"dizziness, neurotoxicity, cognitive dysfunction, blurred vision, psychosis, dissociation, urological dysfunction, restlessness, headache, nausea, vomiting, and cardiovascular symptoms"
+6,Electroconvulsive Therapy (ECT),Highly effective,for Major Depressive Disorder
+7,Cognitive-Behavioral Therapy (CBT),first-line treatment,Mild to Moderate Major Depressive Disorder
+8,Interpersonal Therapy (IPT),first-line treatment,Mild to Moderate Major Depressive Disorder
+9,Exercise,Recommended,as adjunct to treat Major Depressive Disorder
+10,Phototherapy,Effective,for both seasonal and non-seasonal depression
+0,"Mirtazapine, Escitalopram, Venlafaxine, Sertraline",More effective,"Duloxetine, Fluoxetine, Fluvoxamine, Paroxetine, Reboxetine for Unipolar Major Depression in adults"
+1,Escitalopram and Sertraline,More favorable,"Profile of acceptability leading to significantly fewer discontinuations than Duloxetine, Fluvoxamine, Paroxetine, Reboxetine, and Venlafaxine"
+2,Sertraline,first-line treatment,Moderate to severe major depression in adults
+3,New-generation antidepressants,Associated with,Inconsistency in results regarding efficacy
+4,Reboxetine,less effective,All other tested antidepressants for Unipolar Major Depression in adults
+5,Sertraline and Escitalopram,Highly effective,Acute treatment of major depression
+6,Escitalopram,Comparable to,Sertraline in terms of efficacy and acceptability for the treatment of major depression
+0,Depression,Associated with,poor quality of life and impaired functioning
+1,Selective Serotonin Reuptake Inhibitors (SSRIs),first-line treatment,Depression
+2,Depression-focused psychotherapy,second-line treatment,Depression
+3,Electroconvulsive therapy (ECT),Highly effective,Depression
+4,MAOIs,less commonly used,Depression
+5,MAOIs,Specific efficacy in treating,Depression with atypical features
+6,SSRIs,side effects,sexual and digestive issues
+7,Ketamine,side effects,"dizziness, neurotoxicity, cognitive dysfunction, blurred vision, psychosis, dissociation, urological dysfunction, restlessness, headache, nausea, vomiting, and cardiovascular symptoms"
+8,Cognitive-Behavioral Therapy (CBT),first-line treatment,Depression
+9,Interpersonal Therapy (IPT),first-line treatment,Depression
+0,Major Depression,Definition,"a mental health disorder characterized by a pervasive and persistent low mood, accompanied by low self-esteem and loss of interest or pleasure in normally enjoyable activities"
+1,Second-generation antidepressants,Associated with,inconsistencies in efficacy results
+2,"Mirtazapine, Escitalopram, Venlafaxine, and Sertraline",More effective,"than Duloxetine, Fluoxetine, Fluvoxamine, Paroxetine, and Reboxetine for treating Major Depression"
+3,Reboxetine,Less effective,than all the other tested antidepressants for treating Major Depression
+4,Escitalopram and Sertraline,Properties,"Show the best profile of acceptability, leading to significantly fewer discontinuations than do duloxetine, fluvoxamine, paroxetine, reboxetine, and venlafaxine"
+5,Sertraline,Comparable to,"Escitalopram in terms of balance between benefits, acceptability, and acquisition cost for treating Major Depression"
+6,Acute treatment duration for Major Depression,Definition,8-week treatment period
+0,Major Depressive Disorder,Definition,a prevalent psychiatric disorder leading to poor quality of life and impaired functioning
+1,Selective Serotonin Reuptake Inhibitors (SSRIs),first-line treatment,Major Depressive Disorder during the acute phase
+2,Major Depressive Disorder,Symptom,high rates of suicidal behavior and mortality
+3,Depression-focused psychotherapy,second-line treatment,Major Depressive Disorder
+4,Electroconvulsive therapy (ECT),highly effective,somatic therapy for Depression
+5,Monoamine Oxidase Inhibitors (MAOIs),less commonly used,antidepressants
+6,Tricyclic antidepressants (TCAs),more effective than,SSRIs in hospitalized patients
+7,SSRIs,side effects,"sexual and digestive issues, irritability, anxiety, insomnia, and headaches"
+8,Ketamine,specific efficacy in treating,resistant unipolar and bipolar depression
+9,Cognitive-behavioral therapy (CBT),first-line treatment,Major Depressive Disorder
+10,Interpersonal therapy (IPT),Comparable to,CBT for mild to moderate major depressive episodes in adults
+0,"Mirtazapine, escitalopram, venlafaxine, sertraline",More effective,"duloxetine, fluoxetine, fluvoxamine, paroxetine, reboxetine"
+1,Escitalopram and sertraline,More tolerable,"duloxetine, fluvoxamine, paroxetine, reboxetine"
+2,"Bupropion, escitalopram, paroxetine, venlafaxine",Symptom,Sexual dysfunction less likely
+3,Sertraline,Comparable to,escitalopram
+4,"Mirtazapine, venlafaxine",Highly effective,Major depressive disorder treatment
+5,Sertraline,Widely used,Treatment for Major depressive disorder
+6,Reboxetine,Less effective,All the other 11 antidepressants
+7,Reboxetine,Not effective,First-line acute treatment for major depression
+0,Selective Serotonin Reuptake Inhibitors (SSRIs),first-line treatment,All Depression
+1,Electroconvulsive therapy (ECT),most effective,somatic therapy for depression
+2,MAOIs,Specific efficacy in treating,depression with atypical features
+3,Bupropion,Properties,minimal weight gain or even weight loss
+4,Ketamine,Treats,treatment-resistant unipolar and bipolar depression
+5,TCAs,More effective,severe Major Depressive Disorder (MDD) symptoms in hospitalized patients
+6,Psychotherapy,first-line treatment,mild to moderate Major Depressive Disorder
+7,Cognitive Behavioral Therapy (CBT) and Interpersonal Therapy (IPT),first-line treatment,mild to moderate Major Depressive Disorder
+8,Vagus Nerve Stimulation (VNS),treatment options,resistant depression
+9,Physical exercise,recommendation,as adjunct to other anti-depressive treatments
+10,Mindfulness-Based Cognitive Therapy (MBCT),Potential alternative, to reduce or even stop antidepressant treatment without increasing the risk of depressive recurrence
+11,Transcranial Direct Current Stimulation (tDCS),less effective,than antidepressants and Repetitive Transcranial Magnetic Stimulation (rTMS) for the acute treatment of major depression
+0,"Mirtazapine, Escitalopram, Venlafaxine, Sertraline",More effective,"Duloxetine, Fluoxetine, Fluvoxamine, Paroxetine, Reboxetine"
+1,Escitalopram and Sertraline,Side effects,significantly fewer discontinuations
+2,Reboxetine,Less effective,all the other antidepressants tested
+3,Escitalopram and Sertraline,Highly effective,moderate to severe major depression in adults
+4,Sertraline,Comparable to,Escitalopram
+5,Reboxetine,Not effective,routine first-line acute treatment for major depression
+6,Duloxetine and Paroxetine,Side effects,less well tolerated than Escitalopram and Sertraline
+7,"Mirtazapine, Escitalopram, Venlafaxine, Sertraline",More eﬀicacious,Fluoxetine
+0,Anxious depression,Definition,Major depressive disorder with clinically meaningful levels of anxiety
+1,Anxious depression,Symptom,"greater severity of depressive illness, greater functional impairment, greater illness chronicity, increased risk of suicidality"
+2,Anxious depression,More common than,"nonanxious depression in African American group, Hispanics, Primary Care Patients, Unemployed, Married then Divorced/Widowed, Less Education, Public insurance, Lower-income"
+3,Anxious depression,Side effects,greater reduction in anxiety/somatization score yet greater residual symptoms of anxiety/somatization than nonanxious depression
+4,Anxious depression,side effects,"high mean QIDS-SR score at exit, low raw QID-SR change score, low percentage change in QIDS-SR score than nonanxious depression"
+5,Citalopram,first-line treatment,Major depressive disorder
+6,Anxious depression,Less commonly used,adequate dose of citalopram due to side effects or patient’s choice
+7,Anxious depression,Associated with,poor acute outcome following antidepressant treatment compared to nonanxious depression
