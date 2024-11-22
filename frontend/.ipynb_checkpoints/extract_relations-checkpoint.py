@@ -1,10 +1,13 @@
 import requests
 import sys,io
 from openai import OpenAI
-sys.path.append("/Users/rishikasrinivas/KnowledgeGraphMentalHealth/")
+from src import model
+from src import data
+from src import constants
+'''
 import src.model as model
 import src.data as data 
-import src.constants as constants
+import src.constants as constants'''
 import os
 import pandas as pd
 

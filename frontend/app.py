@@ -40,16 +40,14 @@ def get_results():
     try:
         data=[]
         # Fetch all documents from the collection
-        print("ent get")
+ 
         results = collection.find()
-        print("found res", results)
         
         for res in results:
         # Convert the results to a list of dictionaries
             res['_id'] = str(res['_id'])  # Convert ObjectId to string
             data.append(res)
-        
-        print("retuning")  
+       
         response=jsonify(data)
         response.headers["Content-Type"] = "application/json"
         response.headers["Content-Disposition"] = "inline" 
@@ -74,7 +72,7 @@ def upload_files():
         return jsonify({'error': str(e)}), 500
    
 if __name__ == '__main__':
-    collections.Brightside.deleteMany({})
+    collection.Brightside.delete_many({})
 
     app.run(port=8000, debug=True)
     
