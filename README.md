@@ -26,11 +26,13 @@ Hand annotations were meticulously developed by team members, who manually revie
 
 4. **Searching the KG:**
    ![Animated Demo](assets/searching.gif)
+
    Perform searches on the KG to find specific triplets or related entities.  
 
-5. **Reading the KG:**
+6. **Reading the KG:**
    VISUALS TBA
-   Visualize the KG with clear distinctions using color coding and edge weights.  
+
+    Visualize the KG with clear distinctions using color coding and edge weights.  
 
 ### Visualization Features  
 - **Color Coding:**
