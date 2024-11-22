@@ -99,8 +99,8 @@ Hand annotations were meticulously developed by team members, who manually revie
 #### 4. **G-Eval**  
 - **Evaluation Type:** Model-Based  
 - **Method:**
-- Compare each row of the ground truth to each row of the LLM output
-- Calculate semantic similarity between two triples considering medical domain knowledge.
+   - Compare each row of the ground truth to each row of the LLM output.
+   - Calculate semantic similarity between two triples considering medical domain knowledge.
 - **Threshold for Matching:** 0.7, 0.5 
 - **Accuracy:** 46% 
 - **Output:** Display the percentage of “matches” between ground truth and actual input. 
