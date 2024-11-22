@@ -14,45 +14,32 @@ Hand annotations were meticulously developed by team members, who manually revie
 
 ---
 
-## User Interface (UI)
+## User Interface (UI)  
 
-### Features
+### Features  
+1. **Uploading Files:**
+   ![Animated Demo](assets/uploading.gif)
+   Users can upload PDF or CSV files for processing into KG format.  
 
-1. **Upload Files**
-<p align="center">
-  <img src="assets/uploading.gif" alt="File Upload Demo" width="50%">
-</p>
-   Easily import PDFs, which are converted into Knowledge Graphs (KGs) that extract clinical entities and relationships.
+3. **Fetching Previous KGs:**  
+   Retrieve previously saved Knowledge Graphs for continued analysis.  
 
-3. **Fetch Previous Graphs**  
-   Retrieve saved Knowledge Graphs for continued analysis or updates.
+4. **Searching the KG:**
+   ![Animated Demo](assets/searching.gif)
+   Perform searches on the KG to find specific triplets or related entities.  
 
-4. **Search and Highlight**
-<p align="center">
-  <img src="assets/searching.gif" alt="Search Functionality Demo" width="50%">
-</p>
-   A **search-first design** lets users quickly locate nodes or relationships. Results are **highlighted in orange** and zoomed in for clarity.
+5. **Reading the KG:**
+   VISUALS TBA
+   Visualize the KG with clear distinctions using color coding and edge weights.  
 
-6. **Dynamic Visualization**  
-   - Nodes represent clinical entities, and edges use **color coding and varying thickness** to show relationship categories and strength.  
-   - The **Relationship Table** offers a legend with clickable colored circles for more details on each relationship.  
-   - A **magnitude table** shows the significance of relationships.
+### Visualization Features  
+- **Color Coding:**
+     VISUALS TBA
 
-7. **Custom Filtering**  
-   Users can **filter** the graph to focus on specific relationship types (e.g., "Side Effects" or "Recommendations"), improving clarity without clutter.
-
-8. **Help Button**  
-   An intuitive **Help button** offers guidance on the graph’s features, ensuring accessibility for new users and clinicians unfamiliar with knowledge graphs.
-
----
-
-### Design Highlights
-
-- **Brightside Health Branding**: The design aligns with **Brightside Health’s brand** using calming blues, pastels, and creative accents like **color-coded edges** for a clean, engaging experience.
-- **User-Centered Design**: Focuses on usability with:  
-   - **Interactive Relationship Table** for easy data interpretation.  
-   - **Edge Thickness** to prioritize strong relationships for evidence-based decisions.  
-   - **Search and Filtering** for focused, efficient navigation.
+   Visual cues for different entity types and relationships.  
+- **Edge Weights:**
+     VISUALS TBA
+   Representing the strength of relationships.  
 
 6. **Fitering Results the KG:**
    ![Animated Demo](assets/filtering.gif)
@@ -66,13 +53,14 @@ Hand annotations were meticulously developed by team members, who manually revie
 
 ### Evaluation Metrics Table  
 
-| **Method**               | **Type**       | **Accuracy** | **Key Pitfalls**                   |  
+| **Method**               | **Type**       | **Accuracy/Result** | **Key Pitfalls**                   |  
 |---------------------------|----------------|--------------|-------------------------------------|  
 | Fuzzy Wuzzy              | Statistical    | 35.32%       | Low accuracy, only simple matches. |  
 | TF-IDF + Cosine Similarity | Statistical    | 36.28%       | Limited to vectorized text formats.|  
 | GPT Critic               | Model-Based    | 61.66%       | Requires large computational resources.|  
 | G-Eval                   | Model-Based    | TBD          | Requires large computational resources.    |  
 | PyTorch + bioBERT        | Model-Based    | TBD          | TBD    |  
+| Precision                | Statistical    | 81.81          | Applies cosine similarity which is not always a good indication of contextual similarity    |  
 
 ---
 
@@ -132,7 +120,7 @@ Hand annotations were meticulously developed by team members, who manually revie
 - **Evaluation Type:** Statistical: word match and cosine similarity 
 - **Method:** Checking if the extracted relationship is in the source text or in the ground truth annotations  
 - **Threshold for Matching:** 0.7 
-- **Precision Score:** 85.85
+- **Precision Score:** 81.82
 
 #### 7. **Hallucination** 
 - **Evaluation Type:** TBA
