@@ -5,7 +5,7 @@ import spacy
 nlp = spacy.load("en_core_web_sm")
 def read_file_text(filename):
     '''
-    Takes in a filename, opens and parses it, and returns the text
+    Takes in a filename, opens and parses it, and returns the text as a generator
     '''
     doc = PdfReader(filename)
     num_pages=len(doc.pages) 
@@ -27,6 +27,4 @@ def read_file_text(filename):
             text_in_group += text
         yield text_in_group
     
-    #print("text", all_text)
-    #return all_text
 

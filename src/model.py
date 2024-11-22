@@ -5,6 +5,14 @@ import src.data as data
 import os,json
 
 def get_response(client, src_text : list, prompt_llm :str, model_type: str):
+    '''
+        client: OpenAI objected
+        src_text: text model uses to extract relationships from
+        prompt_llm: prompt llm uses as a basis for determining relationships
+        model_type: version of gpt
+
+        This function returns the results from the llm in the form of a list of dictionaries (with all items lowered)
+    '''
 
     responses=[]
     prompt=f'Using this information: {src_text}, answer the following question: {prompt_llm}'
@@ -31,15 +39,17 @@ def get_response(client, src_text : list, prompt_llm :str, model_type: str):
         for i in range(len(resp_list)):
             resp_list[i] = {k.lower(): v.lower() for k,v in resp_list[i].items()}
     except:
-        print("Error ", resp)
         return "Error"
 
     responses.extend(resp_list)
     return responses
 
-def parse_response(response) -> pd.DataFrame:
-    
-    df =pd.DataFrame()
+def parse_response(response):
+    '''
+        response: response from the llm as a string
+
+        The function takes the llm response which is a returns a list of dictionaries 
+    '''
     start_idx=response.find('[')
     
     end_idx=response[start_idx:].find(']')
@@ -52,14 +62,20 @@ def parse_response(response) -> pd.DataFrame:
       
     response=response[start_idx:start_idx+end_idx+2]
     return response
+
+
 def save_resp_as_df(response):
+    '''
+        This functions takes a response as a list of dictionaries and populates a dataframe
+    '''
     df=pd.DataFrame()
     df=pd.concat([df, pd.DataFrame(response)])
     df=df.drop_duplicates(subset=['subj', 'rel', 'obj'], keep='first').reset_index().drop(columns= ['index'])
 
     return df
+
+
 def main():
-    print(os.environ)
     OpenAI.api_key = os.environ["OPENAI_API_KEY"]
     client= OpenAI()
     file_text = []
@@ -71,13 +87,12 @@ def main():
             continue
         for text in data.read_file_text(documents):
             if text:
-                print("Reading text from ", text)
                 file_text.append(text)
-                response = get_response(client, file_text, constants.PROMPT, constants.MODEL_TYPE) 
+                response = get_response(client, text, constants.PROMPT, constants.MODEL_TYPE) 
                 responses.extend(response)
                 dfs.append(save_resp_as_df(response))
     pd.concat([df for df in dfs]).to_csv(constants.SAVE_FILE)
 
-
+main()
     
 
