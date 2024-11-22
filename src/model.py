@@ -50,17 +50,23 @@ def parse_response(response):
 
         The function takes the llm response which is a returns a list of dictionaries 
     '''
-    start_idx=response.find('[')
     
+    start_idx=response.find('[')
     end_idx=response[start_idx:].find(']')
+    count=0
     while response[start_idx + end_idx-2] != '}':
+        count +=1 
         old=end_idx
         end_idx=response[start_idx+end_idx+1:].find(']')+old+1
+        if count == 100:
+            print(f"Couldn't extract all the text, returning max length possible. Try rerunning for better results")
+            return response=response[start_idx:start_idx+end_idx+2]
                                                     
         
 
       
     response=response[start_idx:start_idx+end_idx+2]
+
     return response
 
 
@@ -92,6 +98,6 @@ def main():
                 dfs.append(save_resp_as_df(response))
     pd.concat([df for df in dfs]).to_csv(constants.SAVE_FILE)
 
-
+main()
     
 
