@@ -73,7 +73,8 @@ def upload_files():
    
 if __name__ == '__main__':
     collection.Brightside.delete_many({})
-
+    print(collection.Brightside.count_documents({}))
+    assert collection.Brightside.count_documents({}) == 0
     app.run(port=8000, debug=True)
     
     
