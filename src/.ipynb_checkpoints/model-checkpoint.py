@@ -80,17 +80,19 @@ def main():
     client= OpenAI()
     responses=[]
     dfs=[]
+    file_text=[]
     for documents in os.listdir(constants.DOCS_DIR):
         documents="Docs/" + documents
         if documents[-4:] != ".pdf":
             continue
         for text in data.read_file_text(documents):
             if text:
+                file_text.append(text)
                 response = get_response(client, text, constants.PROMPT, constants.MODEL_TYPE) 
                 responses.extend(response)
                 dfs.append(save_resp_as_df(response))
     pd.concat([df for df in dfs]).to_csv(constants.SAVE_FILE)
 
-main()
+
     
 
