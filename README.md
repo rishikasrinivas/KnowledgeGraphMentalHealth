@@ -129,8 +129,9 @@ Hand annotations were meticulously developed by team members, who manually revie
 | **Method**               | **Type**       | **Accuracy** | **Key Pitfalls**                   |
 |---------------------------|----------------|--------------|-------------------------------------|
 | Fuzzy Wuzzy              | Statistical    | 35.32%       | Low accuracy, only simple matches. |
-| TF-IDF + Cosine Similarity | Statistical    | 36.28%       | Limited to vectorized text formats.|
-| GPT Critic               | Model-Based    | 69.0%       | Requires large computational resources.|
+| TF-IDF + Cosine Similarity | Statistical  | 36.28%       | Limited to vectorized text formats.|
+| GPT Critic               | Model-Based    | 69.00%       | None.|
+| RAGA                     | Model-Based    | 64.25%.      | None.|
 | G-Eval                   | Model-Based    | TBD          | Requires large computational resources.    |
 | PyTorch + bioBERT        | Model-Based    | TBD          | TBD    |
 
@@ -170,16 +171,31 @@ Hand annotations were meticulously developed by team members, who manually revie
 
 ---
 
-#### 4. **G-Eval**  
+#### 4. **RAGA**  
+- **Evaluation Type:** Model-Based  
+- **Method:**  
+   - Uses 10 worker threads to enable parallel comparisons.  
+   - Compares each LLM output row with ground truth rows using GPT-3.5-turbo.  
+   - Finds the best similarity score for each LLM output based on 4 criteria (Retrieval, Augumentation, Generation, and Attribution.  
+- **Accuracy:** 64.25%
+    -  Retrieval: 49.0%
+    -  Augumentation: 67.0%
+    -  Generation: 78.0%
+    -  Attribution: 63.0%
+- **Output:** Best ground truth match for each LLM output row.  
+
+---
+
+#### 5. **G-Eval**  
 - **Evaluation Type:** Model-Based  
 - **Method:** TBD  
 - **Threshold for Matching:** TBD  
-- **Accuracy:** TBD  
+- **Accuracy:**
 - **Output:** TBD  
 
 ---
 
-#### 5. **PyTorch + bioBERT**  
+#### 6. **PyTorch + bioBERT**  
 - **Evaluation Type:** Model-Based  
 - **Method:** TBD  
 - **Threshold for Matching:** TBD  
@@ -188,7 +204,7 @@ Hand annotations were meticulously developed by team members, who manually revie
 
 ---
 
-#### 6. **Precision** 
+#### 7. **Precision** 
 - **Evaluation Type:** Statistical: word match and cosine similarity 
 - **Method:** Checking if the extracted relationship is in the source text or in the ground truth annotations  
 - **Threshold for Matching:** 0.7 
@@ -196,7 +212,7 @@ Hand annotations were meticulously developed by team members, who manually revie
 
 ---
 
-#### 7. **Hallucination** 
+#### 8. **Hallucination** 
 - **Evaluation Type:** Statistical: Factual Alignment and Consistency
 - **Method:** DeepEval Hallutionation Metric
 - **Threshold for Matching:** 0.5

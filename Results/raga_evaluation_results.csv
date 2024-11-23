@@ -1,0 +1,531 @@
+llm_output,ground_truth,evaluation,retrieval,augmentation,generation,attribution
+venlafaxine comparable to tricyclic antidepressants (tcas),Monoamine oxidase inhibitors Same efficacy as Tricyclic antidepressants,"Retrieval: 0.75
+Augmentation: 0.75
+Generation: 0.90
+Attribution: 0.80
+The LLM output is mostly relevant to the ground truth, provides additional information, is fluent and grammatically correct, and attributes the comparison to venlafaxine.",0.75,0.75,0.9,0.8
+mirtazapine properties increases serotonin or norepinephrine availability,Mirtazapine Increases Availability of serotonin or norepinephrine (or both),"Retrieval: 1.00
+Augmentation: 0.75
+Generation: 0.75
+Attribution: 1.00
+The LLM output accurately retrieves the main information from the ground truth, partially synthesizes it, maintains good grammar, and correctly attributes the information.",1.0,0.75,0.75,1.0
+selective serotonin reuptake inhibitors (ssris) first-line treatment major depressive disorder (mdd),Pharmacotherapy Entails Norepinephrine reuptake inhibitors,"Retrieval: 0.25
+Augmentation: 0.75
+Generation: 0.75
+Attribution: 0.50
+The LLM output is partially relevant in terms of retrieval, but it provides additional information and is fluent in its generation, although it lacks accuracy in attribution.",0.25,0.75,0.75,0.5
+selective serotonin reuptake inhibitors (ssris) definition antidepressants that block serotonin reuptake,Pharmacotherapy Entails Norepinephrine reuptake inhibitors,"Retrieval: 0.50
+Augmentation: 0.75
+Generation: 0.75
+Attribution: 0.25
+The LLM output partially captures the concept of reuptake inhibitors but incorrectly focuses on SSRIs instead of norepinephrine, lacking factual attribution.",0.5,0.75,0.75,0.25
+vortioxetine specific efficacy in treating depression-related cognitive impairment,"Problem-solving therapy Use Preventing depression among the elderly and treating patients with mild depressive symptoms, especially in primary care","Retrieval: 0.00
+Augmentation: 0.50
+Generation: 0.75
+Attribution: 0.75
+The LLM output is partially relevant to the ground truth by mentioning depression, but it focuses on a specific treatment rather than problem-solving therapy.",0.0,0.5,0.75,0.75
+selective serotonin reuptake inhibitors (ssris) comparable to tricyclic antidepressants (tcas),Monoamine oxidase inhibitors Same efficacy as Tricyclic antidepressants,"Retrieval: 0.75
+Augmentation: 0.75
+Generation: 0.90
+Attribution: 0.80
+The LLM output is mostly accurate in terms of relevance, information synthesis, fluency, and factual attribution, but there is a slight deviation in the specific type of antidepressants mentioned.",0.75,0.75,0.9,0.8
+mirtazapine side effects weight gain,Duloxetine Side effects Lower acceptability,"Retrieval: 0.25
+Augmentation: 0.50
+Generation: 0.75
+Attribution: 0.75
+The LLM output is somewhat relevant to the ground truth, provides additional information on weight gain side effects, is fluent in grammar, and correctly attributes the side effects to mirtazapine.",0.25,0.5,0.75,0.75
+monoamine oxidase inhibitors (maois) less commonly used depression treatment,Pharmacotherapy Entails Monoamine oxidase inhibitors,"Retrieval: 0.75
+Augmentation: 0.75
+Generation: 0.75
+Attribution: 0.75
+The LLM output provides relevant information about monoamine oxidase inhibitors, but adds additional context and explanation, while maintaining fluency and accuracy in attribution.",0.75,0.75,0.75,0.75
+selective serotonin reuptake inhibitors (ssris) side effects sexual dysfunction,Pharmacotherapy Entails Norepinephrine reuptake inhibitors,"Retrieval: 0.50
+Augmentation: 0.75
+Generation: 0.75
+Attribution: 0.25
+The LLM output is partially relevant to the ground truth but includes additional information about side effects of SSRIs, with decent fluency but lacks factual attribution.",0.5,0.75,0.75,0.25
+"ketamine side effects neurotoxicity, drug dependence","Ketamine Side effects dizziness, neurotoxicity, cognitive dysfunction, blurred vision, psychosis, dissociation, urological dysfunction, restlessness, headache, nausea, vomiting, and cardiovascular symptoms","Retrieval: 0.50
+Augmentation: 0.50
+Generation: 0.75
+Attribution: 0.50
+The LLM output partially captures the side effects of ketamine but lacks completeness and accuracy in comparison to the ground truth.",0.5,0.5,0.75,0.5
+ketamine definition treatment for resistant depression,"Ketamine Has effects on Unipolar, bipolar depression","Retrieval: 0.50
+Augmentation: 0.75
+Generation: 0.75
+Attribution: 0.50
+The LLM output is partially relevant to the ground truth by mentioning ketamine as a treatment for depression, but lacks specificity in mentioning its effects on unipolar and bipolar depression.",0.5,0.75,0.75,0.5
+esketamine associated with risk of substance abuse,Marital and family therapy Treats Severe forms of depression associated with medications and hospitalization,"Retrieval: 0.00
+Augmentation: 0.50
+Generation: 0.75
+Attribution: 0.25
+The LLM output is partially relevant in terms of augmentation by mentioning a risk factor associated with a different treatment for depression, but it lacks relevance and attribution to the ground truth.",0.0,0.5,0.75,0.25
+monoamine oxidase inhibitors (maois) specific efficacy in treating depression with atypical features,"Monoamine oxidase inhibitors Demonstrated specific efficacy in treating Atypical features, such as reactive moods, reverse neuro-vegetative symptoms, and sensitivity to rejection","Retrieval: 0.75
+Augmentation: 0.75
+Generation: 0.75
+Attribution: 0.75
+The LLM output is mostly accurate and relevant to the ground truth, but lacks some specific details mentioned in the original statement.",0.75,0.75,0.75,0.75
+electroconvulsive therapy (ect) highly effective somatic therapy for depression,Electroconvulsive therapy Effective Acute phase of depression in some situations,"Retrieval: 0.75
+Augmentation: 0.75
+Generation: 0.75
+Attribution: 0.75
+The LLM output is mostly accurate in terms of relevance, information synthesis, fluency, and factual attribution, but could be improved by directly mentioning the effectiveness of ECT in the acute phase of depression.",0.75,0.75,0.75,0.75
+cognitive-behavioral therapy (cbt) first-line treatment major depressive disorder (mdd),Cognitive-behavioral therapy Use For the first time treatment,"Retrieval: 0.75
+Augmentation: 0.75
+Generation: 0.85
+Attribution: 0.90
+The LLM output is mostly accurate in terms of relevance, information synthesis, fluency, and factual attribution, with minor improvements needed in retrieval and augmentation.",0.75,0.75,0.85,0.9
+esketamine definition s-enantiomer of ketamine for treatment-resistant depression,Pharmacotherapy Treats Acute phase of depression,"Retrieval: 0.50
+Augmentation: 0.75
+Generation: 0.75
+Attribution: 0.75
+The LLM output provides relevant information about a specific medication for depression, but lacks specificity in relation to the acute phase of depression.",0.5,0.75,0.75,0.75
+cognitive-behavioral therapy (cbt) treats elderly depressed patient,"Depression-focused psychotherapy Entails Cognitive-behavioral therapy (CBT), interpersonal therapy (IPT), Supportive therapy (ST) and psychoeducational intervention (PEI)","Retrieval: 0.25
+Augmentation: 0.25
+Generation: 0.75
+Attribution: 0.75
+The LLM output is partially relevant to the ground truth but lacks specificity in mentioning only CBT and elderly patients.",0.25,0.25,0.75,0.75
+bupropion benefits patients with low to moderate level of anxiety,Depression-focused psychotherapy For Mild to moderate MDD,"Retrieval: 0.50
+Augmentation: 0.25
+Generation: 0.75
+Attribution: 0.75
+The LLM output is somewhat relevant to the ground truth but lacks in information synthesis and fluency, although it maintains factual attribution.",0.5,0.25,0.75,0.75
+cognitive-behavioral therapy (cbt) treats resistant depression,Pharmacotherapy Treats Acute phase of depression,"Retrieval: 0.50
+Augmentation: 0.75
+Generation: 0.80
+Attribution: 0.25
+The LLM output is partially relevant to the ground truth, provides additional information, is well-written, but lacks factual attribution.",0.5,0.75,0.8,0.25
+cognitive-behavioral therapy (cbt) treats depression in primary care management,Pharmacotherapy Treats Acute phase of depression,"Retrieval: 0.50
+Augmentation: 0.75
+Generation: 0.75
+Attribution: 0.75
+The LLM output is partially relevant to the ground truth but provides additional information about cognitive-behavioral therapy in primary care management for treating depression.",0.5,0.75,0.75,0.75
+resistant depression treats vagus nerve stimulation (vns),Pharmacotherapy Treats Acute phase of depression,"Retrieval: 0.50
+Augmentation: 0.75
+Generation: 0.75
+Attribution: 0.25
+The LLM output is partially relevant to the ground truth, provides additional information about vagus nerve stimulation, is fluently written, but lacks factual attribution.",0.5,0.75,0.75,0.25
+cognitive-behavioral therapy (cbt) first-line treatment depression in adolescents,Depression-focused psychotherapy Second most common treatment of Acute phase depression,"Retrieval: 0.50
+Augmentation: 0.75
+Generation: 0.75
+Attribution: 0.75
+The LLM output is partially relevant to the ground truth, but provides additional information about cognitive-behavioral therapy as a first-line treatment for depression in adolescents.",0.5,0.75,0.75,0.75
+cognitive-behavioral therapy (cbt) first-line treatment depression in children,Depression-focused psychotherapy Second most common treatment of Acute phase depression,"Retrieval: 0.50
+Augmentation: 0.75
+Generation: 0.75
+Attribution: 0.75
+The LLM output is partially relevant but includes additional information about CBT being a first-line treatment for depression in children.",0.5,0.75,0.75,0.75
+problem-solve therapy (pst) comparable to other psychotherapeutic methods used to treat depression,"Problem-solving therapy Use Preventing depression among the elderly and treating patients with mild depressive symptoms, especially in primary care","Retrieval: 0.50
+Augmentation: 0.75
+Generation: 0.75
+Attribution: 0.75
+The LLM output is partially relevant to the ground truth, synthesizes information well, has good fluency and grammar, and attributes the information accurately.",0.5,0.75,0.75,0.75
+vagus nerve stimulation (vns) benefits significant positive outcome observe after six to 12 mo,"Somatic treatments Includes Transcranial magnetic stimulation (rTMS), transcranial direct current stimulation (tDCS), vagus nerve stimulation (VNS), deep brain stimulation (DBS), and magnetic seizure therapy","Retrieval: 0.50
+Augmentation: 0.50
+Generation: 0.75
+Attribution: 0.75
+The LLM output partially captures the information about vagus nerve stimulation from the ground truth, but lacks detail and accuracy in its presentation.",0.5,0.5,0.75,0.75
+interpersonal therapy (ipt) first-line treatment mild to moderate major depressive episode in adult,Depression-focused psychotherapy For Mild to moderate MDD,"Retrieval: 0.75
+Augmentation: 0.75
+Generation: 0.80
+Attribution: 0.90
+The LLM output is mostly accurate in terms of relevance, information synthesis, fluency, and factual attribution, but could be improved with more precise wording.",0.75,0.75,0.8,0.9
+repetitive transcranial magnetic stimulation (rtms) benefits a well-tolerate profile,Repetitive Transcranial magnetic stimulation Results rTMS and antidepressants more effective,"Retrieval: 0.50
+Augmentation: 0.75
+Generation: 0.75
+Attribution: 0.25
+The LLM output is partially relevant to the ground truth, provides some additional information, is mostly fluent, but lacks proper attribution of the source.",0.5,0.75,0.75,0.25
+repetitive transcranial magnetic stimulation (rtms) more effective than placebo conditions with mild side effects and good acceptability,"Somatic treatments Includes Transcranial magnetic stimulation (rTMS), transcranial direct current stimulation (tDCS), vagus nerve stimulation (VNS), deep brain stimulation (DBS), and magnetic seizure therapy","Retrieval: 0.75
+Augmentation: 0.75
+Generation: 0.75
+Attribution: 0.75
+The LLM output is mostly accurate in terms of relevance, information synthesis, fluency, and factual attribution, but could be improved by mentioning other somatic treatments listed in the ground truth.",0.75,0.75,0.75,0.75
+ketamine treats treatment-resistant major depressive disorder,Schema Therapy Treats Patients with personality disorder comorbidity,"Retrieval: 0.00
+Augmentation: 0.50
+Generation: 0.75
+Attribution: 0.25
+The LLM output is not relevant to the ground truth but shows some synthesis of information and decent fluency, though lacks factual attribution.",0.0,0.5,0.75,0.25
+vagus nerve stimulation (vns) definition a therapeutic method involving the implantation of a pacemaker connected to an electrode surrounding the left vagus nerve,Transcranial direct current stimulation Results Lower than that of antidepressants and rTMS,"Retrieval: 0.50
+Augmentation: 0.75
+Generation: 0.75
+Attribution: 0.75
+The LLM output provides relevant information about vagus nerve stimulation, but it does not directly address the comparison between transcranial direct current stimulation and other treatments mentioned in the ground truth.",0.5,0.75,0.75,0.75
+repetitive transcranial magnetic stimulation example neuro-modulation treatment options for depression,Repetitive Transcranial magnetic stimulation Results rTMS and antidepressants more effective,"Retrieval: 0.75
+Augmentation: 0.75
+Generation: 0.75
+Attribution: 0.75
+The LLM output captures the main idea of using repetitive transcranial magnetic stimulation for depression treatment, but lacks the specific comparison to antidepressants mentioned in the ground truth.",0.75,0.75,0.75,0.75
+esketamine treats treatment-resistant depression,Pharmacotherapy Treats Acute phase of depression,"Retrieval: 0.50
+Augmentation: 0.75
+Generation: 0.75
+Attribution: 0.75
+The LLM output is partially relevant to the ground truth, provides additional information, is well-written, and attributes the treatment to esketamine.",0.5,0.75,0.75,0.75
+selective serotonin reuptake inhibitors (ssris) first-line treatment major depressive disorder,Pharmacotherapy Entails Norepinephrine reuptake inhibitors,"Retrieval: 0.25
+Augmentation: 0.75
+Generation: 0.75
+Attribution: 0.50
+The LLM output is partially relevant to the ground truth, but it provides additional information about SSRIs as a first-line treatment for major depressive disorder.",0.25,0.75,0.75,0.5
+intranasal esketamine form of esketamine,Computerized CBT Is a form of CBT,"Retrieval: 0.00
+Augmentation: 0.50
+Generation: 0.75
+Attribution: 0.00
+The LLM output is partially relevant in terms of information synthesis and fluency, but completely incorrect in terms of retrieval and attribution.",0.0,0.5,0.75,0.0
+phototherapy benefits effective for both seasonal and non-seasonal depression,Luxtherapy Eligible for Those with seasonal and non-seasonal depression. Benefits to sleep deprivation and drug treatments have also been reported,"Retrieval: 0.75
+Augmentation: 0.75
+Generation: 0.85
+Attribution: 0.90
+The LLM output is mostly accurate and relevant to the ground truth, with some additional information and good fluency, but could be improved with more explicit attribution.",0.75,0.75,0.85,0.9
+marital and family therapy (mft) treats some aspects of depression,Pharmacotherapy Treats Acute phase of depression,"Retrieval: 0.50
+Augmentation: 0.75
+Generation: 0.75
+Attribution: 0.75
+The LLM output is partially relevant to the ground truth, provides additional information related to therapy for depression, is fluent and grammatically correct, and attributes the information appropriately.",0.5,0.75,0.75,0.75
+"anxious depression more common than nonanxious depression in african american group, hispanics, primary care patients, unemployed, married then divorced/widowed, less, education, public insurance, lower-income",Depression-focused psychotherapy Second most common treatment of Acute phase depression,"Retrieval: 0.25
+Augmentation: 0.75
+Generation: 0.75
+Attribution: 0.50
+The LLM output contains some relevant information about depression demographics, but it lacks direct relevance to the ground truth statement.",0.25,0.75,0.75,0.5
+transcranial direct current stimulation (tdcs) used as a complementary intervention or as monotherapy to reduce depressive symptoms in unipolar or bipolar depression patients,"Somatic treatments Includes Transcranial magnetic stimulation (rTMS), transcranial direct current stimulation (tDCS), vagus nerve stimulation (VNS), deep brain stimulation (DBS), and magnetic seizure therapy","Retrieval: 0.50
+Augmentation: 0.75
+Generation: 0.90
+Attribution: 0.85
+The LLM output is partially relevant to the ground truth by mentioning tDCS, but it provides additional information about its use in treating depressive symptoms, with good fluency and factual attribution.",0.5,0.75,0.9,0.85
+exercise treats major depressive disorder (mdd),Schema Therapy Treats Patients with personality disorder comorbidity,"Retrieval: 0.00
+Augmentation: 0.50
+Generation: 0.75
+Attribution: 0.25
+The LLM output is partially relevant in terms of augmentation and generation, but lacks accuracy in retrieval and attribution.",0.0,0.5,0.75,0.25
+psychotherapy treats major depressive disorder (mdd),Schema Therapy Treats Patients with personality disorder comorbidity,"Retrieval: 0.00
+Augmentation: 0.50
+Generation: 0.75
+Attribution: 0.25
+The LLM output is partially relevant in terms of treating a mental health condition, but does not accurately reflect the ground truth of schema therapy for personality disorder comorbidity.",0.0,0.5,0.75,0.25
+transcranial direct current stimulation (tdcs) consistency encouraging but vary results that depend on the study’s design and the technique use,Transcranial direct current stimulation Results Outperforms the simulator by rate of response and remission,"Retrieval: 0.75
+Augmentation: 0.75
+Generation: 0.80
+Attribution: 0.85
+The LLM output provides relevant information and synthesizes it well, with good fluency and grammar, and accurately attributes the information to studies.",0.75,0.75,0.8,0.85
+"electroconvulsive therapy (ect) highly effective treatment modality for psychiatry, major unipolar depression, and reducing the number of hospital readmissions",Electroconvulsive therapy Reduces Number of hospital readmissions,"Retrieval: 0.75
+Augmentation: 0.75
+Generation: 0.85
+Attribution: 0.90
+The LLM output is mostly relevant to the ground truth, synthesizes additional information effectively, is fluent and grammatically correct, and attributes the information accurately.",0.75,0.75,0.85,0.9
+vagus nerve stimulation (vns) second-line treatment treatment-resistant major depressive disorder (trd),"Somatic treatments Includes Transcranial magnetic stimulation (rTMS), transcranial direct current stimulation (tDCS), vagus nerve stimulation (VNS), deep brain stimulation (DBS), and magnetic seizure therapy","Retrieval: 0.50
+Augmentation: 0.75
+Generation: 0.75
+Attribution: 0.75
+The LLM output partially captures the ground truth by mentioning vagus nerve stimulation as a treatment option for major depressive disorder, but lacks completeness in listing other somatic treatments.",0.5,0.75,0.75,0.75
+cognitive behavioral therapy (cbt) treats major depressive disorder,Group therapy Reduces Depressive Symptoms,"Retrieval: 0.50
+Augmentation: 0.75
+Generation: 0.75
+Attribution: 0.75
+The LLM output is partially relevant to the ground truth, synthesizes information well, is fluent and grammatically correct, and attributes the treatment to cognitive behavioral therapy.",0.5,0.75,0.75,0.75
+psychoeducation treats depression,Pharmacotherapy Treats Acute phase of depression,"Retrieval: 0.25
+Augmentation: 0.50
+Generation: 0.75
+Attribution: 0.25
+The LLM output is partially relevant to the ground truth but lacks accuracy in attribution.",0.25,0.5,0.75,0.25
+electroconvulsive therapy (ect) treats major depressive disorder (mdd),Electroconvulsive therapy Effective Acute phase of depression in some situations,"Retrieval: 0.75
+Augmentation: 0.75
+Generation: 0.75
+Attribution: 0.75
+The LLM output captures the essence of the ground truth but lacks specificity in mentioning the effectiveness in the acute phase of depression.",0.75,0.75,0.75,0.75
+"electroconvulsive therapy (ect) recommended for patients with severe and psychotic depression, high risk of suicide, parkinson’s disease, and pregnant patients","Electroconvulsive therapy Eligible for Patients with severe and psychotic depression, a high risk of suicide, or Parkinson’s disease, as well as pregnant patients","Retrieval: 1.00
+Augmentation: 0.75
+Generation: 0.90
+Attribution: 1.00
+The LLM output accurately retrieves the information from the ground truth, slightly expands on it, presents it fluently, and attributes the information correctly.",1.0,0.75,0.9,1.0
+repetitive transcranial magnetic stimulation (rtms) treats major depressive disorder (mdd),Repetitive Transcranial magnetic stimulation Results rTMS and antidepressants more effective,"Retrieval: 0.75
+Augmentation: 0.75
+Generation: 0.90
+Attribution: 0.75
+The LLM output captures the essence of the ground truth by mentioning the effectiveness of rtms in treating major depressive disorder, but lacks the explicit comparison with antidepressants.",0.75,0.75,0.9,0.75
+"mirtazapine more effective duloxetine, fluoxetine, fluvoxamine, paroxetine, reboxetine",Mirtazapine As effective as SSRIs,"Retrieval: 0.50
+Augmentation: 0.75
+Generation: 0.80
+Attribution: 0.75
+The LLM output provides relevant information but goes beyond the ground truth by comparing mirtazapine to additional SSRIs, and the output is fluent and grammatically correct with mostly accurate attribution.",0.5,0.75,0.8,0.75
+electroconvulsive therapy (ect) definition the most document and effective method in neuro-modulation treatment for depression,Electroconvulsive therapy Goal Lighten the burden of depression,"Retrieval: 0.75
+Augmentation: 0.75
+Generation: 0.75
+Attribution: 0.75
+The LLM output provides relevant information about electroconvulsive therapy for depression, synthesizes additional details, maintains fluency, and attributes the information accurately.",0.75,0.75,0.75,0.75
+"escitalopram more effective duloxetine, fluoxetine, fluvoxamine, paroxetine, reboxetine","SSRI Includes fluoxetine, sertraline, paroxetine, fluvoxamine, citalopram, and escitalopram","Retrieval: 0.83
+Augmentation: 0.75
+Generation: 0.90
+Attribution: 0.75
+The LLM output is mostly relevant to the ground truth, provides additional information, is fluent, but lacks proper attribution of facts.",0.83,0.75,0.9,0.75
+electroconvulsive therapy (ect) associated with reduction in psychiatric readmissions,Electroconvulsive therapy Reduces Number of hospital readmissions,"Retrieval: 0.75
+Augmentation: 0.75
+Generation: 0.85
+Attribution: 0.90
+The LLM output is mostly relevant to the ground truth, synthesizes information well, is fluent and grammatically correct, and accurately attributes the information to electroconvulsive therapy.",0.75,0.75,0.85,0.9
+"venlafaxine more effective duloxetine, fluoxetine, fluvoxamine, paroxetine, reboxetine",Repetitive Transcranial magnetic stimulation Results rTMS and antidepressants more effective,"Retrieval: 0.25
+Augmentation: 0.75
+Generation: 0.75
+Attribution: 0.75
+The LLM output provides relevant information but misses the mark on retrieval, while successfully synthesizing and generating new information with proper attribution.",0.25,0.75,0.75,0.75
+reboxetine less effective all tested antidepressants,Repetitive Transcranial magnetic stimulation Results rTMS and antidepressants more effective,"Retrieval: 0.50
+Augmentation: 0.25
+Generation: 0.75
+Attribution: 0.75
+The LLM output partially captures the main idea but introduces conflicting information and lacks clarity in expression.",0.5,0.25,0.75,0.75
+major depressive disorder (mdd) definition a mood disorder causing a persistent feeling of sadness and loss of interest,Acceptance and commitment therapy Use Accepting and adjusting to persistent problems,"Retrieval: 0.50
+Augmentation: 0.50
+Generation: 0.75
+Attribution: 0.75
+The LLM output partially captures the essence of acceptance and commitment therapy but focuses more on the definition of major depressive disorder, showing some relevance and information synthesis, with decent fluency and factual attribution.",0.5,0.5,0.75,0.75
+"sertraline more effective duloxetine, fluoxetine, fluvoxamine, paroxetine, reboxetine",Repetitive Transcranial magnetic stimulation Results rTMS and antidepressants more effective,"Retrieval: 0.20
+Augmentation: 0.80
+Generation: 0.90
+Attribution: 0.70
+The LLM output provides relevant information about the effectiveness of different antidepressants compared to rTMS, but lacks accuracy in retrieval.",0.2,0.8,0.9,0.7
+"venlafaxine more effective fluoxetine, fluvoxamine",Repetitive Transcranial magnetic stimulation Results rTMS and antidepressants more effective,"Retrieval: 0.50
+Augmentation: 0.75
+Generation: 0.75
+Attribution: 0.75
+The LLM output is partially relevant to the ground truth, provides additional information, is fluent, and correctly attributes the effectiveness of different antidepressants.",0.5,0.75,0.75,0.75
+electroconvulsive therapy (ect) side effects cognitive side effects,"Acute-phase treatment options Approaches Pharmacotherapy, depression-focused psychotherapy, combinations of medications and psychotherapy, and somatic therapies such as electroconvulsive therapy (ECT)","Retrieval: 0.25
+Augmentation: 0.50
+Generation: 0.75
+Attribution: 0.75
+The LLM output partially captures the ground truth by mentioning electroconvulsive therapy, but lacks other acute-phase treatment options. It synthesizes information by mentioning cognitive side effects, but could be more relevant and accurate.",0.25,0.5,0.75,0.75
+"escitalopram more effective citalopram, reboxetine, paroxetine, fluoxetine, fluvoxamine","SSRI Includes fluoxetine, sertraline, paroxetine, fluvoxamine, citalopram, and escitalopram","Retrieval: 0.60
+Augmentation: 0.70
+Generation: 0.80
+Attribution: 0.60
+The LLM output includes some relevant information but also introduces additional drugs not mentioned in the ground truth.",0.6,0.7,0.8,0.6
+reboxetine less effective all the other 11 antidepressants,Repetitive Transcranial magnetic stimulation Results rTMS and antidepressants more effective,"Retrieval: 0.25
+Augmentation: 0.75
+Generation: 0.75
+Attribution: 0.50
+The LLM output is partially relevant to the ground truth but synthesizes additional information accurately, with decent fluency and attribution.",0.25,0.75,0.75,0.5
+"mirtazapine more effective fluoxetine, venlafaxine",Mirtazapine As effective as SSRIs,"Retrieval: 0.50
+Augmentation: 0.75
+Generation: 0.80
+Attribution: 0.75
+The LLM output partially captures the ground truth but adds additional information, is well-written, and attributes the information correctly.",0.5,0.75,0.8,0.75
+escitalopram highly effective major depression,Electroconvulsive therapy Effective Acute phase of depression in some situations,"Retrieval: 0.25
+Augmentation: 0.50
+Generation: 0.75
+Attribution: 0.25
+The LLM output is partially relevant to the ground truth but lacks specificity and factual accuracy.",0.25,0.5,0.75,0.25
+escitalopram comparable to sertraline,Nefazodone Is comparable to SSRI,"Retrieval: 0.50
+Augmentation: 0.75
+Generation: 0.75
+Attribution: 0.50
+The LLM output is partially relevant to the ground truth, synthesizes information well, is fluent, but lacks factual attribution.",0.5,0.75,0.75,0.5
+venlafaxine highly effective major depression,Electroconvulsive therapy Effective Acute phase of depression in some situations,"Retrieval: 0.25
+Augmentation: 0.50
+Generation: 0.75
+Attribution: 0.25
+The LLM output is somewhat relevant to the ground truth but lacks specificity and accuracy in terms of attribution.",0.25,0.5,0.75,0.25
+sertraline highly effective major depression,Electroconvulsive therapy Effective Acute phase of depression in some situations,"Retrieval: 0.25
+Augmentation: 0.50
+Generation: 0.75
+Attribution: 0.25
+The LLM output is somewhat relevant to the ground truth but lacks specificity and factual accuracy.",0.25,0.5,0.75,0.25
+ketamine associated with risk of misuse and abuse,Transcranial direct current stimulation Results Lower than that of antidepressants and rTMS,"Retrieval: 0.50
+Augmentation: 0.75
+Generation: 0.75
+Attribution: 0.75
+The LLM output is partially relevant to the ground truth, provides additional information, is well-written, and correctly attributes the information to ketamine.",0.5,0.75,0.75,0.75
+reboxetine not effective major depression,Electroconvulsive therapy Effective Acute phase of depression in some situations,"Retrieval: 0.25
+Augmentation: 0.50
+Generation: 0.75
+Attribution: 0.25
+The LLM output is somewhat relevant to the ground truth but lacks accuracy in attribution and retrieval.",0.25,0.5,0.75,0.25
+sertraline comparable to escitalopram,Nefazodone Is comparable to SSRI,"Retrieval: 0.50
+Augmentation: 0.75
+Generation: 0.75
+Attribution: 0.50
+The LLM output is partially relevant to the ground truth, provides additional information, is fluent, but lacks accuracy in attribution.",0.5,0.75,0.75,0.5
+mirtazapine highly effective major depression,Mirtazapine As effective as SSRIs,"Retrieval: 0.50
+Augmentation: 0.75
+Generation: 0.75
+Attribution: 0.75
+The LLM output is partially relevant to the ground truth, provides additional information, is fluent and grammatically correct, and attributes the information correctly.",0.5,0.75,0.75,0.75
+"escitalopram more effective duloxetine, fluoxetine, fluvoxamine, paroxetine, reboxetine","SSRI Includes fluoxetine, sertraline, paroxetine, fluvoxamine, citalopram, and escitalopram","Retrieval: 0.50
+Augmentation: 0.75
+Generation: 0.75
+Attribution: 0.75
+The LLM output includes some relevant information but also adds additional drugs and lacks perfect accuracy in retrieval.",0.5,0.75,0.75,0.75
+"sertraline more effective duloxetine, fluoxetine, fluvoxamine, paroxetine, reboxetine",Repetitive Transcranial magnetic stimulation Results rTMS and antidepressants more effective,"Retrieval: 0.25
+Augmentation: 0.75
+Generation: 0.75
+Attribution: 0.75
+The LLM output provides relevant information about the effectiveness of different antidepressants compared to rTMS, but lacks specificity in directly addressing the ground truth statement.",0.25,0.75,0.75,0.75
+"venlafaxine more effective duloxetine, fluoxetine, fluvoxamine, paroxetine, reboxetine",Repetitive Transcranial magnetic stimulation Results rTMS and antidepressants more effective,"Retrieval: 0.25
+Augmentation: 0.75
+Generation: 0.75
+Attribution: 0.50
+The LLM output provides relevant information about the effectiveness of different antidepressants compared to rTMS, but lacks specificity in attributing the information to the ground truth statement.",0.25,0.75,0.75,0.5
+"bupropion, citalopram, duloxetine, escitalopram, fluoxetine, fluvoxamine, milnacipran, mirtazapine, paroxetine, reboxetine, sertraline, venlafaxine treats unipolar major depression in adults",Pharmacotherapy Treats Acute phase of depression,"Retrieval: 0.90
+Augmentation: 0.80
+Generation: 0.95
+Attribution: 0.85
+The LLM output is highly relevant to the ground truth, provides additional information on specific medications, is well-written, and correctly attributes the treatment to adults with unipolar major depression.",0.9,0.8,0.95,0.85
+escitalopram benefits balance between efficacy and acceptability,Fluvoxamine Side effects Lower acceptability due to reduced efficacy,"Retrieval: 0.25
+Augmentation: 0.75
+Generation: 0.75
+Attribution: 0.50
+The LLM output is partially relevant to the ground truth, synthesizes information well, is fluent, but lacks factual attribution.",0.25,0.75,0.75,0.5
+repetitive transcranial magnetic stimulation (rtms) comparable to electroconvulsive therapy (ect),Electroconvulsive therapy Effective Acute phase of depression in some situations,"Retrieval: 0.75
+Augmentation: 0.75
+Generation: 0.90
+Attribution: 0.80
+The LLM output is mostly relevant to the ground truth, provides additional information, is well-written, but lacks direct attribution to the source.",0.75,0.75,0.9,0.8
+exercise benefits improvement in symptom severity and quality of life in severe mdd,Physical Exercise Benefits Improvements in one’s quality of life,"Retrieval: 0.75
+Augmentation: 0.75
+Generation: 0.80
+Attribution: 0.80
+The LLM output is mostly relevant to the ground truth, provides additional information, is well-written, and accurately attributes the benefits to exercise in severe MDD.",0.75,0.75,0.8,0.8
+selective serotonin reuptake inhibitors (ssri) associated with increased risk of sexual dysfunction,Pharmacotherapy Entails Norepinephrine reuptake inhibitors,"Retrieval: 0.50
+Augmentation: 0.75
+Generation: 0.75
+Attribution: 0.25
+The LLM output is partially relevant to the ground truth, provides additional information related to antidepressants, is fluent but lacks factual attribution.",0.5,0.75,0.75,0.25
+sertraline recommended starting treatment for moderate to severe unipolar major depression in adults,Depression-focused psychotherapy For Mild to moderate MDD,"Retrieval: 0.50
+Augmentation: 0.75
+Generation: 0.90
+Attribution: 0.75
+The LLM output is partially relevant to the ground truth, provides additional information, is fluent, but lacks correct attribution.",0.5,0.75,0.9,0.75
+venlafaxine comparable to selective serotonin reuptake inhibitors (ssri) and other antidepressants,Nefazodone Is comparable to SSRI,"Retrieval: 0.75
+Augmentation: 0.75
+Generation: 0.90
+Attribution: 0.80
+The LLM output is mostly relevant to the ground truth, provides additional information, is fluent and grammatically correct, and attributes the information accurately.",0.75,0.75,0.9,0.8
+anxious depression more common than nonanxious depression,Depression-focused psychotherapy Second most common treatment of Acute phase depression,"Retrieval: 0.25
+Augmentation: 0.50
+Generation: 0.75
+Attribution: 0.25
+The LLM output is somewhat relevant to the ground truth but lacks factual accuracy and attribution.",0.25,0.5,0.75,0.25
+anxious depression associated with poor acute outcome following antidepressant treatment,Depression Side effect Slower response to treatment,"Retrieval: 0.75
+Augmentation: 0.75
+Generation: 0.75
+Attribution: 0.75
+The LLM output is mostly relevant to the ground truth, provides additional information, is well-written, and accurately attributes the information.",0.75,0.75,0.75,0.75
+"all depression definition a mental health disorder characterized by persistently depressed mood or loss of interest in activities, causing significant impairment in daily life",Marital and family therapy Treats Severe forms of depression associated with medications and hospitalization,"Retrieval: 0.50
+Augmentation: 0.75
+Generation: 0.90
+Attribution: 0.75
+The LLM output provides relevant information about depression but lacks specificity in addressing severe forms treated with therapy, while maintaining good fluency and factual attribution.",0.5,0.75,0.9,0.75
+anxious depression definition major depressive disorder with high levels of anxiety symptoms,Depression-focused psychotherapy Second most common treatment of Acute phase depression,"Retrieval: 0.25
+Augmentation: 0.75
+Generation: 0.75
+Attribution: 0.50
+The LLM output is partially relevant to the ground truth, but it provides additional information about the symptoms of anxious depression with decent fluency and grammar, although lacking in factual attribution.",0.25,0.75,0.75,0.5
+citalopram first-line treatment level 1 of star*d for major depressive disorder,Depression-focused psychotherapy Second most common treatment of Acute phase depression,"Retrieval: 0.50
+Augmentation: 0.75
+Generation: 0.75
+Attribution: 0.75
+The LLM output is partially relevant to the ground truth, provides additional information, is fluent, and attributes the information correctly to a specific study.",0.5,0.75,0.75,0.75
+anxious depression more common than nonanxious depression,Depression-focused psychotherapy Second most common treatment of Acute phase depression,"Retrieval: 0.25
+Augmentation: 0.50
+Generation: 0.75
+Attribution: 0.25
+The LLM output is somewhat relevant to the ground truth but lacks factual accuracy and attribution.",0.25,0.5,0.75,0.25
+bupropion benefits patients with depression requiring an antidepressant with fewer sexual side effects,Bupropion Properties Has a more activating profile than SSRIs that are modestly superior to bupropion in patients with MDD,"Retrieval: 0.50
+Augmentation: 0.75
+Generation: 0.75
+Attribution: 0.75
+The LLM output is partially relevant to the ground truth by mentioning bupropion benefits for depression, but it does not fully capture the activating profile compared to SSRIs.",0.5,0.75,0.75,0.75
+nonanxious depression definition major depressive disorder without high levels of anxiety symptoms,SSRIs Treat Acute phase of depression,"Retrieval: 0.25
+Augmentation: 0.75
+Generation: 0.75
+Attribution: 0.50
+The LLM output partially captures the concept of depression but lacks accuracy in attributing SSRIs as a treatment for the acute phase of depression.",0.25,0.75,0.75,0.5
+anxious depression associated with more medical comorbidity,Schema Therapy Treats Patients with personality disorder comorbidity,"Retrieval: 0.25
+Augmentation: 0.50
+Generation: 0.75
+Attribution: 0.25
+The LLM output is somewhat relevant to the ground truth but lacks factual attribution and is not directly related to schema therapy for personality disorder comorbidity.",0.25,0.5,0.75,0.25
+anxious depression results lower remission rates,Transcranial direct current stimulation Results Lower than that of antidepressants and rTMS,"Retrieval: 0.50
+Augmentation: 0.50
+Generation: 0.75
+Attribution: 0.75
+The LLM output captures some relevant information from the ground truth but lacks specificity in terms of the comparison between different treatments.",0.5,0.5,0.75,0.75
+citalopram treats major depressive disorder,Schema Therapy Treats Patients with personality disorder comorbidity,"Retrieval: 0.00
+Augmentation: 0.00
+Generation: 0.75
+Attribution: 0.25
+The LLM output is not relevant to the ground truth and lacks factual attribution, but it is fluently and grammatically generated.",0.0,0.0,0.75,0.25
+anxious depression symptom increased risk of suicidality,Pharmacotherapy Treats Acute phase of depression,"Retrieval: 0.25
+Augmentation: 0.75
+Generation: 0.75
+Attribution: 0.50
+The LLM output is partially relevant to the ground truth, provides additional information related to depression symptoms and suicidality, is fluent in language but lacks factual attribution to the original statement.",0.25,0.75,0.75,0.5
+sustain-release bupropion second-line treatment nonremitters to citalopram in level 2 of star*d,Bupropion Finding Is more likely than SSRIs to improve symptoms of fatigue and sleepiness,"Retrieval: 0.75
+Augmentation: 0.50
+Generation: 0.75
+Attribution: 0.75
+The LLM output partially captures the essence of the ground truth but lacks direct relevance and synthesis of information.",0.75,0.5,0.75,0.75
+electroconvulsive therapy (ect) overview usage in the treatment of major depressive disorder and its potential mechanism,Electroconvulsive therapy Goal Lighten the burden of depression,"Retrieval: 0.75
+Augmentation: 0.75
+Generation: 0.90
+Attribution: 0.80
+The LLM output is mostly relevant to the ground truth, provides additional information, is fluent and grammatically correct, and attributes the information well.",0.75,0.75,0.9,0.8
+anxious depression associated with serious adverse psychiatric events,"Depression-focused psychotherapy Goal To monitor their mood, improve their functioning, understand their symptoms better, and master the practical tools they need to cope with stressful events","Retrieval: 0.25
+Augmentation: 0.50
+Generation: 0.75
+Attribution: 0.25
+The LLM output partially captures the concept of depression but lacks accuracy and coherence with the ground truth.",0.25,0.5,0.75,0.25
+anxious depression associated with greater likelihood of reported suicidal ideation,Depression Side effect Suicidal behavior,"Retrieval: 0.75
+Augmentation: 0.75
+Generation: 0.90
+Attribution: 0.85
+The LLM output is mostly relevant to the ground truth, provides additional information, is fluently written, and attributes the information correctly.",0.75,0.75,0.9,0.85
+anxious depression associated with greater overall number of comorbid axis i condition,Interpersonal Therapy Goal Identify triggers of depression episodes,"Retrieval: 0.25
+Augmentation: 0.50
+Generation: 0.75
+Attribution: 0.75
+The LLM output partially relates to the ground truth by mentioning depression, but includes additional information about comorbid conditions, and is well-written and factually accurate.",0.25,0.5,0.75,0.75
+anxious depression associated with specific treatment responsivity,Depression Side effect Slower response to treatment,"Retrieval: 0.50
+Augmentation: 0.75
+Generation: 0.75
+Attribution: 0.75
+The LLM output is partially relevant to the ground truth, synthesizes information well, is fluent and grammatically correct, and attributes the information accurately.",0.5,0.75,0.75,0.75
+citalopram treats anxious depression symptoms,Pharmacotherapy Treats Acute phase of depression,"Retrieval: 0.50
+Augmentation: 0.75
+Generation: 0.75
+Attribution: 0.25
+The LLM output is partially relevant to the ground truth, provides additional information, is fluent, but lacks factual attribution.",0.5,0.75,0.75,0.25
+serotonin and noradrenaline reuptake inhibitors (snri) definition a class of medication used in the treatment of major depressive disorder that inhibits the reuptake of serotonin and noradrenaline,SSRIs Is a part of Pharmacotherapy,"Retrieval: 0.75
+Augmentation: 0.75
+Generation: 0.80
+Attribution: 0.90
+The LLM output provides relevant information about SNRIs, slightly expands on the ground truth, is fluent, and accurately attributes the information to the class of medication.",0.75,0.75,0.8,0.9
+anxious depression less effective antidepressant treatment in achieving remission compared to nonanxious depression,Depression Side effect Slower response to treatment,"Retrieval: 0.75
+Augmentation: 0.75
+Generation: 0.75
+Attribution: 0.75
+The LLM output captures the essence of the ground truth but adds additional information about the effectiveness of antidepressant treatment in achieving remission for anxious depression compared to nonanxious depression.",0.75,0.75,0.75,0.75
+anxious depression associated with poorer treatment outcome with antidepressant monotherapy,Depression Side effect Slower response to treatment,"Retrieval: 0.75
+Augmentation: 0.75
+Generation: 0.75
+Attribution: 0.75
+The LLM output captures the essence of the ground truth statement but adds more information about the specific type of depression and treatment outcome, maintaining fluency and accuracy.",0.75,0.75,0.75,0.75
+"anxious depression associated with higher side effect frequency, intensity, and burden",Depression Side effect Slower response to treatment,"Retrieval: 0.50
+Augmentation: 0.75
+Generation: 0.75
+Attribution: 0.75
+The LLM output provides relevant information about depression and side effects, but adds additional details and context that enhance the understanding of the relationship between the two.",0.5,0.75,0.75,0.75
+"second-generation antidepressants definition a category of medications for major depressive disorder that includes both selective serotonin reuptake inhibitors (ssris) and serotonin and noradrenaline reuptake inhibitors (snris) among others, known for their improved side effect profile over first-generation antidepressants",SSRIs Is a part of Pharmacotherapy,"Retrieval: 1.00
+Augmentation: 0.75
+Generation: 0.90
+Attribution: 0.95
+The LLM output accurately retrieves the information about SSRIs being a part of pharmacotherapy, augments it with additional relevant information, generates fluently with good grammar, and attributes the information correctly.",1.0,0.75,0.9,0.95
+anxious depression definition a subtype of major depressive disorder with prominent anxiety features,SSRIs Treat Acute phase of depression,"Retrieval: 0.25
+Augmentation: 0.75
+Generation: 0.75
+Attribution: 0.50
+The LLM output is partially relevant to the ground truth but provides additional information about a subtype of depression with anxiety features, demonstrating good fluency and grammar, but lacks factual attribution to SSRIs treating the acute phase of depression.",0.25,0.75,0.75,0.5
+"anxious depression side effects greater frequency, intensity, and burden of side effects",Depression Side effect Suicidal behavior,"Retrieval: 0.50
+Augmentation: 0.75
+Generation: 0.75
+Attribution: 0.75
+The LLM output partially captures the key concepts of depression and side effects, but adds additional information and maintains fluency and factual accuracy.",0.5,0.75,0.75,0.75
+anxious depression associated with shorter time in treatment and on the final citalopram dosage,Depression Side effect Slower response to treatment,"Retrieval: 0.75
+Augmentation: 0.75
+Generation: 0.80
+Attribution: 0.80
+The LLM output is mostly relevant to the ground truth, provides additional information, is fluent, and attributes the information correctly.",0.75,0.75,0.8,0.8
