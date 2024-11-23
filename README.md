@@ -185,21 +185,14 @@ Hand annotations were meticulously developed by team members, who manually revie
 
 ---
 
-#### 5. **G-Eval**  
+#### 4. **G-Eval**  
 - **Evaluation Type:** Model-Based  
-- **Method:** TBD  
-- **Threshold for Matching:** TBD  
-- **Accuracy:**
-- **Output:** TBD  
-
----
-
-#### 6. **PyTorch + bioBERT**  
-- **Evaluation Type:** Model-Based  
-- **Method:** TBD  
-- **Threshold for Matching:** TBD  
-- **Accuracy:** TBD  
-- **Output:** TBD
+- **Method:**
+    - Define common synonyms and related terms in the medical domain
+    - Calculate semantic similarity between two triples considering medical domain knowledge.
+    - Evaluate matches between ground truth and LLM output
+- **Accuracy:** 46.6%
+- **Output:** Shows ground truth row with actual output row along with best evaluation score ranging from 0.10 to 0.80.
 
 ---
 
