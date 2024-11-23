@@ -132,8 +132,7 @@ Hand annotations were meticulously developed by team members, who manually revie
 | TF-IDF + Cosine Similarity | Statistical  | 36.28%       | Limited to vectorized text formats.|
 | GPT Critic               | Model-Based    | 69.0%       | None.|
 | RAGA                     | Model-Based    | 64.25%      | None.|
-| G-Eval                   | Model-Based    | TBD          | Requires large computational resources.    |
-| PyTorch + bioBERT        | Model-Based    | TBD          | TBD    |
+| G-Eval                   | Model-Based    | 46.6%        | Recommended use of medical domain dictionary.  |
 
 ### Detailed Evaluation Methodologies
 
