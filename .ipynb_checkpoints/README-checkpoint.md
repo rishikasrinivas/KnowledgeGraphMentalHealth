@@ -59,7 +59,7 @@
 - **Languages:** Python, HTML, CSS, JavaScript  
 - **Database:** MongoDB  
 - **AI Integration:** OpenAI API
-- **User Interface:** React with Cytoscape JS for graph visualization
+- **User Interface:** React with Cytoscape.js for graph visualization
 
 
 ## 📝 Ground Truth Annotation  
@@ -69,54 +69,50 @@ Hand annotations were meticulously developed by team members, who manually revie
 - `relationship` (Relationship)  
 - `obj` (Object)  
 
-can this all be centered so the list looks better??
 
 ## 💫 User Interface (UI)
-
-### Features
-
-#### 1. Upload Files 📤
-<p align="left">
-  <img src="assets/uploading.gif" alt="File Upload Demo" width="50%">
-</p>
-
-Easily import PDFs, which are converted into Knowledge Graphs (KGs) that extract clinical entities and relationships.
-
-#### 2. Fetch Previous Graphs 🔄
-<p align="left">
-  <img src="assets/fetching.gif" alt="Fetch Previous Graphs Demo" width="50%">
-</p>
-
-Retrieve saved Knowledge Graphs for continued analysis or updates.
-
-#### 3. Search and Highlight 🔍
-<p align="left">
-  <img src="assets/searching.gif" alt="Search Functionality Demo" width="50%">
-</p>
-
-A search-first design lets users quickly locate nodes or relationships. Results are highlighted in orange and zoomed in for clarity.
-
-#### 4. Dynamic Visualization 📊
-<p align="left">
-  <img src="assets/visualization.gif" alt="Visualization Demo" width="50%">
-</p>
-
-Nodes represent clinical entities, and edges use color coding and varying thickness to show relationship categories and strength.
-The Relationship Table offers a legend with clickable colored circles for more details on each relationship.
-A magnitude table shows the significance of relationships.
-#### 5. Custom Filtering 🎯
-<p align="left">
-  <img src="assets/filtering.gif" alt="Filtering Demo" width="50%">
-</p>
-
-Users can filter the graph to focus on specific relationship types (e.g., "Side Effects" or "Recommendations"), improving clarity without clutter.
-
-#### 6. Help Button ℹ️
-<p align="left">
-  <img src="assets/help.gif" alt="Search Functionality Demo" width="50%">
-</p>
-
-An intuitive Help button offers guidance on the graph's features, ensuring accessibility for new users and clinicians unfamiliar with knowledge graphs.
+  #### 1. Upload Files 📤
+  <p align="center">
+    <img src="assets/uploading.gif" alt="File Upload Demo" width="50%">
+  </p>
+  
+  Easily import PDFs, which are converted into Knowledge Graphs (KGs) that extract clinical entities and relationships.
+  
+  #### 2. Fetch Previous Graphs 🔄
+  <p align="center">
+    <img src="assets/fetching.gif" alt="Fetch Previous Graphs Demo" width="50%">
+  </p>
+  
+  Retrieve saved Knowledge Graphs for continued analysis or updates.
+  
+  #### 3. Search and Highlight 🔍
+  <p align="center">
+    <img src="assets/searching.gif" alt="Search Functionality Demo" width="50%">
+  </p>
+  
+  A search-first design lets users quickly locate nodes or relationships. Results are highlighted in orange and zoomed in for clarity.
+  
+  #### 4. Dynamic Visualization 📊
+  <p align="center">
+    <img src="assets/visualization.gif" alt="Visualization Demo" width="50%">
+  </p>
+  
+  Nodes represent clinical entities, and edges use color coding and varying thickness to show relationship categories and strength.
+  The Relationship Table offers a legend with clickable colored circles for more details on each relationship.
+  A magnitude table shows the significance of relationships.
+  #### 5. Custom Filtering 🎯
+  <p align="center">
+    <img src="assets/filtering.gif" alt="Filtering Demo" width="50%">
+  </p>
+  
+  Users can filter the graph to focus on specific relationship types (e.g., "Side Effects" or "Recommendations"), improving clarity without clutter.
+  
+  #### 6. Help Button ℹ️
+  <p align="center">
+    <img src="assets/help.gif" alt="Search Functionality Demo" width="50%">
+  </p>
+  
+  An intuitive Help button offers guidance on the graph's features, ensuring accessibility for new users and clinicians unfamiliar with knowledge graphs.
 
 ### Design Highlights ✨
 
@@ -134,7 +130,7 @@ An intuitive Help button offers guidance on the graph's features, ensuring acces
 |---------------------------|----------------|--------------|-------------------------------------|
 | Fuzzy Wuzzy              | Statistical    | 35.32%       | Low accuracy, only simple matches. |
 | TF-IDF + Cosine Similarity | Statistical    | 36.28%       | Limited to vectorized text formats.|
-| GPT Critic               | Model-Based    | 61.66%       | Requires large computational resources.|
+| GPT Critic               | Model-Based    | 69.00%       | Requires large computational resources.|
 | G-Eval                   | Model-Based    | TBD          | Requires large computational resources.    |
 | PyTorch + bioBERT        | Model-Based    | TBD          | TBD    |
 
@@ -196,7 +192,7 @@ An intuitive Help button offers guidance on the graph's features, ensuring acces
 - **Evaluation Type:** Statistical: word match and cosine similarity 
 - **Method:** Checking if the extracted relationship is in the source text or in the ground truth annotations  
 - **Threshold for Matching:** 0.7 
-- **Precision Score:** 85.85
+- **Precision Score:** 85.85%
 
 ---
 
@@ -204,7 +200,7 @@ An intuitive Help button offers guidance on the graph's features, ensuring acces
 - **Evaluation Type:** Statistical: Factual Alignment and Consistency
 - **Method:** DeepEval Hallutionation Metric
 - **Threshold for Matching:** 0.5
-- **Hallucination Score:** 84
+- **Hallucination Score:** 84.0%
 
 
 ---
