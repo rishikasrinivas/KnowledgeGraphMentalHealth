@@ -27,4 +27,3 @@ def read_file_text(filename):
             text_in_group += text
         yield text_in_group
     
-

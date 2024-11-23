@@ -62,9 +62,6 @@ def parse_response(response):
             print(f"Couldn't extract all the text, returning max length possible. Try rerunning for better results")
             return response=response[start_idx:start_idx+end_idx+2]
                                                     
-        
-
-      
     response=response[start_idx:start_idx+end_idx+2]
 
     return response
@@ -79,8 +76,6 @@ def save_resp_as_df(response):
     df=df.drop_duplicates(subset=['subj', 'rel', 'obj'], keep='first').reset_index().drop(columns= ['index'])
 
     return df
-    
-
 
 def main():
     OpenAI.api_key = os.environ["OPENAI_API_KEY"]
@@ -99,5 +94,3 @@ def main():
     pd.concat([df for df in dfs]).to_csv(constants.SAVE_FILE)
 
 main()
-    
-
