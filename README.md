@@ -130,7 +130,7 @@ Hand annotations were meticulously developed by team members, who manually revie
 |---------------------------|----------------|--------------|-------------------------------------|
 | Fuzzy Wuzzy              | Statistical    | 35.32%       | Low accuracy, only simple matches. |
 | TF-IDF + Cosine Similarity | Statistical    | 36.28%       | Limited to vectorized text formats.|
-| GPT Critic               | Model-Based    | 69.00%       | Requires large computational resources.|
+| GPT Critic               | Model-Based    | 69.0%       | Requires large computational resources.|
 | G-Eval                   | Model-Based    | TBD          | Requires large computational resources.    |
 | PyTorch + bioBERT        | Model-Based    | TBD          | TBD    |
 
@@ -159,13 +159,13 @@ Hand annotations were meticulously developed by team members, who manually revie
 
 ---
 
-#### 3. **GPT Critic Parallel Batch Request**  
+#### 3. **GPT Critic**  
 - **Evaluation Type:** Model-Based  
 - **Method:**  
    - Uses 10 worker threads to enable parallel comparisons.  
-   - Compares each LLM output row with ground truth rows using GPT-4 (RLHF).  
+   - Compares each LLM output row with ground truth rows using GPT-3.5-turbo.  
    - Finds the best similarity score for each LLM output.  
-- **Accuracy:** 61.66%  
+- **Accuracy:** 69.0%  
 - **Output:** Best ground truth match for each LLM output row.  
 
 ---
