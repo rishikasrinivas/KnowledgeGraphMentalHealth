@@ -880,6 +880,7 @@
                     <li><strong>Potential Alternative</strong>: Alternative treatment options to consider.</li>
                     <li><strong>Dosage</strong>: Dosage recommendations or requirements.</li>
                     <li><strong>Details</strong>: Specific details or processes related to treatment.</li>
+                    <li><strong>Not Effective</strong>:  When a treatment shows no beneficial effect for a condition.</li>
                     <li><strong>Less Well Tolerated</strong>: A treatment that is not tolerated well by the majority of patients.</li>
                     <li><strong>Less Tolerated Than</strong>: A comparison of the tolerance level of two treatments, where one is less tolerated than the other.</li>
                 </ul>
@@ -987,9 +988,11 @@ function toggleDetails(id) {
         
         <p><strong>📝 Getting Started:</strong> Click "📁Choose Files" to upload PDFs, then click "Upload Files" to start. You'll see the message "Processing your files..." and the graph will appear once processed.</p>
 
-        <p><strong>📊 Understanding the Graph:</strong> 🔵 Circles (nodes) represent terms like treatments, symptoms, or medications. Hover over a node to see more details. → Lines (edges)show relationships between terms, color-coded by category (see the legend).</p>
+        <p><strong>📊 Understanding the Graph:</strong>  
+           🔵Nodes (Circles): Represent terms like treatments, symptoms, or medications. Hover over a node to see more details.    
+           →Edges (Lines): Show relationships between nodes. These are color-coded by category (see table on the right) and weighted by strength (see ledger at the bottom).</p>
 
-        <p><strong>🗂 Relationship Ledger:</strong> Relationships are color-coded by type. Use the ledger to understand the connections. Click a color in the ledger to see a detailed list of relationships for that category.</p>
+        <p><strong>🗂 Relationship Ledger:</strong> Relationships are color-coded by type. Click a color in the ledger to see a detailed list of relationships for that category.</p>
 
         <p><strong>🔍 Search & Filter:</strong> Use the search bar to find specific terms quickly. Filter relationships with the panel that appears after processing.</p>
 
@@ -1080,4 +1083,4 @@ function toggleDetails(id) {
         });
     </script>
 </body>
-</html>  
+</html> 
