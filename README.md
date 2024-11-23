@@ -190,11 +190,15 @@ An intuitive Help button offers guidance on the graph's features, ensuring acces
 - **Accuracy:** TBD  
 - **Output:** TBD
 
+---
+
 #### 6. **Precision** 
 - **Evaluation Type:** Statistical: word match and cosine similarity 
 - **Method:** Checking if the extracted relationship is in the source text or in the ground truth annotations  
 - **Threshold for Matching:** 0.7 
 - **Precision Score:** 85.85
+
+---
 
 #### 7. **Hallucination** 
 - **Evaluation Type:** Statistical: Factual Alignment and Consistency
