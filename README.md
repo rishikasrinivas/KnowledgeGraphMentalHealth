@@ -140,10 +140,6 @@ An intuitive Help button offers guidance on the graph's features, ensuring acces
 
 ### Detailed Evaluation Methodologies
 
-[Rest of your detailed evaluation methodologies content remains exactly the same...]
-
-### Detailed Evaluation Methodologies  
-
 #### 1. **Fuzzy Wuzzy**  
 - **Evaluation Type:** Statistical  
 - **Method:**  
