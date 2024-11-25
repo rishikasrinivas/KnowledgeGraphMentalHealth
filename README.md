@@ -130,8 +130,8 @@ Hand annotations were meticulously developed by team members, who manually revie
 |---------------------------|----------------|--------------|-------------------------------------|
 | Fuzzy Wuzzy              | Statistical    | 35.32%       | Low accuracy, only simple matches. |
 | TF-IDF + Cosine Similarity | Statistical  | 36.28%       | Limited to vectorized text formats.|
-| GPT Critic               | Model-Based    | 69.0%       | None.|
-| RAGA                     | Model-Based    | 69.67%      | None.|
+| GPT Critic               | Model-Based    | 69.0%       | Utilizes an LLM to evaluate an LLM.|
+| RAGA                     | Model-Based    | 69.67%      | Utilizes an LLM to evaluate an LLM.|
 | G-Eval                   | Model-Based    | 46.6%        | Recommended use of medical domain dictionary.  |
 
 ### Detailed Evaluation Methodologies
