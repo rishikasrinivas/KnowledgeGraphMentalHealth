@@ -215,3 +215,7 @@ Hand annotations were meticulously developed by team members, who manually revie
 ## Contribution  
 We welcome contributions to improve the evaluation methods, refine the UI, or expand the dataset. Please feel free to submit issues or pull requests.  
 
+---
+
+## License  
+This project is licensed under the [MIT License](LICENSE).  
