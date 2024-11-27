@@ -205,7 +205,7 @@ Hand annotations were meticulously developed by team members, who manually revie
 
 #### 8. **Hallucination** 
 - **Evaluation Type:** Statistical: Factual Alignment and Consistency
-- **Method:** DeepEval Hallutionation Metric
+- **Method:** DeepEval Hallucination Metric
 - **Threshold for Matching:** 0.5
 - **Hallucination Score:** 84.0%
 
