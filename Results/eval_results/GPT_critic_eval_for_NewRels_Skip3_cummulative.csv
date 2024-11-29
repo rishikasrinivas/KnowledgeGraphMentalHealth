@@ -1,0 +1,210 @@
+llm_output,best_matching_ground_truth,best_evaluation,best_score
+selective serotonin reuptake inhibitors first-line treatment major depressive disorder,Pharmacotherapy Entails Norepinephrine reuptake inhibitors,"Score: 0.50
+The LLM output is partially correct as it mentions a different class of drugs (selective serotonin reuptake inhibitors) for Major Depressive Disorder, but fails to mention Norepinephrine reuptake inhibitors as part of pharmacotherapy.",0.5
+serotonin-norepinephrine reuptake inhibitors (snris) second-line treatment if ssris not effective,Pharmacotherapy Entails Norepinephrine reuptake inhibitors,"Score: 0.75
+The LLM output is generally correct in mentioning norepinephrine reuptake inhibitors, but there is a slight deviation by also including serotonin-norepinephrine reuptake inhibitors (SNRIs), which are a specific type of antidepressant medication.",0.75
+monoamine oxidase inhibitors (maois) less commonly used over time,Pharmacotherapy Entails Monoamine oxidase inhibitors,"Score: 0.75
+The LLM output provides some context about the usage of monoamine oxidase inhibitors over time but does not directly address the statement about pharmacotherapy entailing MAOIs, thus lowering the overall correctness score.",0.75
+selective serotonin reuptake inhibitors (ssris) first-line treatment major depression,Pharmacotherapy Entails Norepinephrine reuptake inhibitors,"Score: 0.75
+The LLM output is partially correct as it mentions a type of antidepressants, but it incorrectly states SSRIs as the first-line treatment instead of norepinephrine reuptake inhibitors.",0.75
+tricyclic antidepressants (tcas) comparable to selective serotonin reuptake inhibitors (ssris),Nefazodone Is comparable to SSRI,"Score: 0.80
+The LLM output is mostly correct, as it correctly identifies that both Nefazodone and SSRIs are antidepressants, but incorrectly labels Nefazodone as a tricyclic antidepressant.",0.8
+"selective serotonin reuptake inhibitors (ssris) side effects sexual and digestive issues, irritability, anxiety, insomnia, and headache",Duloxetine Side effects Lower acceptability,"Score: 0.75
+The LLM output contains some relevant side effects of Duloxetine, but it does not specifically mention the acceptability being lower compared to other options, hence the score is slightly lower.",0.75
+"monoamine oxidase inhibitors side effects hepatotoxicity, hypertensive crisis leading to lethal intracranial hemorrhage",Monoamine oxidase inhibitors Side effects Hepatotoxicity and hypertensive crises,"Score: 0.75
+The LLM output successfully includes the two main side effects of monoamine oxidase inhibitors (hepatotoxicity and hypertensive crises), but adds in a potentially exaggerated and uncommon result of lethal intracranial hemorrhage.",0.75
+"ketamine side effects dizziness, cognitive dysfunction, blurred vision, psychosis, dissociation, urological dysfunction, restlessness, headache, nausea, vomiting, cardiovascular symptoms","Ketamine Side effects dizziness, neurotoxicity, cognitive dysfunction, blurred vision, psychosis, dissociation, urological dysfunction, restlessness, headache, nausea, vomiting, and cardiovascular symptoms","Score: 0.95
+The LLM output is highly accurate, with only neurotoxicity missing from the list of ketamine side effects in the ground truth.",0.95
+monoamine oxidase inhibitors (maois) specific efficacy in treating depression with atypical features,"Monoamine oxidase inhibitors Demonstrated specific efficacy in treating Atypical features, such as reactive moods, reverse neuro-vegetative symptoms, and sensitivity to rejection","Score: 0.85
+The LLM output is mostly correct, but it doesn't mention the specific atypical features associated with atypical depression, such as reactive moods, reverse neuro-vegetative symptoms, and sensitivity to rejection, which were stated in the ground truth statement.",0.85
+"all antidepressants side effects nausea, vomiting, sexual dysfunction, sedation, priapism, cardiotoxicity","Ketamine Side effects dizziness, neurotoxicity, cognitive dysfunction, blurred vision, psychosis, dissociation, urological dysfunction, restlessness, headache, nausea, vomiting, and cardiovascular symptoms","Score: 0.50
+The LLM output is only partially correct as it incorrectly generalizes side effects to all antidepressants, when in reality they are specific to ketamine.",0.5
+selective serotonin reuptake inhibitors (ssris) first-line treatment major depressive disorder (mdd),Pharmacotherapy Entails Norepinephrine reuptake inhibitors,"Score: 0.50
+The LLM output mentions selective serotonin reuptake inhibitors (SSRIs) for major depressive disorder, which is different from norepinephrine reuptake inhibitors mentioned in the ground truth, leading to a lower score of correctness.",0.5
+electroconvulsive therapy (ect) highly effective specific situations in depression treatment,Electroconvulsive therapy Effective Acute phase of depression in some situations,"Score: 0.80
+The LLM output is mostly correct, but the ground truth mentions ""acute phase"" of depression specifically which the LLM output does not include.",0.8
+ketamine specific efficacy in treating treatment-resistant major depressive disorder (mdd),"Monoamine oxidase inhibitors Demonstrated specific efficacy in treating Atypical features, such as reactive moods, reverse neuro-vegetative symptoms, and sensitivity to rejection","Score: 0.50
+LLM Output is partially correct as it mentions a different drug (ketamine) and target condition (treatment-resistant major depressive disorder) than the Ground Truth, which focuses on monoamine oxidase inhibitors in treating atypical features in depression.",0.5
+all antidepressants consistency no significant difference in efficacy among the different classes of antidepressants,"Mindfulness-based cognitive therapy Goal Reduce, or even stop, antidepressant treatment without increasing the risk of depressive recurrence, especially for patients at a high risk of relapse","Score: 0.75
+The LLM output is mostly correct but does not directly address the goal of reducing or stopping antidepressant treatment while preventing depressive recurrence for high-risk patients.",0.75
+monoamine oxidase inhibitors (maois) less commonly used major depressive disorder (mdd),Pharmacotherapy Entails Monoamine oxidase inhibitors,"Score: 0.75
+The LLM output captures the main idea of the ground truth but adds additional context about the reduced usage of monoamine oxidase inhibitors for major depressive disorder.",0.75
+electroconvulsive therapy (ect) highly effective major depressive disorder (mdd),Electroconvulsive therapy Effective Acute phase of depression in some situations,"Score: 0.75
+The LLM output accurately captures the essence of the ground truth statement, but could be more specific by mentioning the acute phase of depression and that effectiveness depends on the situation.",0.75
+psychotherapy benefits patients with depression,Depression-focused psychotherapy Second most common treatment of Acute phase depression,"Score: 0.75
+The LLM output captures the essence of the ground truth statement by highlighting the benefits of psychotherapy for patients with depression, but it does not specifically mention the treatment being the second most common during the acute phase of depression.",0.75
+cognitive-behavioral therapy (cbt) first-line treatment mild to moderate major depressive disorder (mdd),Depression-focused psychotherapy For Mild to moderate MDD,"Score: 1.00
+The LLM output accurately captures the essence of the ground truth statement, using the same key terms and conveying the same information.",1.0
+"cognitive-behavioral therapy overview based on robust evidence, targets depressed patient's irrational beliefs and distorted cognitions by challenging and reversing them",Cognitive-behavioral therapy For Depressed patients’ with irrational beliefs and distorted cognitions that perpetuate depressive symptoms by challenging and reversing them,"Score: 0.95
+The two statements are very similar in content and meaning, with only slight differences in wording.",0.95
+monoamine oxidase inhibitors (maois) comparable to tricyclic antidepressants (tcas),Monoamine oxidase inhibitors Same efficacy as Tricyclic antidepressants,"Score: 1.00
+The LLM output accurately conveys the information from the ground truth with no errors or discrepancies.",1.0
+"ketamine definition a treatment for resistant unipolar and possibly bipolar depression, and acute suicidal ideation, in intravenous sub-anesthetic doses","Ketamine Has effects on Unipolar, bipolar depression","Score: 0.95
+The LLM output accurately expands on the ground truth statement by providing additional details about the effects and uses of ketamine in treating depression, including its potential effectiveness for bipolar depression and acute suicidal ideation.",0.95
+selective serotonin reuptake inhibitors (ssris) first-line treatment major depression,Depression-focused psychotherapy Second most common treatment of Acute phase depression,"Score: 0.75
+The LLM output is partially correct as SSRI's are indeed a common first-line treatment for major depression, but it misses the mark on the specific treatment of acute phase depression.",0.75
+physical exercise recommendation depression,Physical Exercise Finding an adjunct to other Anti-depressive treatments,"Score: 0.75
+The LLM output is mostly correct as it identifies physical exercise and depression, but it lacks the specificity of finding an adjunct to other anti-depressive treatments.",0.75
+esketamine definition approved by the united states food and drug administration in march 2019 for treatment-resistant depression,Cognitive-behavioral therapy For Depressed patients’ with irrational beliefs and distorted cognitions that perpetuate depressive symptoms by challenging and reversing them,"Score: 0.75
+The LLM output is somewhat related to the ground truth, as it also involves a treatment for depression, but it does not directly address cognitive-behavioral therapy or challenging irrational beliefs.",0.75
+monoamine oxidase inhibitors (maois) less commonly used depression,Pharmacotherapy Entails Monoamine oxidase inhibitors,"Score: 0.75
+The LLM output accurately mentions monoamine oxidase inhibitors but incorrectly states that they are less commonly used for depression.",0.75
+transcranial direct current stimulation (tdcs) less effective antidepressants and repetitive transcranial magnetic stimulation (rtms),Transcranial direct current stimulation Results Lower than that of antidepressants and rTMS,"Score: 0.80
+The LLM output is mostly accurate but lacks the specificity of mentioning the specific results being lower for transcranial direct current stimulation compared to antidepressants and rTMS.",0.8
+monoamine oxidase inhibitors definition a class of antidepressants defined as the first drug for the condition and later classified as monoamine oxidase inhibitor,Pharmacotherapy Entails Monoamine oxidase inhibitors,"Score: 0.75
+The LLM output contains some relevant information about monoamine oxidase inhibitors, but it is not as precise or comprehensive as the ground truth statement.",0.75
+electroconvulsive therapy (ect) highly effective major unipolar depression,Electroconvulsive therapy Effective Acute phase of depression in some situations,"Score: 0.85
+The LLM output is mostly correct in stating the effectiveness of electroconvulsive therapy for major unipolar depression, but it simplifies the scope by omitting that it is specifically effective in the acute phase of depression and not for all situations.",0.85
+interpersonal therapy (ipt) first-line treatment mild to moderate major depressive disorder (mdd),Depression-focused psychotherapy For Mild to moderate MDD,"Score: 0.90
+The LLM output accurately captures the essence of the ground truth, but the wording is slightly different.",0.9
+"ketamine side effects dizziness, neurotoxicity, cognitive dysfunction, blurred vision, psychosis, dissociation, urological dysfunction, restlessness, headache, nausea, vomiting, cardiovascular symptoms","Ketamine Side effects dizziness, neurotoxicity, cognitive dysfunction, blurred vision, psychosis, dissociation, urological dysfunction, restlessness, headache, nausea, vomiting, and cardiovascular symptoms","Score: 1.00
+The LLM output is identical to the ground truth statement, including all listed side effects without any errors or omissions.",1.0
+repetitive transcranial magnetic stimulation (rtms) highly effective depression,"Somatic treatments Includes Transcranial magnetic stimulation (rTMS), transcranial direct current stimulation (tDCS), vagus nerve stimulation (VNS), deep brain stimulation (DBS), and magnetic seizure therapy","Score: 0.75
+The LLM output correctly identifies rTMS (repetitive transcranial magnetic stimulation) as a somatic treatment option, but it lacks specificity in mentioning only its effectiveness for depression.",0.75
+selective serotonin reuptake inhibitors first-line treatment major depression,Depression-focused psychotherapy Second most common treatment of Acute phase depression,"Score: 0.50
+The LLM output does not align with the ground truth as it incorrectly states selective serotonin reuptake inhibitors as the first-line treatment for major depression, when in fact depression-focused psychotherapy is the second most common treatment for acute phase depression.",0.5
+cognitive behavioral therapy (cbt) first-line treatment depression,Depression-focused psychotherapy Second most common treatment of Acute phase depression,"Score: 0.75
+The LLM output is mostly correct as cognitive behavioral therapy is indeed a common treatment for depression, but it inaccurately states it as the first-line treatment instead of the second most common treatment in the acute phase.",0.75
+"selective serotonin reuptake inhibitors comparable to tcas, snris, maois",Pharmacotherapy Entails Norepinephrine reuptake inhibitors,"Score: 0.75
+The LLM output contains relevant information about different types of antidepressants, but it inaccurately substitutes selective serotonin reuptake inhibitors for norepinephrine reuptake inhibitors.",0.75
+"monoamine oxidase inhibitors definition the first drug defined as an antidepressant, later classified as a monoamine oxidase inhibitor",Pharmacotherapy Entails Monoamine oxidase inhibitors,"Score: 0.75
+The LLM output provides a fairly accurate description of monoamine oxidase inhibitors, but lacks specificity in mentioning that pharmacotherapy specifically entails the use of these drugs.",0.75
+interpersonal therapy (ipt) first-line treatment mild to moderate major depressive episode in adults,Depression-focused psychotherapy For Mild to moderate MDD,"Score: 0.75
+The LLM output has captured the essence of the ground truth but there are some slight differences in wording and phrasing.",0.75
+monoamine oxidase inhibitors treats depression with atypical features,"Monoamine oxidase inhibitors Demonstrated specific efficacy in treating Atypical features, such as reactive moods, reverse neuro-vegetative symptoms, and sensitivity to rejection","Score: 0.90
+The LLM output is almost correct as it accurately states that monoamine oxidase inhibitors treat depression with atypical features, but misses some specific details mentioned in the ground truth statement.",0.9
+tricyclic antidepressants more effective ssris for hospitalized patients,Monoamine oxidase inhibitors Same efficacy as Tricyclic antidepressants,"Score: 0.50
+The LLM output correctly identified tricyclic antidepressants as more effective for hospitalized patients, but did not mention monoamine oxidase inhibitors or their equivalent efficacy to tricyclic antidepressants, resulting in a lower accuracy score.",0.5
+selective serotonin reuptake inhibitors (ssris) first-line treatment all depression,Depression Side effect Slower response to treatment,"Score: 0.50
+The LLM output is only somewhat correct as it mentions SSRIs as the first-line treatment for depression, but fails to mention anything about slower response to treatment as a side effect of depression.",0.5
+serotonin-norepinephrine reuptake inhibitors second-line treatment when patients do not respond to ssris,Norepinephrine reuptake inhibitors Eligible for Patients who do not respond to SSRIs,"Score: 0.75
+The LLM output accurately conveys the meaning of the ground truth, but it introduces slight variations in wording.",0.75
+"psycho-educational intervention goal improve the clinical course, treatment adherence, and psychosocial function in patients with depression","Depression-focused psychotherapy Goal To monitor their mood, improve their functioning, understand their symptoms better, and master the practical tools they need to cope with stressful events","Score: 0.80
+The LLM output captures the essence of the ground truth statement, but misses some key details such as monitoring mood and understanding symptoms better.",0.8
+electroconvulsive therapy highly effective major unipolar depression,Electroconvulsive therapy Goal Lighten the burden of depression,"Score: 0.80
+The LLM output captures the general idea of electroconvulsive therapy being effective for major depression, but it doesn't fully align with the ground truth which mentions lightening the burden of depression.",0.8
+electroconvulsive therapy (ect) highly effective major unipolar depression,"Acute-phase treatment options Approaches Pharmacotherapy, depression-focused psychotherapy, combinations of medications and psychotherapy, and somatic therapies such as electroconvulsive therapy (ECT)","Score: 0.75
+The LLM output correctly identifies electroconvulsive therapy as an effective treatment for major unipolar depression, but it lacks the full scope of acute-phase treatment options mentioned in the ground truth.",0.75
+"selective serotonin reuptake inhibitors (ssris) side effects sexual and digestive (nausea and loss of appetite), as well as irritability, anxiety, insomnia, and headache",Fluvoxamine Side effects Lower acceptability due to reduced efficacy,"Score: 0.75
+The LLM output provides information on common side effects of SSRIs in general, but does not specifically address the reduced efficacy and lower acceptability of fluvoxamine as mentioned in the ground truth statement.",0.75
+electroconvulsive therapy definition the most effective somatic therapy for depression in some specific situations,Electroconvulsive therapy Effective Acute phase of depression in some situations,"Score: 0.90
+The LLM output is mostly correct, but the term ""definition"" is unnecessary and slightly inaccurate.",0.9
+ketamine specific efficacy in treating treatment-resistant unipolar and bipolar depression,"Ketamine Has effects on Unipolar, bipolar depression","Score: 0.85
+The LLM output is very close to the ground truth, mentioning ketamine's specific efficacy in treating treatment-resistant unipolar and bipolar depression, which is a more specific and accurate statement than the ground truth.",0.85
+"selective serotonin reuptake inhibitors side effects sexual and digestive issues (nausea and loss of appetite), irritability, anxiety, insomnia, headache","Acute-phase treatment options Approaches Pharmacotherapy, depression-focused psychotherapy, combinations of medications and psychotherapy, and somatic therapies such as electroconvulsive therapy (ECT)","Score: 0.75
+The LLM output provides relevant information about side effects of selective serotonin reuptake inhibitors in the context of acute-phase treatment options for depression, but it misses important details and does not cover all the treatment approaches mentioned in the ground truth.",0.75
+selective serotonin reuptake inhibitors (ssris) side effects sexual and digestive problems,"Monoamine oxidase inhibitors Demonstrated specific efficacy in treating Atypical features, such as reactive moods, reverse neuro-vegetative symptoms, and sensitivity to rejection","Score: 0.50
+The LLM output is somewhat relevant to the topic of antidepressants, but it inaccurately focuses on side effects of SSRIs rather than the specific efficacy of MAOIs for treating atypical depression features.",0.5
+selective serotonin reuptake inhibitors (ssris) first-line treatment major depressive disorder,Pharmacotherapy Entails Norepinephrine reuptake inhibitors,"Score: 0.50
+The LLM output is partially correct as it mentions SSRIs as a first-line treatment for major depressive disorder, but it incorrectly substitutes norepinephrine reuptake inhibitors with SSRIs.",0.5
+electroconvulsive therapy (ect) results reduces number of hospital readmissions,Electroconvulsive therapy Reduces Number of hospital readmissions,"Score: 0.90
+The LLM output is mostly correct but contains a minor grammatical error with ""results"" instead of ""reduces.""",0.9
+monoamine oxidase inhibitors (maois) less commonly used all depression,Monoamine oxidase inhibitors Same efficacy as Tricyclic antidepressants,"Score: 0.75
+The LLM output is partially correct as it mentions that MAOIs are less commonly used for depression, but it does not accurately reflect their efficacy compared to tricyclic antidepressants.",0.75
+monoamine oxidase inhibitors (maois) less commonly used due to side effects and dietary restrictions,Depression Side effect Slower response to treatment,"Score: 0.75
+The LLM output is partially correct as it mentions side effects, but it does not directly address the slower response to treatment, which is a key aspect of the ground truth statement.",0.75
+mirtazapine comparable to ssris,Mirtazapine As effective as SSRIs,"Score: 0.90
+The LLM output is slightly less accurate than the ground truth as it uses the word ""comparable"" instead of ""effective,"" which may imply a different level of similarity between Mirtazapine and SSRIs.",0.9
+ketamine treats treatment-resistant unipolar and bipolar major depression,"Ketamine Has effects on Unipolar, bipolar depression","Score: 0.90
+The LLM output is mostly correct as it accurately captures the essence of the ground truth statement, but it does not explicitly mention that ketamine also has effects on depression.",0.9
+electroconvulsive therapy highly effective somatic therapy for depression,Electroconvulsive therapy Effective Acute phase of depression in some situations,"Score: 0.80
+The LLM output is generally correct but overstates the effectiveness of electroconvulsive therapy for depression.",0.8
+mindfulness-based cognitive therapy (mbct) overview combines elements of cbt with mindfulness-based stress reduction,Mindfulness-based cognitive therapy Combines CBT with mindfulness-based stress reduction,"Score: 0.90
+The LLM output accurately reflects the essence of the Ground Truth statement but with slightly different wording.",0.9
+"escitalopram more effective duloxetine, fluoxetine, fluvoxamine, paroxetine, reboxetine",Repetitive Transcranial magnetic stimulation Results rTMS and antidepressants more effective,"Score: 0.75
+The LLM output correctly identifies various antidepressants as being potentially effective, but does not specifically mention repetitive transcranial magnetic stimulation as being more effective overall.",0.75
+selective serotonin reuptake inhibitors (ssris) same efficacy as ... for tricyclic antidepressants (tcas),SSRIs Same efficacy as TCAs,"Score: 1.00
+The LLM output accurately reflects the ground truth statement without any errors.",1.0
+escitalopram first-line treatment major depressive disorder,"Mindfulness-based cognitive therapy Goal Reduce, or even stop, antidepressant treatment without increasing the risk of depressive recurrence, especially for patients at a high risk of relapse","Score: 0.50
+The LLM output is somewhat related to the ground truth as it mentions a first-line treatment for major depressive disorder, but it does not address the goal of reducing antidepressant treatment and preventing depressive recurrence.",0.5
+"sertraline more effective duloxetine, fluoxetine, fluvoxamine, paroxetine, reboxetine",Repetitive Transcranial magnetic stimulation Results rTMS and antidepressants more effective,"Score: 0.75
+The LLM output correctly identifies different antidepressants as potentially effective, but does not specifically mention rTMS as being more effective overall.",0.75
+"mirtazapine more effective duloxetine, fluoxetine, fluvoxamine, paroxetine, reboxetine",Repetitive Transcranial magnetic stimulation Results rTMS and antidepressants more effective,"Score: 0.75
+The LLM output correctly identifies specific antidepressants as being more effective than others, but may be missing the overall comparison to repetitive Transcranial Magnetic Stimulation (rTMS) mentioned in the ground truth.",0.75
+"venlafaxine more effective duloxetine, fluoxetine, fluvoxamine, paroxetine, reboxetine",Repetitive Transcranial magnetic stimulation Results rTMS and antidepressants more effective,"Score: 0.75
+The LLM output correctly identified a list of antidepressants, but it missed some key information about rTMS being more effective overall.",0.75
+antidepressants definition medications that treat major depressive disorder,Transcranial direct current stimulation Results Lower than that of antidepressants and rTMS,"Score: 0.5
+The LLM output is mostly incorrect as it does not accurately address the comparison made in the ground truth statement.",0.5
+major depressive disorder treats selective serotonin reuptake inhibitors (ssris),Pharmacotherapy Entails Norepinephrine reuptake inhibitors,"Score: 0.50
+The LLM output is partially correct as it mentions the treatment of a specific disorder with a different class of drug, but the drug class mentioned does not match the ground truth.",0.5
+selective serotonin reuptake inhibitors (ssris) first-line treatment major depressive disorder,Norepinephrine reuptake inhibitors Eligible for Patients who do not respond to SSRIs,"Score: 0.75
+The LLM output is partially correct as it mentions SSRIs as a first-line treatment for major depressive disorder, but it inaccurately suggests that SSRIs are for patients who do not respond to them, switching the information from the ground truth.",0.75
+sertraline comparable to escitalopram,Nefazodone Is comparable to SSRI,"Score: 0.50
+The LLM output is partially correct as it mentions two SSRIs, but it does not directly match the ground truth of comparing nefazodone to an SSRI.",0.5
+reboxetine less effective other antidepressants,Repetitive Transcranial magnetic stimulation Results rTMS and antidepressants more effective,"Score: 0.75
+The LLM output is partially correct as it correctly identifies that reboxetine is less effective than other antidepressants, but it does not fully capture the comparison made in the ground truth statement.",0.75
+physical exercise benefits improvement in quality of life and symptom relief for depression,Pharmacotherapy Treats Acute phase of depression,"Score: 0.75
+The LLM output addresses the treatment of depression, but the statement about physical exercise lacks relevance to the ground truth about pharmacotherapy for the acute phase of depression.",0.75
+cognitive-behavioral therapy (cbt) first-line treatment mild to moderate major depressive disorder,Depression-focused psychotherapy For Mild to moderate MDD,"Score: 0.90
+LLM output is highly correct with only slight differences in wording and structure.",0.9
+ketamine treats treatment-resistant depression,Pharmacotherapy Treats Acute phase of depression,"Score: 0.75
+The LLM output provides a related treatment for depression, but specifically mentions ketamine for treatment-resistant depression rather than the acute phase of depression addressed in the ground truth.",0.75
+cognitive-behavioral therapy (cbt) overview involves modifying dysfunctional behavior and cognitions,"Depression-focused psychotherapy Entails Cognitive-behavioral therapy (CBT), interpersonal therapy (IPT), Supportive therapy (ST) and psychoeducational intervention (PEI)","Score: 0.75
+The LLM output accurately captures the essence of cognitive-behavioral therapy (CBT) but misses the broader context of other therapies that are part of depression-focused psychotherapy.",0.75
+electroconvulsive therapy highly effective major depressive disorder,Electroconvulsive therapy Effective Acute phase of depression in some situations,"Score: 0.75
+The LLM output simplifies the ground truth statement but retains the main message, indicating the effectiveness of electroconvulsive therapy for major depressive disorder.",0.75
+selective serotonin reuptake inhibitors (ssris) first-line treatment major depressive disorder,Norepinephrine reuptake inhibitors Eligible for Patients who do not respond to SSRIs,"Score: 0.50
+
+The LLM output is partially correct as it mentions SSRIs as a first-line treatment for major depressive disorder but does not accurately reflect the original statement about norepinephrine reuptake inhibitors being eligible for patients who do not respond to SSRIs.",0.5
+electroconvulsive therapy (ect) highly effective major depressive disorder,Electroconvulsive therapy Effective Acute phase of depression in some situations,"Score: 0.75
+LLM output is mostly correct but fails to mention the specificity of ECT in the acute phase of depression and only mentions major depressive disorder in general.",0.75
+major depressive disorder definition a prevalent psychiatric disorder leading to poor quality of life and impaired functioning,"Mindfulness-based cognitive therapy Goal Reduce, or even stop, antidepressant treatment without increasing the risk of depressive recurrence, especially for patients at a high risk of relapse","Score: 0.75
+The LLM output provides a general definition of major depressive disorder, but does not fully capture the specific goal of mindfulness-based cognitive therapy as outlined in the Ground Truth statement.",0.75
+ketamine comparable to other antidepressants,Monoamine oxidase inhibitors Eligible for Patients who do not respond to other treatments,"Score: 0.50
+
+The LLM output is somewhat relevant to the ground truth as it mentions antidepressants, but it does not accurately reflect the specific information about monoamine oxidase inhibitors for patients who do not respond to other treatments.",0.5
+"selective serotonin reuptake inhibitors (ssris) side effects sexual and digestive issues, irritability, anxiety, insomnia, headache",Fluoxetine Side effects Generally acceptable side effect profile,"Score: 0.75
+The LLM output contains more specific side effects of fluoxetine (SSRI) that are generally accurate, but it lacks the overall endorsement of a generally acceptable side effect profile as stated in the ground truth.",0.75
+anxious depression more common than nonanxious depression,Bupropion Properties Has a more activating profile than SSRIs that are modestly superior to bupropion in patients with MDD,"Score: 0.50
+The LLM output is only partially correct as it mentions a difference between types of depression, but it does not fully capture the information from the Ground Truth statement.",0.5
+electroconvulsive therapy (ect) highly effective major unipolar depression,Electroconvulsive therapy Effective Acute phase of depression in some situations,"Score: 0.85
+The LLM output is mostly correct but oversimplifies by stating it is highly effective for all major unipolar depression cases, when the ground truth emphasizes its effectiveness only in some situations.",0.85
+"anxious depression associated with unemployment, less education, more severe depression, concurrent anxiety disorders, melancholic/endogenous features","Problem-solving therapy Use Preventing depression among the elderly and treating patients with mild depressive symptoms, especially in primary care","Score: 0.50
+The LLM output discusses characteristics associated with anxious depression, which is related to depression but not directly addressing problem-solving therapy for preventing or treating depression in the elderly or patients with mild depressive symptoms.",0.5
+citalopram first-line treatment major depressive disorder,"Mindfulness-based cognitive therapy Goal Reduce, or even stop, antidepressant treatment without increasing the risk of depressive recurrence, especially for patients at a high risk of relapse","Score: 0.50
+The LLM output is not very correct as it focuses on recommending citalopram as a first-line treatment for major depressive disorder instead of the goal of mindfulness-based cognitive therapy to reduce antidepressant treatment and prevent depressive recurrence.",0.5
+"ketamine side effects neurotoxicity, cognitive dysfunction, psychosis, dissociation, cardiovascular symptoms","Ketamine Has effects on Unipolar, bipolar depression","Score: 0.50
+The LLM output is partially incorrect as it mentions side effects of ketamine instead of its effects on depression, resulting in a lower correctness score.",0.5
+anxious depression more common than nonanxious depression,Bupropion Finding Is more likely than SSRIs to improve symptoms of fatigue and sleepiness,"Score: 0.50
+The LLM output is partially incorrect as it mentions anxious depression, which is not directly related to the given Ground Truth statement about Bupropion and SSRIs.",0.5
+monoamine oxidase inhibitors (maois) second-line treatment patients not responding to several other pharmacotherapies,Monoamine oxidase inhibitors Eligible for Patients who do not respond to other treatments,"Score: 0.75
+The LLM output conveys the same meaning as the ground truth, but with slightly different wording and structure.",0.75
+major depressive disorder associated with high rate of suicidal behavior and mortality,Depression Side effect Suicidal behavior,"Score: 0.75
+The LLM output is mostly correct as it correctly identifies the relationship between major depressive disorder and suicidal behavior, but does not explicitly mention the side effect aspect.",0.75
+monoamine oxidase inhibitors (maois) specific efficacy in treating depression with atypical features,Pharmacotherapy Entails Monoamine oxidase inhibitors,"Score: 0.75
+The LLM output provides relevant information about the use of monoamine oxidase inhibitors in treating depression, but does not directly state that pharmacotherapy entails using monoamine oxidase inhibitors.",0.75
+cognitive-behavioral therapy (cbt) first-line treatment mild to moderate major depressive disorder,Depression-focused psychotherapy For Mild to moderate MDD,"Score: 0.90
+The LLM output is highly accurate in capturing the essence of the ground truth but lacks some minor details.",0.9
+anxious depression symptom high levels of anxiety,Depression-focused psychotherapy Second most common treatment of Acute phase depression,"Score: 0.50
+The LLM output captures some aspects of depression (anxious depression) but does not directly address the specific treatment mentioned in the ground truth.",0.5
+citalopram first-line treatment major depressive disorder,"Mindfulness-based cognitive therapy Goal Reduce, or even stop, antidepressant treatment without increasing the risk of depressive recurrence, especially for patients at a high risk of relapse","Score: 0.25
+Explanation: The LLM output is not relevant to the ground truth statement as it is discussing a specific antidepressant for major depressive disorder rather than mindfulness-based cognitive therapy for reducing antidepressant treatment and the risk of depressive recurrence.",0.25
+anxious depression less effective citalopram treatment,Depression Side effect Slower response to treatment,"Score: 0.50
+
+The LLM output contains some relevant keywords such as ""depression"" and ""treatment,"" but it also introduces the term ""anxious"" which was not present in the ground truth statement.",0.5
+"major depressive disorder treatment options pharmacotherapy, depression-focused psychotherapy, combination of medication and psychotherapy, somatic therapy such as electroconvulsive therapy (ect)","Acute-phase treatment options Approaches Pharmacotherapy, depression-focused psychotherapy, combinations of medications and psychotherapy, and somatic therapies such as electroconvulsive therapy (ECT)","Score: 0.95
+The LLM output is almost identical to the ground truth with minor differences in capitalization and wording.",0.95
+anxious depression more common than nonanxious depression,Bupropion Properties Has a more activating profile than SSRIs that are modestly superior to bupropion in patients with MDD,"Score: 0.50
+The LLM output does not accurately reflect the content of the ground truth statement.",0.5
+citalopram first-line treatment major depressive disorder in star*d level 1,"Problem-solving therapy Use Preventing depression among the elderly and treating patients with mild depressive symptoms, especially in primary care","Score: 0.50
+The LLM output is somewhat related to the ground truth in terms of treating depressive symptoms, but it focuses on a specific medication for major depressive disorder instead of problem-solving therapy for preventing depression in the elderly and treating mild depressive symptoms.",0.5
+anxious depression associated with poor acute outcome than nonanxious depression,Bupropion Properties Has a more activating profile than SSRIs that are modestly superior to bupropion in patients with MDD,"Score: 0.50
+The LLM output does not accurately summarize the information given in the ground truth statement, indicating a lower level of correctness.",0.5
+anxious depression results less likely remission and longer time to occur than those with nonanxious depression,Depression Side effect Slower response to treatment,"Score: 0.75
+The LLM output captures the essence of the ground truth statement but adds additional nuances about the specific type of depression (anxious vs. nonanxious) that the ground truth does not mention.",0.75
+anxious depression less effective citalopram treatment outcome compares to nonanxious depression,Depression Side effect Slower response to treatment,"Score: 0.50
+The LLM output partially captures the ground truth by mentioning depression and treatment outcomes, but it also introduces the concept of anxiety without directly addressing the slower response to treatment in depression.",0.5
+anxious depression associated with poor acute outcome compared to nonanxious depression following antidepressant treatment,Depression Side effect Slower response to treatment,"Score: 0.75
+The LLM output is mostly correct, but it introduces the concept of anxiety which is not present in the ground truth statement.",0.75
+anxious depression benefits direct and stronger focus in clinical trials for effective treatment strategies,"Problem-solving therapy Use Preventing depression among the elderly and treating patients with mild depressive symptoms, especially in primary care","Score: 0.75
+The LLM output is somewhat relevant to the ground truth as it mentions depression and treatment strategies, but it doesn't specifically address problem-solving therapy for preventing depression among the elderly or treating mild depressive symptoms in primary care.",0.75
+sertraline comparable to escitalopram for treating major depressive disorder with anxious features,Monoamine oxidase inhibitors Eligible for Patients who do not respond to other treatments,"Score: 0.50
+The LLM output is somewhat related to the ground truth, as both statements are about treatments for depression, but the LLM output specifically compares two specific drugs while the ground truth mentions a type of medication for patients who don't respond to other treatments.",0.5
+anxious depression associated with higher mean qids-sr score at exit and lower raw qids-sr change score and percentage change in qids-sr score than the nonanxious depression group,"Deep Brain Stimulation Findings Elicited a clinical response in 60% of resistant depression patients after six months and clinical remission in 35% of patients, with benefits maintained for over 12 mo","Score: 0.85
+The LLM output is mostly correct in terms of reporting statistical findings related to depression, but it does not directly compare or address the ground truth statement about Deep Brain Stimulation findings.",0.85
+anxious depression associated with greater reduction in anxiety/somatization score but greater residual symptoms of anxiety/somatization at endpoint than those without anxious depression,Transcranial direct current stimulation Results Lower than that of antidepressants and rTMS,"Score: 0.75
+The LLM output accurately describes the findings of a study related to anxious depression, but it does not directly compare the results of transcranial direct current stimulation with antidepressants and rTMS.",0.75
+"citalopram side effects higher side effect frequency, intensity, burden, and serious adverse event in anxious depression group compared to nonanxious depression group",Depression Side effect Mortality,"Score: 0.75
+The LLM output is mostly correct as it relates citalopram to side effects in the context of anxious and nonanxious depression groups, but the statement does not explicitly mention mortality as in the ground truth.",0.75
+"anxious depression more commonly used concomitant treatment for current general medical conditions, associated symptoms of depression (e.g., sleep and agitation), and citalopram's side effects",Pharmacotherapy Treats Acute phase of depression,"Score: 0.75
+The LLM output is mostly relevant to the ground truth but includes some irrelevant information and lacks specificity.",0.75
