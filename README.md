@@ -130,7 +130,7 @@ Hand annotations were meticulously developed by team members, who manually revie
 |---------------------------|----------------|--------------|-------------------------------------|
 | Fuzzy Wuzzy              | Statistical    | 35.32%       | Low accuracy, only simple matches. |
 | TF-IDF + Cosine Similarity | Statistical  | 36.28%       | Limited to vectorized text formats.|
-| GPT Critic               | Model-Based    | 69.0%       | Utilizes an LLM to evaluate an LLM.|
+| GPT Critic               | Model-Based    | 76.11%       | Utilizes an LLM to evaluate an LLM.|
 | RAGA                     | Model-Based    | 69.67%      | Utilizes an LLM to evaluate an LLM.|
 | G-Eval                   | Model-Based    | 46.6%        | Recommended use of medical domain dictionary.  |
 
@@ -165,7 +165,7 @@ Hand annotations were meticulously developed by team members, who manually revie
    - Uses 10 worker threads to enable parallel comparisons.  
    - Compares each LLM output row with ground truth rows using GPT-3.5-turbo.  
    - Finds the best similarity score for each LLM output.  
-- **Accuracy:** 69.0%  
+- **Accuracy:** 76.11%  
 - **Output:** Best ground truth match for each LLM output row.  
 
 ---
