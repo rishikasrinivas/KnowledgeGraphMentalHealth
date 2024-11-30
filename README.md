@@ -66,7 +66,7 @@
 
 Hand annotations were meticulously developed by team members, who manually reviewed every sentence across three provided PDFs. These annotations formed triplets structured as:  
 - `subj` (Subject)  
-- `relationship` (Relationship)  
+- `rel` (Relationship)  
 - `obj` (Object)  
 
 
