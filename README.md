@@ -11,7 +11,7 @@
 </div>
 
 
-## 👥 Our Team ❤️
+## 👥 Our Team ❤
 
 <div align="center" style="border: 2px solid #aed4d2; padding: 10px; border-radius: 8px; max-width: 100%; overflow-x: auto;">
   <table>
@@ -200,8 +200,8 @@ Hand annotations were meticulously developed by team members, who manually revie
 #### 7. **Precision** 
 - **Evaluation Type:** Statistical: word match and cosine similarity 
 - **Method:** Checking if the extracted relationship is in the source text or in the ground truth annotations  
-- **Threshold for Matching:** 0.7 
-- **Precision Score:** 85.85%
+- **Threshold for Matching:** 0.7
+- **Precision Score:** 81.81
 
 ---
 
@@ -209,7 +209,7 @@ Hand annotations were meticulously developed by team members, who manually revie
 - **Evaluation Type:** Statistical: Factual Alignment and Consistency
 - **Method:** DeepEval Hallucination Metric
 - **Threshold for Matching:** 0.5
-- **Hallucination Score:** 84.0%
+- **Hallucination Score:** 
 
 
 ---
