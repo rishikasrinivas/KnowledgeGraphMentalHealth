@@ -11,7 +11,7 @@
 </div>
 
 
-## 👥 Our Team ❤
+## 👥 Our Team 
 
 <div align="center" style="border: 2px solid #aed4d2; padding: 10px; border-radius: 8px; max-width: 100%; overflow-x: auto;">
   <table>
