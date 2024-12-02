@@ -124,15 +124,17 @@ Hand annotations were meticulously developed by team members, who manually revie
 
 ## 📊 Evaluation Methods
 
-### Evaluation Metrics Table
+### Evaluation Metrics Table 
 
 | **Method**               | **Type**       | **Accuracy** | **Key Pitfalls**                   |
 |---------------------------|----------------|--------------|-------------------------------------|
 | Fuzzy Wuzzy              | Statistical    | 35.32%       | Low accuracy, only simple matches. |
 | TF-IDF + Cosine Similarity | Statistical  | 36.28%       | Limited to vectorized text formats.|
-| GPT Critic               | Model-Based    | 76.11%       | Utilizes an LLM to evaluate an LLM.|
+| GPT Critic               | Model-Based    | 86.0%       | Utilizes an LLM to evaluate an LLM.|
 | RAGA                     | Model-Based    | 69.67%      | Utilizes an LLM to evaluate an LLM.|
 | G-Eval                   | Model-Based    | 46.6%        | Recommended use of medical domain dictionary.  |
+| Precision                | Statistical  | 81.81%        | Can be mislead by cosine similarity|
+| Hallucination            | Model-Based   |               | Utilizes an LLM to evaluate an LLM.|
 
 ### Detailed Evaluation Methodologies
 
