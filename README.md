@@ -128,16 +128,38 @@ Hand annotations were meticulously developed by team members, who manually revie
 
 | **Method**               | **Type**       | **Accuracy** | **Key Pitfalls**                   |
 |---------------------------|----------------|--------------|-------------------------------------|
-| Fuzzy Wuzzy              | Statistical    | 35.32%       | Low accuracy, only simple matches. |
-| TF-IDF + Cosine Similarity | Statistical  | 36.28%       | Limited to vectorized text formats.|
 | GPT Critic               | Model-Based    | 86.0%       | Utilizes an LLM to evaluate an LLM.|
-| RAGA                     | Model-Based    | 69.67%      | Utilizes an LLM to evaluate an LLM.|
-| G-Eval                   | Model-Based    | 46.60%        | Recommended use of medical domain dictionary.  |
 | Precision                | Statistical  | 81.81%        | Can be mislead by cosine similarity|
 | Hallucination            | Model-Based   |   33.80%            | Utilizes an LLM to evaluate an LLM.|
 
 ### Detailed Evaluation Methodologies
 
+### Final Metrics:
+
+#### 1. **GPT Critic**  
+- **Evaluation Type:** Model-Based  
+- **Method:**  
+   - Uses 10 worker threads to enable parallel comparisons.  
+   - Compares each LLM output row with ground truth rows using GPT-3.5-turbo.  
+   - Finds the best similarity score for each LLM output.  
+- **Accuracy:** 86.0%  
+- **Output:** Best ground truth match for each LLM output row.
+
+#### 2. **Precision** 
+- **Evaluation Type:** Statistical: word match and cosine similarity 
+- **Method:** Checking if the extracted relationship is in the source text or in the ground truth annotations  
+- **Threshold for Matching:** 0.7
+- **Precision Score:** 81.81%
+
+---
+
+#### 3. **Hallucination** 
+- **Evaluation Type:** Statistical: Factual Alignment and Consistency
+- **Method:** DeepEval Hallucination Metric
+- **Threshold for Matching:** 0.5
+- **Hallucination Score:** 33.80%
+ 
+### Explored Metrics:
 #### 1. **Fuzzy Wuzzy**  
 - **Evaluation Type:** Statistical  
 - **Method:**  
@@ -161,18 +183,7 @@ Hand annotations were meticulously developed by team members, who manually revie
 
 ---
 
-#### 3. **GPT Critic**  
-- **Evaluation Type:** Model-Based  
-- **Method:**  
-   - Uses 10 worker threads to enable parallel comparisons.  
-   - Compares each LLM output row with ground truth rows using GPT-3.5-turbo.  
-   - Finds the best similarity score for each LLM output.  
-- **Accuracy:** 86.0%  
-- **Output:** Best ground truth match for each LLM output row.  
-
----
-
-#### 4. **RAGA**  
+#### 3. **RAGA**  
 - **Evaluation Type:** Model-Based  
 - **Method:**  
    - Uses 10 worker threads to enable parallel comparisons.  
@@ -197,19 +208,6 @@ Hand annotations were meticulously developed by team members, who manually revie
 
 ---
 
-#### 7. **Precision** 
-- **Evaluation Type:** Statistical: word match and cosine similarity 
-- **Method:** Checking if the extracted relationship is in the source text or in the ground truth annotations  
-- **Threshold for Matching:** 0.7
-- **Precision Score:** 81.81%
-
----
-
-#### 8. **Hallucination** 
-- **Evaluation Type:** Statistical: Factual Alignment and Consistency
-- **Method:** DeepEval Hallucination Metric
-- **Threshold for Matching:** 0.5
-- **Hallucination Score:** 33.80%
 
 
 ---
