@@ -134,7 +134,7 @@ Hand annotations were meticulously developed by team members, who manually revie
 | RAGA                     | Model-Based    | 69.67%      | Utilizes an LLM to evaluate an LLM.|
 | G-Eval                   | Model-Based    | 46.60%        | Recommended use of medical domain dictionary.  |
 | Precision                | Statistical  | 81.81%        | Can be mislead by cosine similarity|
-| Hallucination            | Model-Based   |               | Utilizes an LLM to evaluate an LLM.|
+| Hallucination            | Model-Based   |   33.80%            | Utilizes an LLM to evaluate an LLM.|
 
 ### Detailed Evaluation Methodologies
 
@@ -209,7 +209,7 @@ Hand annotations were meticulously developed by team members, who manually revie
 - **Evaluation Type:** Statistical: Factual Alignment and Consistency
 - **Method:** DeepEval Hallucination Metric
 - **Threshold for Matching:** 0.5
-- **Hallucination Score:** 
+- **Hallucination Score:** 33.80%
 
 
 ---
