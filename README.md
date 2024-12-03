@@ -132,7 +132,7 @@ Hand annotations were meticulously developed by team members, who manually revie
 | TF-IDF + Cosine Similarity | Statistical  | 36.28%       | Limited to vectorized text formats.|
 | GPT Critic               | Model-Based    | 86.0%       | Utilizes an LLM to evaluate an LLM.|
 | RAGA                     | Model-Based    | 69.67%      | Utilizes an LLM to evaluate an LLM.|
-| G-Eval                   | Model-Based    | 46.6%        | Recommended use of medical domain dictionary.  |
+| G-Eval                   | Model-Based    | 46.60%        | Recommended use of medical domain dictionary.  |
 | Precision                | Statistical  | 81.81%        | Can be mislead by cosine similarity|
 | Hallucination            | Model-Based   |               | Utilizes an LLM to evaluate an LLM.|
 
@@ -167,7 +167,7 @@ Hand annotations were meticulously developed by team members, who manually revie
    - Uses 10 worker threads to enable parallel comparisons.  
    - Compares each LLM output row with ground truth rows using GPT-3.5-turbo.  
    - Finds the best similarity score for each LLM output.  
-- **Accuracy:** 76.11%  
+- **Accuracy:** 86.0%  
 - **Output:** Best ground truth match for each LLM output row.  
 
 ---
@@ -192,7 +192,7 @@ Hand annotations were meticulously developed by team members, who manually revie
     - Define common synonyms and related terms in the medical domain
     - Calculate semantic similarity between two triples considering medical domain knowledge.
     - Evaluate matches between ground truth and LLM output
-- **Accuracy:** 46.6%
+- **Accuracy:** 46.60%
 - **Output:** Shows ground truth row with actual output row along with best evaluation score ranging from 0.10 to 0.80.
 
 ---
@@ -201,7 +201,7 @@ Hand annotations were meticulously developed by team members, who manually revie
 - **Evaluation Type:** Statistical: word match and cosine similarity 
 - **Method:** Checking if the extracted relationship is in the source text or in the ground truth annotations  
 - **Threshold for Matching:** 0.7
-- **Precision Score:** 81.81
+- **Precision Score:** 81.81%
 
 ---
 
