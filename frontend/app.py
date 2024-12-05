@@ -19,10 +19,9 @@ def index():
 @app.route("/upload_results", methods=['POST'])
 def upload_results():
     try:
-        
-        
         data=request.get_json()
-        collection.insert_many(data)
+        print("data ", data)
+        collection.Brightside.insert_many(data)
         return jsonify({
           'message': 'Data added',
         }), 201
@@ -33,12 +32,11 @@ def upload_results():
 def get_results():
     try:
         data=[]
-        # Fetch all documents from the collection
  
-        results = collection.find()
+        results = collection.Brightside.find()
         
         for res in results:
-        # Convert the results to a list of dictionaries
+            # Convert the results to a list of dictionaries
             res['_id'] = str(res['_id'])  # Convert ObjectId to string
             data.append(res)
        
@@ -53,6 +51,8 @@ def get_results():
         
 @app.route("/upload", methods=['POST'])
 def upload_files():
+    collection.Brightside.delete_many({})
+    assert collection.Brightside.count_documents({}) == 0
     responses= extract_rels(request.files.getlist('files[]'))
     if responses=="Invalid":
         return jsonify({'error': str(e)}), 500
@@ -66,9 +66,7 @@ def upload_files():
         return jsonify({'error': str(e)}), 500
    
 if __name__ == '__main__':
-    collection.Brightside.delete_many({})
-    print(collection.Brightside.count_documents({}))
-    assert collection.Brightside.count_documents({}) == 0
+    
     app.run(port=8000, debug=True)
     
     

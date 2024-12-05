@@ -1,6 +1,9 @@
 
 from pymongo.mongo_client import MongoClient
 from pymongo.server_api import ServerApi
+import sys, os
+print(os.getcwd())
+sys.path.append("../KnowledgeGraphMentalHealth/")
 from src import constants
 from pymongo.server_api import ServerApi
 import uuid

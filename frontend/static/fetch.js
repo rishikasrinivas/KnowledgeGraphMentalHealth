@@ -10,6 +10,7 @@ export async function fetchData() {
 
         const data = await response.json();
         
+        
         data.forEach(item => {
             let ds = {
                 subjSumm: item.subjsummary,
@@ -18,6 +19,7 @@ export async function fetchData() {
                 rel: item.rel,
                 obj: item.obj
             }
+           
             lists.push(ds)
         });
         return lists

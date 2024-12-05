@@ -11,7 +11,6 @@ def extract_rels(files):
     OpenAI.api_key = os.environ["OPENAI_API_KEY"]
     client= OpenAI()
     responses=[]
-    dfs=[]
     for documents in files:
         file=documents.filename
         if file[-4:] != ".pdf":
@@ -19,6 +18,8 @@ def extract_rels(files):
             
         for text in data.read_file_text(io.BytesIO(documents.read()) ):
             response = model.get_response(client, text, constants.PROMPT, constants.MODEL_TYPE)
+            if response == 'Error':
+                continue
             responses.extend(response)
     return responses
 

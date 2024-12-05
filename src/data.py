@@ -1,5 +1,5 @@
 from PyPDF2 import PdfReader
-import os
+import os,sys
 import src.constants as constants
 import spacy
 nlp = spacy.load("en_core_web_sm")

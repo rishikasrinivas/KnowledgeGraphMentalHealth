@@ -1,5 +1,5 @@
 from PyPDF2 import PdfReader
-import os
+import os,sys
 import src.constants as constants
 import spacy
 nlp = spacy.load("en_core_web_sm")
@@ -27,4 +27,3 @@ def read_file_text(filename):
             text_in_group += text
         yield text_in_group
     
-
