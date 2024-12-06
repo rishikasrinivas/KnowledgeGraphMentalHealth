@@ -233,7 +233,6 @@ Start the program by executing:
 ```
 python3 frontend/app.py
 ```
-=======
 
 ---
 
@@ -241,7 +240,7 @@ python3 frontend/app.py
 We welcome contributions to improve the evaluation methods, refine the UI, or expand the dataset. Please feel free to submit issues or pull requests.  
 
 ---
-=======
+
 ## License  
 This project is licensed under the [MIT License](LICENSE).  
->>>>>>> e02eac7 (cleaned eval)
+
