@@ -223,7 +223,7 @@ Hand annotations were meticulously developed by team members, who manually revie
 
 ---
 
-## ✨ How to run the program  
+## 💻 How to run the program  
 
 TBA.  
 
