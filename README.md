@@ -236,6 +236,11 @@ Install all necessary Python libraries by running:
 ```
 pip install -r requirements.txt
 ```
+Install all necessary spacy model:
+```
+pip install -U spacy
+python -m spacy download en_core_web_sm
+```
 Run the following command to install Cytoscape through npm:
 ```
 npm install cytoscape
