@@ -1,0 +1,9 @@
+# Versions to be added
+
+Flask
+OpenAI
+Numpy
+pandas
+Cytoscape
+deepeval 
+PyMuPDF
