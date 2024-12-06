@@ -243,7 +243,7 @@ npm install cytoscape
 ```
 Start the program by executing:
 ```
-python3 app/frontend
+python3 frontend/app.py
 ```
 ---
 
