@@ -225,19 +225,23 @@ Hand annotations were meticulously developed by team members, who manually revie
 
 ## 💻 How to run the program  
 
-TBA.  
+Clone the repo by running this program:
 ```
 git clone git@github.com:rishikasrinivas/KnowledgeGraphMentalHealth.git
 ```
+Using your terminal, cd into the KnowledgeGraphMentalHealth/ folder
 ```
 cd  KnowledgeGraphMentalHealth/
 ```
+Install all necessary Python libraries by running:
 ```
 pip install -r requirements.txt
 ```
+Run the following command to install Cytoscape through npm:
 ```
 npm install cytoscape
 ```
+Start the program by executing:
 ```
 python3 app/frontend
 ```
