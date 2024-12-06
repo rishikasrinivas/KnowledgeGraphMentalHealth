@@ -227,7 +227,7 @@ Hand annotations were meticulously developed by team members, who manually revie
 
 TBA.  
 ```
-git clone 
+git clone git@github.com:rishikasrinivas/KnowledgeGraphMentalHealth.git
 ```
 ```
 cd  KnowledgeGraphMentalHealth/
