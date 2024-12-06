@@ -10,8 +10,6 @@ def read_file_text(filename):
     doc = PdfReader(filename)
     num_pages=len(doc.pages) 
     print(num_pages)
-    for page in doc.pages:
-        page.extract_text
     for page_nums in range(0, num_pages, constants.SKIP): 
         print("Starting at page number :", page_nums)
         text_in_group = ""

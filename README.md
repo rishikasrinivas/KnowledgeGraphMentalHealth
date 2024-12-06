@@ -128,7 +128,7 @@ Hand annotations were meticulously developed by team members, who manually revie
 
 | **Method**               | **Type**       | **Accuracy** | **Key Pitfalls**                   |
 |---------------------------|----------------|--------------|-------------------------------------|
-| Accuracy (GPT Critic)               | Model-Based    | 86.0%       | Utilizes an LLM to evaluate an LLM.|
+| GPT Critic               | Model-Based    | 86.0%       | Utilizes an LLM to evaluate an LLM.|
 | Precision                | Statistical  | 81.81%        | Can be mislead by cosine similarity|
 | Hallucination            | Model-Based   |   33.80%            | Utilizes an LLM to evaluate an LLM.|
 
@@ -136,8 +136,7 @@ Hand annotations were meticulously developed by team members, who manually revie
 
 ### Final Metrics:
 
-#### 1. **Accuracy**  
-- **Framework used**: GPT Critic
+#### 1. **GPT Critic**  
 - **Evaluation Type:** Model-Based  
 - **Method:**  
    - Uses 10 worker threads to enable parallel comparisons.  
@@ -152,22 +151,15 @@ Hand annotations were meticulously developed by team members, who manually revie
 - **Threshold for Matching:** 0.7
 - **Precision Score:** 81.81%
 
+---
+
 #### 3. **Hallucination** 
 - **Evaluation Type:** Statistical: Factual Alignment and Consistency
 - **Method:** DeepEval Hallucination Metric
 - **Threshold for Matching:** 0.5
 - **Hallucination Score:** 33.80%
-
----
-### Explored Metrics for Accuracy:
-| **Method**               | **Type**       | **Accuracy** | **Key Pitfalls**                   |
-|---------------------------|----------------|--------------|-------------------------------------|
-| Fuzzy Wuzzy              | Statistical    | 35.32%       | Low accuracy, only simple matches. |
-| TF-IDF + Cosine Similarity | Statistical  | 36.28%       | Limited to vectorized text formats.|
-| GPT Critic               | Model-Based    | 86.0%       | Utilizes an LLM to evaluate an LLM.|
-| RAGA                     | Model-Based    | 69.67%      | Utilizes an LLM to evaluate an LLM.|
-| G-Eval                   | Model-Based    | 46.6%        | Recommended use of medical domain dictionary.  |
-
+ 
+### Explored Metrics:
 #### 1. **Fuzzy Wuzzy**  
 - **Evaluation Type:** Statistical  
 - **Method:**  
@@ -178,6 +170,7 @@ Hand annotations were meticulously developed by team members, who manually revie
    - Rows of LLM output that match the ground truth at or above 70% similarity.  
    - Only one triplet pair is found matching per threshold.  
 
+---
 
 #### 2. **TF-IDF Vector and Cosine Method**  
 - **Evaluation Type:** Statistical, Feature-weighting  
@@ -186,20 +179,11 @@ Hand annotations were meticulously developed by team members, who manually revie
    - Vectorize text using TF-IDF to convert it to numeric form.  
    - Compare each LLM row to each ground truth row using cosine similarity.  
 - **Accuracy:** 36.28%  
-- **Output:** Best matching ground truth row for each LLM output row.
+- **Output:** Best matching ground truth row for each LLM output row.  
 
-  
-#### 4. **GPT Critic**  
-- **Evaluation Type:** Model-Based  
-- **Method:**  
-   - Uses 10 worker threads to enable parallel comparisons.  
-   - Compares each LLM output row with ground truth rows using GPT-3.5-turbo.  
-   - Finds the best similarity score for each LLM output.  
-- **Accuracy:** 86.0%  
-- **Output:** Best ground truth match for each LLM output row.
+---
 
-  
-#### 4. **RAGA**  
+#### 3. **RAGA**  
 - **Evaluation Type:** Model-Based  
 - **Method:**  
    - Uses 10 worker threads to enable parallel comparisons.  
@@ -211,8 +195,9 @@ Hand annotations were meticulously developed by team members, who manually revie
     -  Generation: 75.0%
 - **Output:** Best ground truth match for each LLM output row.  
 
+---
 
-#### 5. **G-Eval**  
+#### 4. **G-Eval**  
 - **Evaluation Type:** Model-Based  
 - **Method:**
     - Define common synonyms and related terms in the medical domain
@@ -223,34 +208,14 @@ Hand annotations were meticulously developed by team members, who manually revie
 
 ---
 
-## 💻 How to run the program  
 
-Clone the repo by running this program:
-```
-git clone git@github.com:rishikasrinivas/KnowledgeGraphMentalHealth.git
-```
-Using your terminal, cd into the KnowledgeGraphMentalHealth/ folder
-```
-cd  KnowledgeGraphMentalHealth/
-```
-Install all necessary Python libraries by running:
-```
-pip install -r requirements.txt
-```
-Run the following command to install Cytoscape through npm:
-```
-npm install cytoscape
-```
-Start the program by executing:
-```
-python3 app/frontend
-```
+
 ---
 
-## ✨ Contribution  
+## Contribution  
 We welcome contributions to improve the evaluation methods, refine the UI, or expand the dataset. Please feel free to submit issues or pull requests.  
 
 ---
 
-## ⚖️ License  
+## License  
 This project is licensed under the [MIT License](LICENSE).  
