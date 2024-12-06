@@ -3,7 +3,6 @@ fitz==0.0.1.dev2
 openai==1.55.0
 numpy==1.26.4
 pandas==2.2.2
-cytoscape # CHECK THIS
 deepeval==1.4.5
 PyMuPDF==1.24.14
 PyPDF2==2.10.5
