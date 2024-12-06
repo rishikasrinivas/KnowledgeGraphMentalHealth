@@ -226,7 +226,21 @@ Hand annotations were meticulously developed by team members, who manually revie
 ## 💻 How to run the program  
 
 TBA.  
-
+```
+git clone 
+```
+```
+cd  KnowledgeGraphMentalHealth/
+```
+```
+pip install -r requirements.txt
+```
+```
+npm install cytoscape
+```
+```
+python3 app/frontend
+```
 ---
 
 ## ✨ Contribution  
