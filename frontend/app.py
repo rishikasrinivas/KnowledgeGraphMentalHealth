@@ -20,7 +20,6 @@ def index():
 def upload_results():
     try:
         data=request.get_json()
-        print("data ", data)
         collection.Brightside.insert_many(data)
         return jsonify({
           'message': 'Data added',
