@@ -127,7 +127,7 @@ Hand annotations were meticulously developed by team members, who manually revie
 
 | **Method**               | **Type**       | **Accuracy** | **Key Pitfalls**                   |
 |---------------------------|----------------|--------------|-------------------------------------|
-| GPT Critic               | Model-Based    | 86.0%       | Utilizes an LLM to evaluate an LLM.|
+| Accuracy              | Model-Based    | 86.0%       | Utilizes an LLM to evaluate an LLM.|
 | Precision                | Statistical  | 81.81%        | Can be mislead by cosine similarity|
 | Hallucination            | Model-Based   |   33.80%            | Utilizes an LLM to evaluate an LLM.|
 
@@ -135,7 +135,8 @@ Hand annotations were meticulously developed by team members, who manually revie
 
 ### Final Metrics:
 
-#### 1. **GPT Critic**  
+#### 1. **Accuracy**  
+- **Framework used:** GPT Critic
 - **Evaluation Type:** Model-Based  
 - **Method:**  
    - Uses 10 worker threads to enable parallel comparisons.  
@@ -150,15 +151,22 @@ Hand annotations were meticulously developed by team members, who manually revie
 - **Threshold for Matching:** 0.7
 - **Precision Score:** 81.81%
 
----
-
 #### 3. **Hallucination** 
 - **Evaluation Type:** Statistical: Factual Alignment and Consistency
 - **Method:** DeepEval Hallucination Metric
 - **Threshold for Matching:** 0.5
 - **Hallucination Score:** 33.80%
- 
-### Explored Metrics:
+
+ ---
+### 🎯 Explored Metrics for Accuracy:
+| **Method**               | **Type**       | **Accuracy** | **Key Pitfalls**                   |
+|---------------------------|----------------|--------------|-------------------------------------|
+| Fuzzy Wuzzy |Statistical | 35.32% | Can be mislead by cosine similarity. |
+| TF-IDF Vector and Cosine Method| Statistical | 36.28% | Can be mislead by cosine similarity|
+| GPT Critic | Model-Based   |86.0%| Utilizes an LLM to evaluate an LLM.|
+| RAGA | Model-Based   | 69.67% | Utilizes an LLM to evaluate an LLM.|
+| G-Eval | Model-Based   | 46.60% | Utilizes an LLM to evaluate an LLM.|
+
 #### 1. **Fuzzy Wuzzy**  
 - **Evaluation Type:** Statistical  
 - **Method:**  
@@ -169,8 +177,6 @@ Hand annotations were meticulously developed by team members, who manually revie
    - Rows of LLM output that match the ground truth at or above 70% similarity.  
    - Only one triplet pair is found matching per threshold.  
 
----
-
 #### 2. **TF-IDF Vector and Cosine Method**  
 - **Evaluation Type:** Statistical, Feature-weighting  
 - **Method:**  
@@ -180,9 +186,16 @@ Hand annotations were meticulously developed by team members, who manually revie
 - **Accuracy:** 36.28%  
 - **Output:** Best matching ground truth row for each LLM output row.  
 
----
+#### 3. **GPT Critic**  
+- **Evaluation Type:** Model-Based  
+- **Method:**  
+   - Uses 10 worker threads to enable parallel comparisons.  
+   - Compares each LLM output row with ground truth rows using GPT-3.5-turbo.  
+   - Finds the best similarity score for each LLM output.  
+- **Accuracy:** 86.0%  
+- **Output:** Best ground truth match for each LLM output row.
 
-#### 3. **RAGA**  
+#### 4. **RAGA**  
 - **Evaluation Type:** Model-Based  
 - **Method:**  
    - Uses 10 worker threads to enable parallel comparisons.  
@@ -194,9 +207,7 @@ Hand annotations were meticulously developed by team members, who manually revie
     -  Generation: 75.0%
 - **Output:** Best ground truth match for each LLM output row.  
 
----
-
-#### 4. **G-Eval**  
+#### 5. **G-Eval**  
 - **Evaluation Type:** Model-Based  
 - **Method:**
     - Define common synonyms and related terms in the medical domain
@@ -206,13 +217,13 @@ Hand annotations were meticulously developed by team members, who manually revie
 - **Output:** Shows ground truth row with actual output row along with best evaluation score ranging from 0.10 to 0.80.
 
 ---
+## 💻 How to tun this code
 
-
-Clone the repo by running this program:
+Clone the repo by pasting this into the terminal:
 ```
 git clone git@github.com:rishikasrinivas/KnowledgeGraphMentalHealth.git
 ```
-Using your terminal, cd into the KnowledgeGraphMentalHealth/ folder
+Using the terminal, cd into the KnowledgeGraphMentalHealth/ folder
 ```
 cd  KnowledgeGraphMentalHealth/
 ```
@@ -220,9 +231,8 @@ Install all necessary Python libraries by running:
 ```
 pip install -r requirements.txt
 ```
-Install all necessary spacy model:
+Install spacy language model:
 ```
-pip install -U spacy
 python -m spacy download en_core_web_sm
 ```
 Run the following command to install Cytoscape through npm:
@@ -236,11 +246,10 @@ python3 frontend/app.py
 
 ---
 
-## Contribution  
+## ✨ Contribution  
 We welcome contributions to improve the evaluation methods, refine the UI, or expand the dataset. Please feel free to submit issues or pull requests.  
 
 ---
 
-## License  
+## ⚖️ License  
 This project is licensed under the [MIT License](LICENSE).  
-
