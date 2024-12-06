@@ -227,17 +227,9 @@ Using the terminal, cd into the KnowledgeGraphMentalHealth/ folder
 ```
 cd  KnowledgeGraphMentalHealth/
 ```
-Install all necessary Python libraries by running:
+Install all necessary dependencies by running:
 ```
-pip install -r requirements.txt
-```
-Install spacy language model:
-```
-python -m spacy download en_core_web_sm
-```
-Run the following command to install Cytoscape through npm:
-```
-npm install cytoscape
+python3 install_dependencies.py
 ```
 Start the program by executing:
 ```
