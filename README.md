@@ -217,7 +217,7 @@ Hand annotations were meticulously developed by team members, who manually revie
 - **Output:** Shows ground truth row with actual output row along with best evaluation score ranging from 0.10 to 0.80.
 
 ---
-## 💻 How to tun this code
+## 💻 How to run this code
 
 Clone the repo by pasting this into the terminal:
 ```
